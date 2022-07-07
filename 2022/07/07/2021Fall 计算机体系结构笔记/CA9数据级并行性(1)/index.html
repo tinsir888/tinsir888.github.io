@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="CA9 数据级并行性(1)引言SIMD 体系结构利用了数据并行性  面向矩阵的科学计算 面向多媒体的图像和声音处理 机器学习算法  SIMD比MIMD更节能  与MIMD相比，SIMD单挑指令可以同时对许多数据进行操作 个人移动设备使SIMD更具吸引力  在SIMD架构中，程序员从代码顺序执行的角度来思考问题，获得代码并行执行的加速比。 SIMD 并行性SIMD 的三种变形  矢量体系结构 SIM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA9%E6%95%B0%E6%8D%AE%E7%BA%A7%E5%B9%B6%E8%A1%8C%E6%80%A7(1)/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="CA9 数据级并行性(1)引言SIMD 体系结构利用了数据并行性  面向矩阵的科学计算 面向多媒体的图像和声音处理 机器学习算法  SIMD比MIMD更节能  与MIMD相比，SIMD单挑指令可以同时对许多数据进行操作 个人移动设备使SIMD更具吸引力  在SIMD架构中，程序员从代码顺序执行的角度来思考问题，获得代码并行执行的加速比。 SIMD 并行性SIMD 的三种变形  矢量体系结构 SIM">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/10.png">
+<meta property="article:published_time" content="2022-07-07T05:20:00.535Z">
+<meta property="article:modified_time" content="2021-11-15T03:39:16.378Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/10.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-2021Fall 计算机体系结构笔记/CA9数据级并行性(1)" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA9%E6%95%B0%E6%8D%AE%E7%BA%A7%E5%B9%B6%E8%A1%8C%E6%80%A7(1)/" class="article-date">
+  <time class="dt-published" datetime="2022-07-07T05:20:00.535Z" itemprop="datePublished">2022-07-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="CA9-数据级并行性-1"><a href="#CA9-数据级并行性-1" class="headerlink" title="CA9 数据级并行性(1)"></a>CA9 数据级并行性(1)</h1><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>SIMD 体系结构利用了数据并行性</p>
+<ul>
+<li>面向矩阵的科学计算</li>
+<li>面向多媒体的图像和声音处理</li>
+<li>机器学习算法</li>
+</ul>
+<p>SIMD比MIMD更节能</p>
+<ul>
+<li>与MIMD相比，SIMD单挑指令可以同时对许多数据进行操作</li>
+<li>个人移动设备使SIMD更具吸引力</li>
+</ul>
+<p>在SIMD架构中，程序员从代码顺序执行的角度来思考问题，获得代码并行执行的加速比。</p>
+<h2 id="SIMD-并行性"><a href="#SIMD-并行性" class="headerlink" title="SIMD 并行性"></a>SIMD 并行性</h2><p>SIMD 的三种变形</p>
+<ul>
+<li>矢量体系结构</li>
+<li>SIMD 扩展指令集</li>
+<li>图形处理单元GPUs</li>
+</ul>
+<p>Intel x86</p>
+<ul>
+<li>预计每年每个芯片处理器增加两个处理核</li>
+<li>SIMD 宽度每四年翻一倍</li>
+<li>SIMD 的潜在加速比是 MIMD 的两倍</li>
+</ul>
+<p>矢量体系结构</p>
+<ul>
+<li>将许多数据操作扩展为流水执行</li>
+<li>对微处理器来说，代价昂贵<ul>
+<li>需要更多的晶体管资源</li>
+<li>需要最够的DRAM带宽</li>
+</ul>
+</li>
+</ul>
+<p>SIMD 扩展指令集</p>
+<ul>
+<li>1996年，MMX multimedia extensions</li>
+<li>SSE streaming SIMD extensions</li>
+<li>AVX advanced vector extensions</li>
+</ul>
+<p>图形处理单元</p>
+<ul>
+<li>与矢量体系结构共享特征，但具有自己的特性</li>
+<li>独特的生态环境：系统处理器与系统内存+GPU 与图形内存</li>
+</ul>
+<h2 id="矢量体系结构"><a href="#矢量体系结构" class="headerlink" title="矢量体系结构"></a>矢量体系结构</h2><p>基本思路</p>
+<ul>
+<li>将一组分散在内存中的元素读入矢量寄存器</li>
+<li>对这些矢量寄存器进行操作</li>
+<li>把操作结果放回内存中</li>
+</ul>
+<p>对矢量数据执行一条指令，将获得对独立数据元素进行的多条寄存器-寄存器操作</p>
+<p>大型寄存器文件作为编译器可控的缓存器</p>
+<ul>
+<li>隐藏内存延迟：每次矢量加载或存储将导致一次内存延迟，而非每个元素一次，因此均摊了延迟时间</li>
+<li>降低读写次数：利用内存带宽</li>
+</ul>
+<p>矢量体系结构在提供良好的性能的同时，没有付出乱序超标量处理器在能耗和设计复杂性方面的代价。</p>
+<p><img src="/./10.png"></p>
+<h2 id="RV64V-架构"><a href="#RV64V-架构" class="headerlink" title="RV64V 架构"></a>RV64V 架构</h2><p>32个64bit矢量寄存器</p>
+<ul>
+<li>寄存器文件有16个读端口和8个写端口</li>
+</ul>
+<p>矢量功能单元</p>
+<ul>
+<li>全流水</li>
+<li>检测数据和控制相关</li>
+</ul>
+<p>矢量加载-存储单元</p>
+<ul>
+<li>全流水</li>
+<li>在初始延迟后每个时钟周期一个字</li>
+</ul>
+<p>标量寄存器</p>
+<ul>
+<li>31个通用寄存器</li>
+<li>32个浮点寄存器</li>
+</ul>
+<h2 id="特色指令"><a href="#特色指令" class="headerlink" title="特色指令"></a>特色指令</h2><p>跨步装载和存储</p>
+<p>索引装载</p>
+<p>索引存储</p>
+<p>谓词：在计算机语言环境下，是指条件表达式的求值过程</p>
+<h2 id="数据类型和长度"><a href="#数据类型和长度" class="headerlink" title="数据类型和长度"></a>数据类型和长度</h2><p>多种数据大小</p>
+<ul>
+<li>32个64bit元素 128个16bit元素，256个8bit元素</li>
+<li>适合多媒体应用和科学计算</li>
+</ul>
+<h2 id="动态寄存器类型"><a href="#动态寄存器类型" class="headerlink" title="动态寄存器类型"></a>动态寄存器类型</h2><p>创新点</p>
+<ul>
+<li>数据类型与大小和每个矢量寄存器相关联，而不是指令相关联</li>
+<li>指令执行之前，程序配置矢量寄存器用于特定的数据类型和宽度</li>
+</ul>
+<p>动态寄存器类型将所有矢量内存分配给启用的矢量寄存器作为长矢量使用</p>
+<ul>
+<li>最大矢量长度：每个矢量寄存器可以容纳的元素个数</li>
+</ul>
+<h2 id="若干概念"><a href="#若干概念" class="headerlink" title="若干概念"></a>若干概念</h2><ul>
+<li><p>可矢量化</p>
+<p>当循环程序相邻迭代之间不存在相关性时，可矢量化</p>
+</li>
+<li><p>链接</p>
+<p>同时执行相关数据的矢量指令</p>
+<p>一旦源矢量操作数的一个元素有效是，可以立即启动矢量操作</p>
+</li>
+<li><p>执行时间</p>
+<p>是操作数矢量长度，结构危害和数据相关的函数</p>
+</li>
+<li><p>道：在矢量功能单元中配置的多个并行流水线</p>
+</li>
+<li><p>引发速率：矢量单元消耗操作数的速度</p>
+</li>
+<li><p>编队：可以同时开始执行的一组矢量指令</p>
+</li>
+<li><p>定时：执行一个指令编队所需要的时间</p>
+</li>
+</ul>
+<h2 id="发出限制"><a href="#发出限制" class="headerlink" title="发出限制"></a>发出限制</h2><p>启动时间</p>
+<ul>
+<li>等待矢量功能单元满负荷运行的延迟时钟周期数</li>
+<li>所有功能单元全流水<ul>
+<li>浮点数加法 6 cycle</li>
+<li>浮点数乘法 7 cycle</li>
+<li>浮点数除法 20 cycle</li>
+<li>矢量加载 12 cycle</li>
+</ul>
+</li>
+</ul>
+<p>改进方法</p>
+<ul>
+<li>每个时钟周期处理超过1个矢量元素</li>
+<li>非64bit宽矢量</li>
+<li>矢量代码中的取值令声明</li>
+<li>优化存储系统来支持矢量处理器</li>
+<li>多维矩阵和稀疏矩阵</li>
+<li>编程矢量计算机</li>
+</ul>
+<h2 id="多通道概念"><a href="#多通道概念" class="headerlink" title="多通道概念"></a>多通道概念</h2><h2 id="矢量长度寄存器"><a href="#矢量长度寄存器" class="headerlink" title="矢量长度寄存器"></a>矢量长度寄存器</h2><ul>
+<li>控制任何矢量操作长度，包括矢量装入和存储操作</li>
+<li>不能大于最大矢量长度</li>
+</ul>
+<h2 id="谓词寄存器"><a href="#谓词寄存器" class="headerlink" title="谓词寄存器"></a>谓词寄存器</h2><h2 id="存储体"><a href="#存储体" class="headerlink" title="存储体"></a>存储体</h2><p>没有足够的存储器带宽，矢量执行是徒劳的</p>
+<p>装入指令启动时间</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA9%E6%95%B0%E6%8D%AE%E7%BA%A7%E5%B9%B6%E8%A1%8C%E6%80%A7(1)/" data-id="cl5akzo7b000chkur00tt1xak" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA10%E6%95%B0%E6%8D%AE%E7%BA%A7%E5%B9%B6%E8%A1%8C%E6%80%A7/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA8%E6%8C%87%E4%BB%A4%E7%BA%A7%E5%B9%B6%E8%A1%8C%E6%80%A7(2)/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/07/">July 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA4%E5%AD%98%E5%82%A8%E5%B1%82%E6%AC%A120211011/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA3%E6%8C%87%E4%BB%A4%E9%9B%86%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%8420210927/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA2%E9%87%8F%E5%8C%96%E8%AE%BE%E8%AE%A1%E4%B8%8E%E8%AF%84%E4%BC%B020210918/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA1%E6%A6%82%E8%BF%B020210906/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA13%E4%BB%93%E5%BA%93%E7%BA%A7%E8%AE%A1%E7%AE%97%E6%9C%BA/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

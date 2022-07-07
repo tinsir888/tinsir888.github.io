@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="CA7 指令级并行性 ILP20211101概念 指令之间的重叠执行  开发指令级并行性的两类主要方法  依靠硬件来动态发现和利用并行性 用于服务器和台式机处理器 在个人移动设备中的处理器 在 IoT，成本和功耗的约束，利用较低层次的指令级并行性   依靠软件在编译时静态地发现并行性 上世纪 80 年代开始尝试，1989年用于Intel安腾系列 特定领域或带有明显数据级并行性的科学应用     局">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA7%E6%8C%87%E4%BB%A4%E7%BA%A7%E5%B9%B6%E8%A1%8C%E6%80%A7(1)/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="CA7 指令级并行性 ILP20211101概念 指令之间的重叠执行  开发指令级并行性的两类主要方法  依靠硬件来动态发现和利用并行性 用于服务器和台式机处理器 在个人移动设备中的处理器 在 IoT，成本和功耗的约束，利用较低层次的指令级并行性   依靠软件在编译时静态地发现并行性 上世纪 80 年代开始尝试，1989年用于Intel安腾系列 特定领域或带有明显数据级并行性的科学应用     局">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-07-07T05:20:00.512Z">
+<meta property="article:modified_time" content="2021-11-01T03:45:06.443Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-2021Fall 计算机体系结构笔记/CA7指令级并行性(1)" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA7%E6%8C%87%E4%BB%A4%E7%BA%A7%E5%B9%B6%E8%A1%8C%E6%80%A7(1)/" class="article-date">
+  <time class="dt-published" datetime="2022-07-07T05:20:00.512Z" itemprop="datePublished">2022-07-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="CA7-指令级并行性-ILP"><a href="#CA7-指令级并行性-ILP" class="headerlink" title="CA7 指令级并行性 ILP"></a>CA7 指令级并行性 ILP</h1><h4 id="20211101"><a href="#20211101" class="headerlink" title="20211101"></a>20211101</h4><h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><ul>
+<li><p>指令之间的重叠执行</p>
+</li>
+<li><p>开发指令级并行性的两类主要方法</p>
+<ul>
+<li>依靠硬件来动态发现和利用并行性<ul>
+<li>用于服务器和台式机处理器</li>
+<li>在个人移动设备中的处理器</li>
+<li>在 IoT，成本和功耗的约束，利用较低层次的指令级并行性</li>
+</ul>
+</li>
+<li>依靠软件在编译时静态地发现并行性<ul>
+<li>上世纪 80 年代开始尝试，1989年用于Intel安腾系列</li>
+<li>特定领域或带有明显数据级并行性的科学应用</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>局限性</p>
+<ul>
+<li>直接导致了多喝处理器</li>
+<li>了解局限性 以平衡指令级并行性与线程级并行性</li>
+</ul>
+</li>
+<li><p>Pipeline CPI &#x3D; Ideal pipeline CPI + Structural stalls + Data hazard stalls + Control stalls</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">方法</th>
+<th align="center">解决问题</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">向前和旁路</td>
+<td align="center">潜在的数据危害</td>
+</tr>
+<tr>
+<td align="center">简单的分支指令调度和预测</td>
+<td align="center">控制危害</td>
+</tr>
+<tr>
+<td align="center">基本编译流水调度</td>
+<td align="center">数据危害</td>
+</tr>
+<tr>
+<td align="center">基本动态调度</td>
+<td align="center">真实依赖中的数据危害</td>
+</tr>
+<tr>
+<td align="center">循环展开</td>
+<td align="center">控制危害</td>
+</tr>
+<tr>
+<td align="center">高级分支预测</td>
+<td align="center">控制危害</td>
+</tr>
+<tr>
+<td align="center">重命名动态调度</td>
+<td align="center">输出依赖、数据危害</td>
+</tr>
+<tr>
+<td align="center">硬件推测技术</td>
+<td align="center">数据危害和控制危害</td>
+</tr>
+<tr>
+<td align="center">动态存储器消除二义性</td>
+<td align="center">涉及存储器的数据危害</td>
+</tr>
+<tr>
+<td align="center">每个周期发出多条指令</td>
+<td align="center">理想 CPI</td>
+</tr>
+<tr>
+<td align="center">编译器相关分析、软件流水线、跟踪调度</td>
+<td align="center">理想 CPI、数据危害</td>
+</tr>
+<tr>
+<td align="center">硬件支持的编译器推测</td>
+<td align="center">理想 CPI、数据危害、分支危害</td>
+</tr>
+</tbody></table>
+<h2 id="指令级并行性"><a href="#指令级并行性" class="headerlink" title="指令级并行性"></a>指令级并行性</h2><ul>
+<li>挖掘指令级并行性的所有技术都利用指令之间的并行性</li>
+<li>基本块<ul>
+<li>一段直线代码序列</li>
+<li>除了入口没有分支传入且除了出口没有分支转出</li>
+</ul>
+</li>
+<li>并行性<ul>
+<li>基本块一般长度为3~6条指令，基本块内可利用的并行度很小</li>
+<li>提高性能必须跨分支指令（跨基本块）并行化</li>
+</ul>
+</li>
+</ul>
+<h2 id="相关与危害"><a href="#相关与危害" class="headerlink" title="相关与危害"></a>相关与危害</h2><ul>
+<li><p>程序的本性：指令间存在相关</p>
+</li>
+<li><p>流水线结构的性质：</p>
+<ul>
+<li>相关是否导致检测到实际危害：不一定</li>
+<li>危害是实际上引起的停顿<ul>
+<li>停顿（阻塞、拖延和暂停）将直接造成流水线性能下降。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>确定一条指令如何依赖另一条指令是关键的，它决定着程序中</p>
+<ul>
+<li>存在多少并行性</li>
+<li>如何开发并行性</li>
+</ul>
+</li>
+<li><p>三种类型的相关</p>
+<ul>
+<li>数据相关：先写后读</li>
+<li>名称相关<ul>
+<li>反相关：先读后写</li>
+<li>输出相关：先写后写</li>
+</ul>
+</li>
+<li>控制相关</li>
+</ul>
+</li>
+<li><p>指令 i 和 j 数据相关的条件是</p>
+<ul>
+<li>指令 i 产生的结果被指令 j 使用 或者 指令 j 与指令 k 数据相关，而指令 k 与 i 数据相关（相关链）</li>
+</ul>
+</li>
+</ul>
+<h3 id="数据相关"><a href="#数据相关" class="headerlink" title="数据相关"></a>数据相关</h3><ul>
+<li>必须按序执行，不能同时执行或完全重叠执行</li>
+<li>数据相关表示<ul>
+<li>危害的可能性</li>
+<li>必须遵守的计算顺序</li>
+<li>可能利用指令级并行性的上限</li>
+</ul>
+</li>
+<li>解决方法<ul>
+<li>维持数据相关，避免数据危害<ul>
+<li>调度代码是在不改变数据相关的情况下避免数据危害，由编译器和硬件完成</li>
+</ul>
+</li>
+<li>通过转换代码来消除数据相关</li>
+</ul>
+</li>
+<li>难点：存在于内存中的数据相关难以检测</li>
+</ul>
+<h3 id="名称相关"><a href="#名称相关" class="headerlink" title="名称相关"></a>名称相关</h3><ul>
+<li><p>两条指令使用相同的寄存器或内存位置，但关联指令不存在数据流</p>
+</li>
+<li><p>假设 i 在 j 之前</p>
+<ul>
+<li>反相关：j 写入和 i 读取的寄存器或内存位置相同</li>
+<li>输出相关：指令 i 和指令 j 写入的寄存器或内存位置是相同的</li>
+</ul>
+</li>
+<li><p>不是真正的数据相关，但在调度指令时会发生问题</p>
+</li>
+<li><p>通过改变指令的名称，使得指令不再冲突</p>
+<ul>
+<li>寄存器重命名技术解决名称相关问题</li>
+<li>可以通过编译器静态完成，也可以通过硬件动态地实现</li>
+</ul>
+</li>
+</ul>
+<h3 id="寄存器重命名"><a href="#寄存器重命名" class="headerlink" title="寄存器重命名"></a>寄存器重命名</h3><ul>
+<li>通过重命名消除WAR和WAW的危害：需要更多的寄存器资源</li>
+<li>寄存器<ul>
+<li>逻辑寄存器：名称，编程模型中使用的寄存器</li>
+<li>物理寄存器：位置，硬件设备中存在的寄存器</li>
+</ul>
+</li>
+</ul>
+<h4 id="数据危害"><a href="#数据危害" class="headerlink" title="数据危害"></a>数据危害</h4><p>目标：影响程序执行结果的覅放维持程序顺序来开发并行性</p>
+<p>程序顺序：源程序所确定的指令逐条执行的顺序</p>
+<p>数据危害依赖于指令中读和写的顺序</p>
+<ul>
+<li>RAW：写后读，真正的数据相关</li>
+<li>WAW：顺序写，输出相关<ul>
+<li>若流水线中有多个流水段可写 或 允许指令乱序执行 可能会导致WAW危害</li>
+</ul>
+</li>
+<li>RAW<ul>
+<li>指令在流水线早期写结果，在晚期读结果，或指令被重排序</li>
+</ul>
+</li>
+</ul>
+<h3 id="控制相关"><a href="#控制相关" class="headerlink" title="控制相关"></a>控制相关</h3><ul>
+<li><p>控制相关：if 语句 then 部分终端指令对分支指令的相关</p>
+</li>
+<li><p>控制相关施加两条约束</p>
+<ol>
+<li>与分支指令存在的控制相关的指令不能移动到分支指令之前，以使得它的执行不再受分支指令的控制</li>
+<li>与分支指令不存在控制相关的指令不能移动到分支指令之后，以使得它的执行受分支指令的影响</li>
+</ol>
+</li>
+<li><p>因为违反控制相关不一定影响程序的正确性，故</p>
+<ul>
+<li>控制相关不是必须维持的</li>
+<li>中断行为和数据流是必须维持的</li>
+</ul>
+</li>
+<li><p>中断行为：改变指令执行顺序不能改变程序中引发中断的方式</p>
+<ul>
+<li>指令执行的重新排序不能在程序中引起任何新的中断</li>
+</ul>
+</li>
+<li><p>违反控制相关可能不会影响中断行为或数据流</p>
+</li>
+<li><p>通过完成对引起控制停顿的控制危害的检测来维持控制相关</p>
+<ul>
+<li>控制停顿可以通过硬件或软件技术消除或减少</li>
+</ul>
+</li>
+</ul>
+<h2 id="利用指令级并行性的基本编译技术"><a href="#利用指令级并行性的基本编译技术" class="headerlink" title="利用指令级并行性的基本编译技术"></a>利用指令级并行性的基本编译技术</h2><h3 id="基本流水线调度"><a href="#基本流水线调度" class="headerlink" title="基本流水线调度"></a>基本流水线调度</h3><ul>
+<li>为了防止流水线停顿，相关指令的执行必须与源指令相距一定的周期</li>
+<li>相距的周期数等于指令流水线中源指令的延迟周期数</li>
+</ul>
+<p>编译器的调度能力取决于程序中 ILP 和功能单元的延迟</p>
+<h3 id="循环并行性"><a href="#循环并行性" class="headerlink" title="循环并行性"></a>循环并行性</h3><p>循环迭代之间的并行性</p>
+<ul>
+<li>增加指令级并行性的最简单且最常用的方式</li>
+<li>静态或动态的循环展开</li>
+<li>使用 SIMD 矢量处理器或 GPU</li>
+</ul>
+<h3 id="循环展开"><a href="#循环展开" class="headerlink" title="循环展开"></a>循环展开</h3><p>增加有效指令的相对数量</p>
+<ul>
+<li>简单地多次复制循环体</li>
+<li>调整循环终止代码</li>
+</ul>
+<p>strip mining：一种拆分循环以利用缓存技术的编译技术</p>
+<h3 id="调度-循环展开"><a href="#调度-循环展开" class="headerlink" title="调度+循环展开"></a>调度+循环展开</h3><p>何时、如何更改指令顺序</p>
+<p>步骤</p>
+<ul>
+<li>确定是否可以展开，不是所有的循环都可以展开</li>
+<li>使用不同的寄存器来避免不必要的约束</li>
+<li>消除额外的测试和分支指令</li>
+<li>通过观察来自不同迭代的 load 和 store 是否独立，来确定展开循环中 load 和 store 是否可以互换</li>
+<li>调度代码，保留产生与原始代码相同结果所需的所有相关项</li>
+</ul>
+<p>关键需求</p>
+<ul>
+<li>理解一条指令是如何依赖于另一条指令的</li>
+<li>根据相关性，如何更改或重排指令</li>
+</ul>
+<p>限制</p>
+<ul>
+<li>展开所分摊的开销减少</li>
+<li>代码大小的限制</li>
+<li>寄存器的限制</li>
+</ul>
+<h2 id="高级分支预测技术降低分支代价"><a href="#高级分支预测技术降低分支代价" class="headerlink" title="高级分支预测技术降低分支代价"></a>高级分支预测技术降低分支代价</h2><h3 id="关联分支预测"><a href="#关联分支预测" class="headerlink" title="关联分支预测"></a>关联分支预测</h3><p>基本 2 bit 预测方法</p>
+<ul>
+<li>只使用单条分支指令的近期行为来预测它未来的行为</li>
+<li>对每条分支指令预测转移或不转移，如果连续两次错误，改变预测结果</li>
+</ul>
+<p>关联预测方法 两级预测方法</p>
+<ul>
+<li>同时考虑其它分支指令最近的行为</li>
+<li>(m, n)预测器：使用最近m条分支指令的行为来从$2^m$个分支预测中进行选择， 其中每个分支预测器都是一条分支指令的n位预测器<ul>
+<li>最近m条分支指令的全局历史记录在一个m位移位寄存器中，每一位记录看该分支指令是转移还是未转移</li>
+</ul>
+</li>
+</ul>
+<h3 id="锦标预测器"><a href="#锦标预测器" class="headerlink" title="锦标预测器"></a>锦标预测器</h3><ul>
+<li>合金预测器：结合局部分支历史和全局分支历史</li>
+<li>锦标预测器：自适应结合局部预测器和全局预测器</li>
+</ul>
+<p>问题：错误预测时需要改变全局预测器、局部预测器和预测器</p>
+<h3 id="标记混合预测器"><a href="#标记混合预测器" class="headerlink" title="标记混合预测器"></a>标记混合预测器</h3><p>最好的分支预测方法时组合多个预测器</p>
+<ul>
+<li><p>多个预测器：跟踪预测是否可能与当前分支相关</p>
+</li>
+<li><p>问题：意味着巨大的数据表</p>
+</li>
+</ul>
+<p>部分匹配预测法 PPM</p>
+<p>标记混合预测器</p>
+<ul>
+<li>一类基于 PPM 思路的分支预测器</li>
+<li>使用一组使用不同长度历史所以的全局预测器</li>
+</ul>
+<h3 id="预测器初始化问题"><a href="#预测器初始化问题" class="headerlink" title="预测器初始化问题"></a>预测器初始化问题</h3><ul>
+<li>随机初始化</li>
+<li>设置有效位</li>
+<li>根据分支方向设置初始预测</li>
+</ul>
+<h2 id="动态调度"><a href="#动态调度" class="headerlink" title="动态调度"></a>动态调度</h2><p>静态调度（最小化停顿）</p>
+<ul>
+<li>取指令——发指令</li>
+<li>如果存在数据相关，且旁路或向前不能解决</li>
+<li>危害检测硬件从使用结果指令开始停顿</li>
+</ul>
+<p>动态调度（避免停顿）</p>
+<p>在维持数据流和中断行为的同时，硬件重新排列指令执行顺序以减少停顿</p>
+<p>特点</p>
+<ul>
+<li>代码编译不考虑微体系结构</li>
+<li>能够处理编译时处理不了的相关性的一些情况</li>
+<li>允许处理器容忍延迟</li>
+<li>硬件复杂性提高</li>
+</ul>
+<p>动态调度意味着</p>
+<ul>
+<li>乱序执行</li>
+<li>乱序完成</li>
+</ul>
+<p>拆分 ID 流水段为两部分</p>
+<ul>
+<li>发出：译码、检测结构危害</li>
+<li>读操作数：等待数据危害的小时，读取操作数</li>
+</ul>
+<p>特点</p>
+<ul>
+<li>保持按序发出</li>
+<li>能够乱序执行，暗示乱序完成</li>
+</ul>
+<p>乱序执行：一旦指令的操作数有效则马上开始执行</p>
+<h3 id="乱序执行"><a href="#乱序执行" class="headerlink" title="乱序执行"></a>乱序执行</h3><ul>
+<li>乱序完成可能导致不精确中断</li>
+<li>不精确中断：当发生中断时处理器状态看起来不完全像指令以严格程序次序顺序执行的结果<ul>
+<li>流水线中已经完成的指令在程序次序上比引起中断的指令晚</li>
+<li>还未完成的指令在程序次序上比引起中断的指令早</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA7%E6%8C%87%E4%BB%A4%E7%BA%A7%E5%B9%B6%E8%A1%8C%E6%80%A7(1)/" data-id="cl5akzo76000ahkur2swd3roy" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA8%E6%8C%87%E4%BB%A4%E7%BA%A7%E5%B9%B6%E8%A1%8C%E6%80%A7(2)/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA6%E6%B5%81%E6%B0%B4%E7%BA%BF%E6%8A%80%E6%9C%AF(2)/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/07/">July 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA4%E5%AD%98%E5%82%A8%E5%B1%82%E6%AC%A120211011/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA3%E6%8C%87%E4%BB%A4%E9%9B%86%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%8420210927/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA2%E9%87%8F%E5%8C%96%E8%AE%BE%E8%AE%A1%E4%B8%8E%E8%AF%84%E4%BC%B020210918/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA1%E6%A6%82%E8%BF%B020210906/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA13%E4%BB%93%E5%BA%93%E7%BA%A7%E8%AE%A1%E7%AE%97%E6%9C%BA/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
