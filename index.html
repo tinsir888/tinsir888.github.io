@@ -1,2406 +1,562 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>TINSIR888's ZION</title><meta name="keywords" content="Learning"><meta name="author" content="tinsir888"><meta name="copyright" content="tinsir888"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Some notes&#x2F;articles and so on...">
+<meta property="og:type" content="website">
+<meta property="og:title" content="TINSIR888&#39;s ZION">
+<meta property="og:url" content="https://tinsir888.github.io/index.html">
+<meta property="og:site_name" content="TINSIR888&#39;s ZION">
+<meta property="og:description" content="Some notes&#x2F;articles and so on...">
 <meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="tinsir888">
+<meta property="article:tag" content="Learning">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://tinsir888.github.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'TINSIR888\'s ZION',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-07-09 16:59:20'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
   
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-<meta name="generator" content="Hexo 6.2.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-2021Fall 计算机体系结构笔记/CA4存储层次20211011" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA4%E5%AD%98%E5%82%A8%E5%B1%82%E6%AC%A120211011/" class="article-date">
-  <time class="dt-published" datetime="2022-07-07T05:20:00.603Z" itemprop="datePublished">2022-07-07</time>
-</a>
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA4%E5%AD%98%E5%82%A8%E5%B1%82%E6%AC%A120211011/">CA4 存储层次</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="20210927"><a href="#20210927" class="headerlink" title="20210927"></a>20210927</h1><h1 id="存储层次设计"><a href="#存储层次设计" class="headerlink" title="存储层次设计"></a>存储层次设计</h1><h2 id="存储层次重要性"><a href="#存储层次重要性" class="headerlink" title="存储层次重要性"></a>存储层次重要性</h2><ul>
-<li>性能差距：处理器访存的<em>请求时间</em>和DRAM访问<em>延时时间</em></li>
-</ul>
-<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>期望拥有无限容量的快速存储器，但是快速存储器的比特价格远远高于慢速存储器的比特价格</p>
-<h3 id="解决方法：存储层次-memory-hierarchy"><a href="#解决方法：存储层次-memory-hierarchy" class="headerlink" title="解决方法：存储层次 memory hierarchy"></a>解决方法：存储层次 memory hierarchy</h3><ul>
-<li>性能和价格之间的权衡<ul>
-<li>整个寻址空间——慢速大容量存储器</li>
-<li>容量越小、速度越快、比特价格越贵的存储器越靠近处理器</li>
-</ul>
-</li>
-<li>局部性：时间&#x2F;空间局部性<ul>
-<li>保证每次访问的数据都高概率地存储在最快访问速度的物理存储器</li>
-</ul>
-</li>
-</ul>
-<h3 id="从处理器来看"><a href="#从处理器来看" class="headerlink" title="从处理器来看"></a>从处理器来看</h3><ul>
-<li>存储空间的容量：容量最大的物理存储器的存储容量</li>
-<li>存储空间的速度：速度最快的物理存储器的访问速度</li>
-</ul>
-<h2 id="典型存储层次"><a href="#典型存储层次" class="headerlink" title="典型存储层次"></a>典型存储层次</h2><p> <img src="D:\dyt\Studie\5Junior\C_Rechnerarchitektur\Notes\3.PNG"></p>
-<h2 id="存储层次的重要性"><a href="#存储层次的重要性" class="headerlink" title="存储层次的重要性"></a>存储层次的重要性</h2><ul>
-<li>对多核处理器来说，存储层次变得更加重要</li>
-<li>总峰值带宽随处理器核数目增加而增加<ul>
-<li>intel core i7 处理器每核每周期发出两次访存请求</li>
-<li>DRAM 带宽远远小于期望值（&lt;10%）</li>
-<li>解决途径<ul>
-<li>多端口，流水Cache</li>
-<li>每核两级Cache</li>
-<li>片上共享三级 Cache</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>再高端微处理器芯片中，一般 Cache 容量&gt;10MB<ul>
-<li>消耗大量的芯片面积核功率预算</li>
-</ul>
-</li>
-</ul>
-<h2 id="Cache"><a href="#Cache" class="headerlink" title="Cache"></a>Cache</h2><ul>
-<li>当数据在 Cache 中，称为 Cache 命中</li>
-<li>当数据不在 Cache 中，称为 Cache 未命中<ul>
-<li>CPU停止执行</li>
-<li>硬件将未命中的数据块从主存移动到 Cache 中</li>
-<li>如果数据不在主存中，则继续到下一个存储层次——虚存中寻找<ul>
-<li>主存和虚存的关系与cache与主存的关系一样的</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="4-Questions"><a href="#4-Questions" class="headerlink" title="4 Questions"></a>4 Questions</h2><ul>
-<li>块放置 block placement 数据块放哪里？</li>
-<li>块辨识 block identification 如何发现想要的数据块</li>
-<li>块替换 block replacement 在读入新的数据块时替换现有的数据块？</li>
-<li>写策略 write strategy 如何修改数据？</li>
-</ul>
-<h3 id="块放置"><a href="#块放置" class="headerlink" title="块放置"></a>块放置</h3><ul>
-<li><p>直接映射direct mapped：数据块与位置一一对应（1个位置）</p>
-</li>
-<li><p>全相联fully associative：数据块可以放在任意位置（所有位置）</p>
-</li>
-<li><p>组相联set associative：数据块可以放在几个预定位置（几个位置）</p>
-<p>块地址 mod cache中的组数</p>
-</li>
-<li><p>对于n路组相联，n值越大</p>
-<ul>
-<li><p>实现代价越高，绝大多数cache 采用1路（直接映射），2路，4路组相联</p>
-</li>
-<li><p>振荡的可能性越低</p>
-<p>振荡：两个块竞争同一个块帧地址，并交替地循环访问</p>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="块辨识"><a href="#块辨识" class="headerlink" title="块辨识"></a>块辨识</h3><ul>
-<li><p>问题：如何在cache中找到对应的数据</p>
-</li>
-<li><p>将存储地址分成三个部分：Tag标志、组的索引、块内偏移量</p>
-</li>
-<li><p>例子：某个计算机系统</p>
-<ul>
-<li>地址空间$2^{64}$（64位 地址线）</li>
-<li>块大小64字节</li>
-<li>cache 容量 64 MB（$2^{26}$字节，$2^{20}$块）</li>
-<li>采用直接映射方式</li>
-</ul>
-<p>38 bit Tag——20 bit set index选哪一块块——6 bit block offset块内偏移</p>
-</li>
-</ul>
-<h3 id="块替换"><a href="#块替换" class="headerlink" title="块替换"></a>块替换</h3><ul>
-<li>当想要访问的数据块未命中时，cache 控制器必须做出反应<ul>
-<li>对于直接映射方式，将主存中读取新数据直接覆盖未命中的数据块</li>
-<li>对于 n 路组相联方式，必须对 n 个可能的被覆盖数据块位置进行选择</li>
-</ul>
-</li>
-<li>三种选择策略<ul>
-<li>随机：实现容易</li>
-<li>FIFO先进先出：实现比较困难</li>
-<li>LRU最近最少使用：cache 容量越大，实现越困难</li>
-</ul>
-</li>
-</ul>
-<h3 id="写策略"><a href="#写策略" class="headerlink" title="写策略"></a>写策略</h3><p>可参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/dark5669/article/details/53895744">https://blog.csdn.net/dark5669/article/details/53895744</a></p>
-<ul>
-<li>现象：读操作比写操作多</li>
-<li>基本原理：提高经常情形——读操作的性能<ul>
-<li>cache 设计者花费绝大多数精力加快读操作，对写操作关注较少</li>
-<li>根据 amdahl 定律，写操作太慢，整个系统性能会很差</li>
-<li>必须提高写操作性能</li>
-</ul>
-</li>
-<li>两种写策略<ul>
-<li>写透write through：新数据被同时写入cache数据块和低一级存储器</li>
-<li>写回write back<ul>
-<li>如果写命中，则新数据只写入 cache 数据块</li>
-<li>如果写不命中，则首先将被替换的数据块“写回”低一级存储器，然后将新数据写入相应的 Cache 数据块</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>脏（dirty）位：表示被替换 cache 数据块是否需要“实际写回”低一级存储器</li>
-</ul>
-<h3 id="写策略比较"><a href="#写策略比较" class="headerlink" title="写策略比较"></a>写策略比较</h3><ul>
-<li>写透<ul>
-<li>实现容易</li>
-<li>低一级cache中总保存数据最新版本，简化了数据一致性问题</li>
-</ul>
-</li>
-<li>写回<ul>
-<li>写操作速度取决于cache，很快</li>
-<li>多次写操作被捆绑到一起写回低一级存储，效率高</li>
-</ul>
-</li>
-</ul>
-<h3 id="写不命中的处理"><a href="#写不命中的处理" class="headerlink" title="写不命中的处理"></a>写不命中的处理</h3><ul>
-<li>写分配<ul>
-<li>写不命中时分配 cache 块</li>
-<li>数据块分配后是标准的写命中操作</li>
-<li>写不命中等价于读不命中</li>
-<li>与写回策略配合</li>
-</ul>
-</li>
-<li>非写分配<ul>
-<li>写不命中不分配 cache 块</li>
-<li>只更新低一级存储器</li>
-<li>只在读不命中时分配 cache 块</li>
-<li>与写透策略配合</li>
-</ul>
-</li>
-</ul>
-<h3 id="存储层次基础"><a href="#存储层次基础" class="headerlink" title="存储层次基础"></a>存储层次基础</h3><ul>
-<li><p>为命中率miss rate：cache 访问中未命中访问的比例</p>
-<ul>
-<li>局部未命中率local：在该 cache 中未命中访问的次数与对该 cache 访问总次数之比</li>
-<li>全局未命中率global：在该 cache 中未命中访问的次数与处理器发出的访问总数之比</li>
-</ul>
-</li>
-<li><p>平均存储访问时间</p>
-<p>$AccessTime&#x3D;HitTime_1+MissRate_1*MissPenalty_{L1}$</p>
-<p>$MissPenalty_{L1}&#x3D;HitTime_2+MissRate_2*MissPenalty_{L2}$</p>
-<p>一级一级迭代</p>
-</li>
-<li><p>每指令未命中</p>
-<p>$\frac{Misses}{Instruction}&#x3D;\frac{MemAcc}{InsCnt}<em>\frac{MissAcc}{MemAcc}&#x3D;MissRate</em>\frac{MemAcc}{Inscnt}$</p>
-<ul>
-<li>优点：独立于硬件实现</li>
-<li>缺点：与体系结构无关</li>
-</ul>
-</li>
-<li><p>未命中类型</p>
-<ul>
-<li>强制性：对数据块的第一次访问</li>
-<li>容量：前期被替换且稍后又被访问的数据块</li>
-<li>冲突：程序重复访问处于多个存储地址的不同数据块，而这些数据块恰好映射到 cache 中相同位置</li>
-<li>一致性：多个处理器中多个 cache 内容不一致</li>
-</ul>
-</li>
-</ul>
-<h3 id="六种基本-cache-优化方法"><a href="#六种基本-cache-优化方法" class="headerlink" title="六种基本 cache 优化方法"></a>六种基本 cache 优化方法</h3><ul>
-<li><p>加大数据块容量</p>
-<ul>
-<li>减少强制性不命中（数据块块容量大了）</li>
-<li>增加容纳能力和冲突不命中，增加不命中惩罚（因为cache 容量固定，块变大了，块数变少了，每块包含的数据内容变多）</li>
-</ul>
-</li>
-<li><p>加大 Cache 总容量</p>
-<ul>
-<li>降低未命中率</li>
-<li>增加命中时间，增加功耗</li>
-</ul>
-</li>
-<li><p>提高关联性</p>
-<ul>
-<li>减少冲突不命中</li>
-<li>增加命中时间，增加功耗</li>
-</ul>
-</li>
-<li><p>增加 Cache 级数</p>
-<ul>
-<li>减少总的存储器访问时间</li>
-</ul>
-</li>
-<li><p>读操作未命中优先于写操作</p>
-<ul>
-<li>减少未命中惩罚</li>
-</ul>
-</li>
-<li><p>避免 Cache 索引中的地址转换</p>
-<ul>
-<li>减少命中时间</li>
-</ul>
-</li>
-</ul>
-<h2 id="存储器性能和类型"><a href="#存储器性能和类型" class="headerlink" title="存储器性能和类型"></a>存储器性能和类型</h2><ul>
-<li>性能指标<ul>
-<li>延时：cache 关心的问题</li>
-<li>带宽：多处理器和I&#x2F;O关心的问题</li>
-<li>访问时间：从发出读请求到访问存储字到达间隔的时间</li>
-<li>周期时间：不相关存储请求之间的最小间隔时间</li>
-</ul>
-</li>
-<li>存储器类型<ul>
-<li>SRAM：低延时，用于存储器芯片上1-3级Cache<ul>
-<li>功率低</li>
-<li>访问时间接近周期时间</li>
-<li>6个晶体管</li>
-</ul>
-</li>
-<li>DRAM：将芯片组织为许多高带宽的存储体，用于主存。<ul>
-<li>读操作之后必须重写</li>
-<li>必须周期性刷新<ul>
-<li>8ms刷新一次</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="DRAM-内部组成"><a href="#DRAM-内部组成" class="headerlink" title="DRAM 内部组成"></a>DRAM 内部组成</h3><ul>
-<li>存储体数目上限为 16 （DDR4）</li>
-<li>数据访问<ul>
-<li>发出 ACT 命令</li>
-<li>打开一个存储体和一行且将该行加载到行缓冲器</li>
-<li>根据后续列地址，以任意DRAM宽度传输，或通过起始地址进行块传输</li>
-<li>预充电命令关闭存储体和行，为新的访存做好准备</li>
-</ul>
-</li>
-</ul>
-<h3 id="存储器性能优化方法"><a href="#存储器性能优化方法" class="headerlink" title="存储器性能优化方法"></a>存储器性能优化方法</h3><ul>
-<li>对相同行缓存多个列访问</li>
-<li>同步DRAM（SDRAM）<ul>
-<li>在DRAM中添加时钟，对指令进行流水操作</li>
-<li>关键存储字优先的突发模式</li>
-</ul>
-</li>
-<li>更宽的接口</li>
-<li>双倍数据速率 Double Data Rate<ul>
-<li>在存储器的上升沿和下降沿均传输数据</li>
-</ul>
-</li>
-<li>每个DRAM设备上存在多个存储体（重叠访问）</li>
-</ul>
-<h3 id="Flash-存储器"><a href="#Flash-存储器" class="headerlink" title="Flash 存储器"></a>Flash 存储器</h3><ul>
-<li>类型：电可擦写可编程只读存储器 EEPROM</li>
-<li>种类<ul>
-<li>NAND：密度更高，适合大容量非易失存储器<ul>
-<li>编程速度块，擦除时间短</li>
-</ul>
-</li>
-<li>NOR：速度更快<ul>
-<li>随机存取和对字节执行写操作</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA4%E5%AD%98%E5%82%A8%E5%B1%82%E6%AC%A120211011/" data-id="cl5alduz20007gourhrxodkpg" data-title="CA4 存储层次" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-2021Fall 计算机体系结构笔记/CA3指令集体系结构20210927" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA3%E6%8C%87%E4%BB%A4%E9%9B%86%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%8420210927/" class="article-date">
-  <time class="dt-published" datetime="2022-07-07T05:20:00.601Z" itemprop="datePublished">2022-07-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA3%E6%8C%87%E4%BB%A4%E9%9B%86%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%8420210927/">CA3 指令集体系结构</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="20210927"><a href="#20210927" class="headerlink" title="20210927"></a>20210927</h1><h2 id="指令集体系结构"><a href="#指令集体系结构" class="headerlink" title="指令集体系结构"></a>指令集体系结构</h2><h3 id="机器指令"><a href="#机器指令" class="headerlink" title="机器指令"></a>机器指令</h3><p>包含：存储地址、寄存器地址、立即数</p>
-<ul>
-<li>操作码 opcode<ul>
-<li>操作内容 add，mult</li>
-<li>操作数 int，fp</li>
-</ul>
-</li>
-<li>操作数 operand<ul>
-<li>位置（寄存器或储存器）</li>
-<li>操作数个数不定（1个或2个）</li>
-</ul>
-</li>
-</ul>
-<h3 id="指令运行"><a href="#指令运行" class="headerlink" title="指令运行"></a>指令运行</h3><ul>
-<li>PC 存放的当前执行的指令在内存中的地址（32bit or 64bit）</li>
-<li>PC 输出到指令存储器 IM（只读）</li>
-<li>IM 传到 IR</li>
-<li>IR 译码器 到 通用寄存器 GPRs </li>
-<li>GPRs 包含 rs1-&gt;rd1 rs2-&gt;rd2 ws wd</li>
-<li>输出到  A B 两个寄存器，通过 MUX 选择输出到 ALU</li>
-<li>ALU 运算输出结果，可以写到 DM 中，也可以写入 寄存器 wd 中</li>
-</ul>
-<h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><ul>
-<li>是软件和硬件之间的边界</li>
-<li>是程序员或编译器所见到的计算机</li>
-<li>在某种意义上，是由一组所使用的汇编语言及它们所完成的工作来定义的</li>
-</ul>
-<h3 id="指令集体系结构里包含的基本内容"><a href="#指令集体系结构里包含的基本内容" class="headerlink" title="指令集体系结构里包含的基本内容"></a>指令集体系结构里包含的基本内容</h3><p>寄存器、存储器寻址和寻址方式、指令操作数、有效操作、控制流指令、指令编码……</p>
-<h3 id="设计目标"><a href="#设计目标" class="headerlink" title="设计目标"></a>设计目标</h3><p>较短的指令宽度</p>
-<ul>
-<li>最小化指令宽度，从而最小化程序长度</li>
-</ul>
-<p>较好的指令密度（完成一件事情需要的指令数要少）</p>
-<ul>
-<li>最小化指令数目，从而最小化程序长度</li>
-</ul>
-<p>快速的指令操作</p>
-<ul>
-<li>如：add (100) (200) (300) 执行的时间比 add r1 r2 r3 要长</li>
-</ul>
-<p>简单的电路实现</p>
-<p>优化的编译器</p>
-<h3 id="指令集体系结构类型"><a href="#指令集体系结构类型" class="headerlink" title="指令集体系结构类型"></a>指令集体系结构类型</h3><ul>
-<li>堆栈型（Stack）（早期）<ul>
-<li>所有操作数都来自堆栈</li>
-</ul>
-</li>
-<li>累加器型（Accumulator）<ul>
-<li>一个操作数在累加器中，另一个操作数必须显式地引用</li>
-</ul>
-</li>
-<li>寄存器型（Register）（现在主要使用）<ul>
-<li>所有操作数必须显式地引用</li>
-<li>操作数可以存储在寄存器或存储器中</li>
-</ul>
-</li>
-</ul>
-<h3 id="寄存器型指令集体系结构"><a href="#寄存器型指令集体系结构" class="headerlink" title="寄存器型指令集体系结构"></a>寄存器型指令集体系结构</h3><ul>
-<li>操作数必须有明显的操作数格式<ul>
-<li>寄存器在 CPU 内部</li>
-</ul>
-</li>
-<li>指令集体系结构提供<ul>
-<li>LOAD 存储器 -&gt; 寄存器</li>
-<li>STORE 寄存器 -&gt; 存储器</li>
-</ul>
-</li>
-<li>这种体系结构也被称为<em>通用寄存器 General-Purpose Register 指令集体系结构</em></li>
-<li>分为三种类型<ul>
-<li>寄存器-存储器 ISA</li>
-<li>寄存器-寄存器 ISA（装入-存储 ISA）——现代 CPU 常用结构</li>
-<li>存储器-存储器 ISA——废弃</li>
-</ul>
-</li>
-</ul>
-<h3 id="寄存器-寄存器-ISA"><a href="#寄存器-寄存器-ISA" class="headerlink" title="寄存器-寄存器 ISA"></a>寄存器-寄存器 ISA</h3><ul>
-<li>特殊指令访问存储器：LOAD、STORE</li>
-<li>基本运算步骤<ul>
-<li>从存储器装入第一个操作数到寄存器中</li>
-<li>从存储器装入第二个操作数到寄存器中</li>
-<li>在 ALU 中完成运算操作</li>
-<li>如果需要，将操作结构存储到存储器中</li>
-</ul>
-</li>
-<li>两个操作数和结果的位置都需要显式地引用</li>
-</ul>
-<h3 id="寄存器数目"><a href="#寄存器数目" class="headerlink" title="寄存器数目"></a>寄存器数目</h3><ul>
-<li>现代指令集体系结构倾向于拥有<strong>更多</strong>的寄存器</li>
-<li>拥有更多的寄存器使得编译器拥有更多的机会来提高效率</li>
-<li>通常，编译器预留一些寄存器用于特殊目的<ul>
-<li>保留函数调用的参数</li>
-<li>帮助表达式求值</li>
-</ul>
-</li>
-<li>剩余的寄存器用于保存程序变量</li>
-</ul>
-<h3 id="存储器寻址"><a href="#存储器寻址" class="headerlink" title="存储器寻址"></a>存储器寻址</h3><ul>
-<li><p>ISA 必须定义存储器的寻址方式</p>
-<ul>
-<li>如何解释</li>
-<li>如何在指令中说明</li>
-</ul>
-</li>
-<li><p>绝大多数的存储器寻址采用字节地址</p>
-<ul>
-<li><p>能够寻址的最小存储器片段是一个字节</p>
-</li>
-<li><p>意味着每个字节拥有一个使用二进制串表示的地址</p>
-</li>
-</ul>
-</li>
-<li><p>通常，ISA 可以访问</p>
-<ul>
-<li>字节 8bit</li>
-<li>半字 16bit</li>
-<li>字 32bit</li>
-<li>双字 64bit</li>
-</ul>
-</li>
-</ul>
-<h3 id="存储对齐"><a href="#存储对齐" class="headerlink" title="存储对齐"></a>存储对齐</h3><ul>
-<li><p>当大多数计算机访问大于一个字节的对象时，往往必须对齐</p>
-</li>
-<li><p>定义：如果访问对象地址是对象长度 S 的倍数时，称问访问对象是<strong>对齐的</strong></p>
-<p>​		$(objects’s\ address)\ mod\ S&#x3D;0$</p>
-</li>
-<li><p>例如</p>
-<ul>
-<li>在000000 访问一个 byte 是对齐的</li>
-<li>在000001 访问一个 半字 是未对齐的</li>
-</ul>
-</li>
-</ul>
-<h3 id="字节顺序"><a href="#字节顺序" class="headerlink" title="字节顺序"></a>字节顺序</h3><ul>
-<li>在半字、字和双字内的字节存在着两种约定<ul>
-<li>小端法 0x0000 的字节放的最低有效位</li>
-<li>大端法 0x0000 的字节放的最高有效位</li>
-</ul>
-</li>
-<li>某些体系结构可以通过设置来决定采用哪种字节顺序</li>
-<li>在绝大多数情况下不必关系字节顺序问题，但<ul>
-<li>当以双字和字节方式访问相同存储位置时，可能出现问题</li>
-<li>当在计算机之间交换数据时，可能出现问题</li>
-</ul>
-</li>
-</ul>
-<h3 id="寻址方式"><a href="#寻址方式" class="headerlink" title="寻址方式"></a>寻址方式</h3><p>寄存器寻址（直接写寄存器号得到寄存器的内容）</p>
-<p>立即数寻址（立即数前加个#）</p>
-<p>位移寻址（寄存器内容加上外部偏移量寻址）</p>
-<p>寄存器间接寻址（将寄存器的内容作为地址来寻址）</p>
-<p>索引寻址（两寄存器内容之和作为内存地址）</p>
-<p>直接寻址（mem[100]，直接写死地址）</p>
-<p>存储器间接寻址（寄存器的内容作为mem地址进行寻址，再将这个mem读出的值作为地址来寻址，mem[mem[regs[R3]]]）</p>
-<p>自动增&#x2F;减量寻址（寄存器简介寻址后该寄存器的值自增&#x2F;减）</p>
-<p>比例寻址（mem[100+regs[R2]+regs[R3]*d]）</p>
-<h3 id="基准程序中各种寻址方式的频度"><a href="#基准程序中各种寻址方式的频度" class="headerlink" title="基准程序中各种寻址方式的频度"></a>基准程序中各种寻址方式的频度</h3><p>略</p>
-<h3 id="选择寻址方式：平衡"><a href="#选择寻址方式：平衡" class="headerlink" title="选择寻址方式：平衡"></a>选择寻址方式：平衡</h3><ul>
-<li><p>寻址方式的选择</p>
-<ul>
-<li>一些 ISA 选择所有的寻址方式，如 WAX</li>
-<li>另一些 ISA 只使用少数几种寻址方式，如 MIPS</li>
-</ul>
-</li>
-<li><p>平衡因素</p>
-<ul>
-<li>寻址方式越多，IC（指令数） 越低</li>
-<li>寻址方式越多，硬件越复杂</li>
-<li>寻址方式越多，CPI（指令周期数） 越高</li>
-</ul>
-</li>
-<li><p>目标：平衡</p>
-<ul>
-<li>简化硬件</li>
-<li>拥有足够的寻址方式，以至于书写代码不会太痛苦</li>
-</ul>
-</li>
-</ul>
-<h3 id="选择位移范围"><a href="#选择位移范围" class="headerlink" title="选择位移范围"></a>选择位移范围</h3><ul>
-<li>权衡考虑<ul>
-<li>位移最大值越大，指令使用范围越广</li>
-<li>位移最大值越小，指令编码越短</li>
-</ul>
-</li>
-</ul>
-<h3 id="操作数类型和大小"><a href="#操作数类型和大小" class="headerlink" title="操作数类型和大小"></a>操作数类型和大小</h3><ul>
-<li>字符 1byte</li>
-<li>半字 2byte</li>
-<li>字 4byte</li>
-<li>单精度浮点和长整数 4byte</li>
-<li>双精度浮点 8byte</li>
-</ul>
-<h3 id="各种类型操作"><a href="#各种类型操作" class="headerlink" title="各种类型操作"></a>各种类型操作</h3><ul>
-<li><p>算术和逻辑（通用）</p>
-<ul>
-<li>整数加减乘除、与或运算</li>
-</ul>
-</li>
-<li><p>数据传输（通用）</p>
-<ul>
-<li>装入、存储</li>
-</ul>
-</li>
-<li><p>控制（通用）</p>
-<ul>
-<li>分支、跳转、过程调用和返回、陷阱</li>
-</ul>
-</li>
-<li><p>系统（可变）</p>
-<ul>
-<li>操作系统调用、管理虚拟内存指令</li>
-</ul>
-</li>
-<li><p>浮点数（可选）</p>
-<ul>
-<li>加减乘、比较</li>
-</ul>
-</li>
-<li><p>字符串（可选）</p>
-<ul>
-<li>字符串比较、字符串搜索</li>
-</ul>
-</li>
-<li><p>图形（可选）</p>
-<ul>
-<li>像素点和顶点操作，压缩与解压操作</li>
-</ul>
-</li>
-</ul>
-<h3 id="指令编码"><a href="#指令编码" class="headerlink" title="指令编码"></a>指令编码</h3><ul>
-<li><p>关键考虑因素</p>
-<ul>
-<li>拥有更多的寄存器和寻址方式，会造成较长的指令代码</li>
-<li>期望降低平均指令代码长度和平均程序长度</li>
-<li>期望指令能够容易且快速译码</li>
-</ul>
-</li>
-<li><p>指令编码方法</p>
-<ul>
-<li>可变格式（满足前二）</li>
-<li>固定格式（满足第三）</li>
-<li>混合格式（尝试达到平衡）</li>
-</ul>
-</li>
-<li><p>可变的，如 intel 的 VAX；固定的，如 RISC-V，ARM，MIPS，PowerPC，SPARC；混合的</p>
-</li>
-</ul>
-<h3 id="编译优化"><a href="#编译优化" class="headerlink" title="编译优化"></a>编译优化</h3><ul>
-<li>高层优化<ul>
-<li>针对源代码进行，可能是源到源的转换</li>
-<li>如：为了 cache 有效性来映射数据，除去条件等</li>
-</ul>
-</li>
-<li>局部优化<ul>
-<li>在较短的直线段源代码中优化代码</li>
-</ul>
-</li>
-<li>全局优化<ul>
-<li>跨过分支指令进行优化，循环优化（循环展开）</li>
-</ul>
-</li>
-<li>寄存器分配<ul>
-<li>寄存器赋初值</li>
-</ul>
-</li>
-</ul>
-<h3 id="CISC-vs-RISC"><a href="#CISC-vs-RISC" class="headerlink" title="CISC vs RISC"></a>CISC vs RISC</h3><ul>
-<li>谬误：“简约指令集”并不意味着指令数目少</li>
-<li>RISC 的关键<ul>
-<li>寄存器中完成操作</li>
-<li>使用 LOAD 和 STORE 指令完成寄存器和存储器之间的通信</li>
-<li>代码是由一系列简单操作实现的</li>
-</ul>
-</li>
-<li>注解：当代码量是关键因素时，RISC 并不是一个好的选择</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA3%E6%8C%87%E4%BB%A4%E9%9B%86%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%8420210927/" data-id="cl5alduz10006gourcj6tc0xp" data-title="CA3 指令集体系结构" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-2021Fall 计算机体系结构笔记/CA2量化设计与评估20210918" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA2%E9%87%8F%E5%8C%96%E8%AE%BE%E8%AE%A1%E4%B8%8E%E8%AF%84%E4%BC%B020210918/" class="article-date">
-  <time class="dt-published" datetime="2022-07-07T05:20:00.598Z" itemprop="datePublished">2022-07-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA2%E9%87%8F%E5%8C%96%E8%AE%BE%E8%AE%A1%E4%B8%8E%E8%AF%84%E4%BC%B020210918/">CA2 量化设计与评估</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="2021-9-18"><a href="#2021-9-18" class="headerlink" title="2021.9.18"></a>2021.9.18</h1><h1 id="量化设计与评估"><a href="#量化设计与评估" class="headerlink" title="量化设计与评估"></a>量化设计与评估</h1><h2 id="性能度量"><a href="#性能度量" class="headerlink" title="性能度量"></a>性能度量</h2><ul>
-<li><p>如何评估计算机系统的性能？</p>
-<ul>
-<li>运行时间：运行程序有多快</li>
-<li>吞吐量：每天能运行多少程序？</li>
-</ul>
-<p>……</p>
-</li>
-<li><p>对比两台计算机的性能</p>
-<ul>
-<li><p>计算机 x 比计算机 y 快 n 倍</p>
-<p>$\frac{ExcutionTime(y)}{ExcutionTime(x)}&#x3D;n$</p>
-</li>
-<li><p>性能表示为运行时间的倒数，即运行时间越短，性能越高</p>
-<p>$n&#x3D;\frac{ExcutionTime(y)}{ExcutionTime(x)}&#x3D;\frac{Performance(x)}{Performance(y)}$</p>
-</li>
-</ul>
-</li>
-<li><p>挂钟时间</p>
-<ul>
-<li>观测到的程序运行时间，也成为响应时间或实耗时间</li>
-<li>影响因素<ul>
-<li>系统负载</li>
-<li>I&#x2F;O延迟</li>
-<li>操作系统开销</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>CPU时间</p>
-<ul>
-<li>运行特定程序花费的时间<ul>
-<li>User time：程序本身花费的时间</li>
-<li>System time：操作系统花费的时间</li>
-</ul>
-</li>
-<li>不包含等待 I&#x2F;O 和运行其它程序的时间，但包含操作系统运行时间</li>
-</ul>
-</li>
-<li><p>方法：运行 <em>一段代码</em> 来比较两台计算机系统的性能</p>
-</li>
-</ul>
-<h2 id="代码内容"><a href="#代码内容" class="headerlink" title="代码内容"></a>代码内容</h2><ul>
-<li>代码内容应该反应对计算机系统的功能需求，与该计算机系统的用途密切相关</li>
-<li>问题<ul>
-<li>比较计算机系统性能时，需要运行什么程序</li>
-<li>如何使用基准程序来进行评价</li>
-</ul>
-</li>
-<li>基准程序 benchmark：生产商用来确定他们所生产计算机系统的相对性能</li>
-<li>挑战：购买者需要的是与他功能需求相关的基准程序</li>
-</ul>
-<h2 id="基准程序"><a href="#基准程序" class="headerlink" title="基准程序"></a>基准程序</h2><h3 id="测量性能的基准程序的最佳候选是实际使用的应用程序"><a href="#测量性能的基准程序的最佳候选是实际使用的应用程序" class="headerlink" title="测量性能的基准程序的最佳候选是实际使用的应用程序"></a>测量性能的基准程序的最佳候选是实际使用的应用程序</h3><ul>
-<li>购买后计算机系统运行的<em>就是</em>测试性能时运行的</li>
-<li>运行比实际使用的应用程序简单得多的测试程序会导致<em>性能陷阱</em></li>
-</ul>
-<h3 id="早期基准程序的类型"><a href="#早期基准程序的类型" class="headerlink" title="早期基准程序的类型"></a>早期基准程序的类型</h3><ul>
-<li>核心 kernel：实际应用程序的关键小片段，如矩阵乘法</li>
-<li>简单程序 toy programs：节选自初级程序设计作业，如快速排序</li>
-<li>综合基准 synthetic benchmarks：为了匹配实际应用程序的配置和行为而开发的“假程序”，如 Dhrystone</li>
-</ul>
-<h2 id="存在的问题"><a href="#存在的问题" class="headerlink" title="存在的问题"></a>存在的问题</h2><h3 id="基准测试游戏"><a href="#基准测试游戏" class="headerlink" title="基准测试游戏"></a>基准测试游戏</h3><p>编译程序的生产者与计算机架构师合谋，使得计算机系统在这些”替身”程序上的表现优于在实际应用程序上的表现</p>
-<h3 id="运行条件上造假"><a href="#运行条件上造假" class="headerlink" title="运行条件上造假"></a>运行条件上造假</h3><ul>
-<li>特定基准程序的编译器标志<ul>
-<li>程序的非法改善</li>
-<li>在其它计算机上性能夏季那个</li>
-</ul>
-</li>
-<li>是否允许修改源代码<ul>
-<li>不允许修改</li>
-<li>允许修改，但基本上不可能修改</li>
-<li>允许修改，但输出结果不变</li>
-</ul>
-</li>
-</ul>
-<h2 id="基准程序包"><a href="#基准程序包" class="headerlink" title="基准程序包"></a>基准程序包</h2><p>针对各种应用的常用处理器性能测试程序</p>
-<ul>
-<li>优势：任何一个基准程序的弱点都由其它基准程序来密闭</li>
-</ul>
-<h3 id="台式机的基准程序"><a href="#台式机的基准程序" class="headerlink" title="台式机的基准程序"></a>台式机的基准程序</h3><ul>
-<li>处理器密集型：SPEC CPU 2017</li>
-<li>图形密集型</li>
-</ul>
-<h3 id="服务器基准程序"><a href="#服务器基准程序" class="headerlink" title="服务器基准程序"></a>服务器基准程序</h3><ul>
-<li>处理器吞吐量：SPEC rate</li>
-<li>文件服务器和Java服务器：SPECSFS</li>
-<li>面向事务处理：TPC基准程序</li>
-</ul>
-<h3 id="嵌入式基准程序"><a href="#嵌入式基准程序" class="headerlink" title="嵌入式基准程序"></a>嵌入式基准程序</h3><ul>
-<li>EEMBC: <strong>E</strong>lectronic Design News <strong>E</strong>mbedded <strong>M</strong>icroprocessor <strong>B</strong>enchmark <strong>C</strong>onsortium</li>
-</ul>
-<h2 id="性能结果"><a href="#性能结果" class="headerlink" title="性能结果"></a>性能结果</h2><p>测试报告的关键：重复性、再现性</p>
-<h3 id="汇总测量数据"><a href="#汇总测量数据" class="headerlink" title="汇总测量数据"></a>汇总测量数据</h3><ul>
-<li>算术均值<ul>
-<li>各个程序的运行时间的算术均值或加权算术均值</li>
-<li>权值的意义？看重哪一部分，就将哪一部分权重加大</li>
-</ul>
-</li>
-</ul>
-<h3 id="归一化运行时间：SPECRatio"><a href="#归一化运行时间：SPECRatio" class="headerlink" title="归一化运行时间：SPECRatio"></a>归一化运行时间：SPECRatio</h3><p>$SPECRatio_A&#x3D;\frac{ExcutionTime_{ref}}{ExcutionTime_A}$</p>
-<p>$\frac{Performance_A}{Performance_B}&#x3D;\frac{\frac{ExcutionTime_{ref}}{ExcutionTime_A}}{\frac{ExcutionTime_{ref}}{ExcutionTime_B}}&#x3D;\frac{SPECRatio_A}{SPECRatio_B}$</p>
-<h3 id="几何均值"><a href="#几何均值" class="headerlink" title="几何均值"></a>几何均值</h3><p>计算几何均值</p>
-<p>$GeometricMean&#x3D;\sqrt[n]{\prod_{i&#x3D;1}^n sample_i}&#x3D;\sqrt[n]{\prod_{i&#x3D;1}^n SPECRatio_i}$</p>
-<p>几何均值的性质</p>
-<ul>
-<li>比值的几何均值&#x3D;几何均值的比值</li>
-<li>几何均值的比值&#x3D;性能比值的几何均值</li>
-</ul>
-<p>几何均值的缺点</p>
-<ul>
-<li>对于工作负载，归一化运行时间的几何均值导致明显的不真实结论</li>
-<li>几何均值“奖励”简单的改进</li>
-</ul>
-<h2 id="理想的性能测试步骤"><a href="#理想的性能测试步骤" class="headerlink" title="理想的性能测试步骤"></a>理想的性能测试步骤</h2><ol>
-<li>测量实际工作负载</li>
-<li>建立实际应用程序与基准程序的相似度</li>
-<li>按照相速度确定每个基准程序结果的权值</li>
-<li>计算加权算术均值</li>
-</ol>
-<p><strong>关键：了解对计算机系统的真实需求</strong></p>
-<h2 id="躲避陷阱"><a href="#躲避陷阱" class="headerlink" title="躲避陷阱"></a>躲避陷阱</h2><ul>
-<li>从错误的、未知的应用领域选择基准程序</li>
-<li>使用简单的基准程序</li>
-<li>与所关心的特性不匹配的基准程序，如关系大容量Cache而选择SPEC基准程序</li>
-<li>草率地确定基准程序规模</li>
-<li>草率地抽取或构造基准程序</li>
-<li>简单案例太多或太少</li>
-</ul>
-<h2 id="错误观点"><a href="#错误观点" class="headerlink" title="错误观点"></a>错误观点</h2><ul>
-<li>使用时钟时钟频率或单个基准程序包的性能来判断具有相同指令集体系结构的两种处理器之间的相对性能——性能的比值与频率不是线性的</li>
-<li>计算机系统的最佳设计是对主要目标优化而不考虑具体时间——上市时间、错误设计概率</li>
-<li>评估系统性能或性价比时，忽略软件版本——软件费用可能占总成本的“大头”</li>
-</ul>
-<h2 id="计算机设计的量化原理"><a href="#计算机设计的量化原理" class="headerlink" title="计算机设计的量化原理"></a>计算机设计的量化原理</h2><h3 id="利用并行性——提高吞吐性能"><a href="#利用并行性——提高吞吐性能" class="headerlink" title="利用并行性——提高吞吐性能"></a>利用并行性——提高吞吐性能</h3><ul>
-<li><p>系统级并行性——提高吞吐量性能</p>
-<ul>
-<li>扩展性：扩展内存和处理器数目</li>
-<li>数据级并行性：使用多存储系统来并行化数据读&#x2F;写操作</li>
-</ul>
-</li>
-<li><p>指令级并行性——提高性能的关键</p>
-<p>指令流水操作：指令重叠执行</p>
-</li>
-<li><p>数据级并行性——数字化设计细节</p>
-<ul>
-<li>组关联Cache使用多个存储体</li>
-<li>算术逻辑使用先行进位</li>
-</ul>
-</li>
-</ul>
-<h3 id="局部性原理"><a href="#局部性原理" class="headerlink" title="局部性原理"></a>局部性原理</h3><ul>
-<li><p>程序倾向于重复使用它们最近使用过的数据和指令</p>
-</li>
-<li><p>局部性类型</p>
-<ul>
-<li>时间局部性，如分支指令预测</li>
-<li>空间局部性，如Cache块结构</li>
-</ul>
-</li>
-<li><p>计算机系统设计的最重要和最普遍原则是：make the common case fast</p>
-</li>
-<li><p>聚焦常见情形（Common Case）</p>
-<ul>
-<li><p>聚焦能源、资源配置和性能方面的常见情形</p>
-<p>处理器的取指和译码单元</p>
-</li>
-<li><p>常见情形相比不常见的情形更简单，可以更快完成</p>
-</li>
-</ul>
-</li>
-<li><p>关键</p>
-<ul>
-<li>what：确定常见情形是什么</li>
-<li>how much：优化常见情形可以对性能有多少提升</li>
-</ul>
-</li>
-</ul>
-<h2 id="Amdahl定律"><a href="#Amdahl定律" class="headerlink" title="Amdahl定律"></a>Amdahl定律</h2><h3 id="加速比"><a href="#加速比" class="headerlink" title="加速比"></a>加速比</h3><p>$SpeedUp&#x3D;\frac{perf_{Enhancement}}{perf_{w&#x2F;oEnhancement}}&#x3D;\frac{ExecTime_{w&#x2F;oEnhancement}}{ExecTime_{Enhancement}}$</p>
-<h3 id="定律内容"><a href="#定律内容" class="headerlink" title="定律内容"></a>定律内容</h3><ul>
-<li>决定因素<ul>
-<li>$fraction_{enhanced}$系统优化前，运行时间中将被优化那部分所占的比例</li>
-<li>$speedup_{enhanced}$系统优化后，被优化部分的加速比</li>
-</ul>
-</li>
-<li>优化后的运行时间<ul>
-<li>$ExecTime_{enhanced}&#x3D;ExecTime×((1-fraction_{enhanced})+\frac{fraction_{enchanced}}{speedup_{enhanced}})$</li>
-</ul>
-</li>
-</ul>
-<h3 id="整体加速比"><a href="#整体加速比" class="headerlink" title="整体加速比"></a>整体加速比</h3><p>​			$speedup_{overall}&#x3D;\frac{1}{((1-fraction_{enhanced})+\frac{fraction_{enchanced}}{speedup_{enhanced}}}$</p>
-<h3 id="收益递减规则"><a href="#收益递减规则" class="headerlink" title="收益递减规则"></a>收益递减规则</h3><ul>
-<li><p>加速比上限</p>
-<p>​	$speedup_{enhanced}≤\frac{1}{((1-fraction_{enhanced})}$</p>
-</li>
-</ul>
-<h3 id="定律的应用"><a href="#定律的应用" class="headerlink" title="定律的应用"></a>定律的应用</h3><p>主要用途：比较两个设计方案的优劣</p>
-<p>计算公式：$speedup&#x3D;\frac{1}{(1-f)+\frac{f}{s}}$</p>
-<ul>
-<li>当$f\rightarrow0,speedup&#x3D;1$</li>
-<li>当$f\rightarrow1,speedup&#x3D;\inf$</li>
-<li>当$s\rightarrow0$</li>
-<li>当$s\rightarrow1$</li>
-</ul>
-<h2 id="CPU-性能方程"><a href="#CPU-性能方程" class="headerlink" title="CPU 性能方程"></a>CPU 性能方程</h2><p>所有计算机系统组成中都包含一个固定频率的时钟</p>
-<p>程序运行所需的CPU时间为</p>
-<p>$CPUTime&#x3D;\frac{CPUClockCyclesForAProgram}{ClockRate}&#x3D;\frac{IC×CPI}{ClockRate}$</p>
-<ul>
-<li><p>指令计数 instruction count， IC 程序运行的指令数目</p>
-</li>
-<li><p>指令周期数（Cycles Per Instruction， CPI），时钟指令数IPC是CPI的倒数</p>
-<p>$CPI&#x3D;\frac{CPUClockCyclesForAProgram}{InstructionCount}$</p>
-</li>
-<li><p>时钟频率（硬件和组成） CPI（组成和指令集） IC（指令集和编译技术） 均与体系结构特性有关，彼此不是独立的。增强某个部分，会对另外两部分有影响</p>
-</li>
-<li><p>如果</p>
-<ul>
-<li>程序有n种不同指令，$IC_i$表示第i种指令的数目</li>
-<li>$CPI_i$是第i种指令的平均时钟周期数</li>
-</ul>
-</li>
-</ul>
-<p><img src="D:\dyt\Studie\5Junior\C_Rechnerarchitektur\Notes\2.PNG"></p>
-<p>。。。。。。梦回组成原理</p>
-<h2 id="确定参数"><a href="#确定参数" class="headerlink" title="确定参数"></a>确定参数</h2><ul>
-<li><p>所有方程都包含CPU time，clock rate，IC和CPI</p>
-</li>
-<li><p>指令计数IC</p>
-<ul>
-<li>只查看源代码很难确定，因为程序运行路径不可测</li>
-<li>可通过运行配置文件，记录完成的指令流<ul>
-<li>处理器的硬件计数器</li>
-<li>检测运行来增减软件计数器</li>
-<li>解释器仿真运行</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>指令平均周期数CPI</p>
-<ul>
-<li>对于简单系统，可通过查询每种指令实现方式和每种指令的周期数来确定CPI</li>
-<li>实际系统复杂得多，处理器在某种情形下会减少指令的周期数，而存储系统也会引入许多延迟周期</li>
-</ul>
-</li>
-</ul>
-<h2 id="谬误：应该避免的错误理念和误解"><a href="#谬误：应该避免的错误理念和误解" class="headerlink" title="谬误：应该避免的错误理念和误解"></a>谬误：应该避免的错误理念和误解</h2><ul>
-<li>多处理器是一颗银弹<ul>
-<li>银弹：某种策略技术或技巧可以极大提高程序员的生产力</li>
-<li>近年来多处理器每代只增加2核，性能改进</li>
-</ul>
-</li>
-<li>提升性能的硬件……</li>
-<li>靳准程序无限期有效</li>
-</ul>
-<h2 id="陷阱：容易犯的错误"><a href="#陷阱：容易犯的错误" class="headerlink" title="陷阱：容易犯的错误"></a>陷阱：容易犯的错误</h2><ul>
-<li>所有指数定律都必须结束</li>
-<li>成为阿姆达尔定律的牺牲品</li>
-<li>单点失效</li>
-<li>故障检测降低了可用性</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA2%E9%87%8F%E5%8C%96%E8%AE%BE%E8%AE%A1%E4%B8%8E%E8%AF%84%E4%BC%B020210918/" data-id="cl5alduz00005gour9kf5a5z7" data-title="CA2 量化设计与评估" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-2021Fall 计算机体系结构笔记/CA1概述20210906" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA1%E6%A6%82%E8%BF%B020210906/" class="article-date">
-  <time class="dt-published" datetime="2022-07-07T05:20:00.595Z" itemprop="datePublished">2022-07-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA1%E6%A6%82%E8%BF%B020210906/">CA1 概述</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="2021-9-6"><a href="#2021-9-6" class="headerlink" title="2021.9.6"></a>2021.9.6</h1><h2 id="成绩评定"><a href="#成绩评定" class="headerlink" title="成绩评定"></a>成绩评定</h2><h3 id="平时70-："><a href="#平时70-：" class="headerlink" title="平时70%："></a>平时70%：</h3><ul>
-<li>考勤5%</li>
-<li>课堂测验5%</li>
-<li>课后作业30%</li>
-<li>实验课30%</li>
-</ul>
-<h3 id="期末考试30"><a href="#期末考试30" class="headerlink" title="期末考试30%"></a>期末考试30%</h3><p>​	基本概念、基本原理、单项能力、综合能力</p>
-<h2 id="平时作业"><a href="#平时作业" class="headerlink" title="平时作业"></a>平时作业</h2><p>文件格式：docx&#x2F;pdf</p>
-<p>文件名称：学号(作业序号)，如：1911xxx(1)</p>
-<h2 id="大致内容"><a href="#大致内容" class="headerlink" title="大致内容"></a>大致内容</h2><h3 id="量化设计和分析"><a href="#量化设计和分析" class="headerlink" title="量化设计和分析"></a>量化设计和分析</h3><h3 id="存储层次"><a href="#存储层次" class="headerlink" title="存储层次"></a>存储层次</h3><h3 id="四个层次的并行"><a href="#四个层次的并行" class="headerlink" title="四个层次的并行"></a>四个层次的并行</h3><ul>
-<li>指令级并行</li>
-<li>数据级并行</li>
-<li>线程级并行</li>
-<li>程序级并行</li>
-</ul>
-<h2 id="发展动力"><a href="#发展动力" class="headerlink" title="发展动力"></a>发展动力</h2><h3 id="半导体技术的进步"><a href="#半导体技术的进步" class="headerlink" title="半导体技术的进步"></a>半导体技术的进步</h3><p>尺寸降低，时钟速度提升</p>
-<p>专业化（specialization）</p>
-<h3 id="体系结构创新"><a href="#体系结构创新" class="headerlink" title="体系结构创新"></a>体系结构创新</h3><ul>
-<li><p>放弃汇编语言编程降低对目标代码兼容性需求</p>
-</li>
-<li><p>开发标准化的独立于系统供应商的操作系统，如Linux和Unix，降低了退出新型体系结构的风险</p>
-</li>
-<li><p>提高功率-性能-成本的唯一途径——特定领域体系结构</p>
-<ul>
-<li>微处理器包含若干个专用核</li>
-<li>每个核只需要很好地完成某类计算</li>
-<li>整体性能明显优于通用核（general-propose core）</li>
-</ul>
-</li>
-<li><p>关键因素：足够规模的需求</p>
-<ul>
-<li>抽取共性问题</li>
-</ul>
-</li>
-<li><p>精简指令集计算机Reduced Instruction Set Computer(RISC)</p>
-</li>
-<li><p>关注点</p>
-<ul>
-<li>开发指令级并行<ul>
-<li>早期：流水操作</li>
-<li>后期：多指令发出</li>
-</ul>
-</li>
-<li>利用Cache<ul>
-<li>早期：简单形式</li>
-<li>后期：更加复杂的组成和优化</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>RISC：具有简单指令集的计算机体系结构</p>
-<ul>
-<li>应对策略：跟上 或 消亡<ul>
-<li>Digital Equipment VAX：消亡</li>
-<li>Intel x86：内部将x86指令转化为类RISC指令</li>
-</ul>
-</li>
-<li>低端应用（移动电话）：以ARM架构为主流</li>
-</ul>
-</li>
-</ul>
-<h3 id="RISC带来的影响"><a href="#RISC带来的影响" class="headerlink" title="RISC带来的影响"></a>RISC带来的影响</h3><h4 id="显著提高了计算机系统的能力"><a href="#显著提高了计算机系统的能力" class="headerlink" title="显著提高了计算机系统的能力"></a>显著提高了计算机系统的能力</h4><h4 id="性价比显著提升带来了新型计算机系统"><a href="#性价比显著提升带来了新型计算机系统" class="headerlink" title="性价比显著提升带来了新型计算机系统"></a>性价比显著提升带来了新型计算机系统</h4><h3 id="计算机系统的分类"><a href="#计算机系统的分类" class="headerlink" title="计算机系统的分类"></a>计算机系统的分类</h3><h4 id="分类标准"><a href="#分类标准" class="headerlink" title="分类标准"></a>分类标准</h4><ul>
-<li>应用领域</li>
-<li>性能需求</li>
-<li>计算技术</li>
-</ul>
-<h4 id="计算机系统的物种类型"><a href="#计算机系统的物种类型" class="headerlink" title="计算机系统的物种类型"></a>计算机系统的物种类型</h4><ul>
-<li>物联网&#x2F;嵌入式计算机</li>
-<li>个人移动设备</li>
-<li>桌面计算系统</li>
-<li>服务器</li>
-<li>集群&#x2F;仓储计算机</li>
-</ul>
-<h3 id="计算机体系的早期定义"><a href="#计算机体系的早期定义" class="headerlink" title="计算机体系的早期定义"></a>计算机体系的早期定义</h3><h4 id="Amdahl：系统程序员所看到的系统属性"><a href="#Amdahl：系统程序员所看到的系统属性" class="headerlink" title="Amdahl：系统程序员所看到的系统属性"></a>Amdahl：系统程序员所看到的系统属性</h4><ul>
-<li>概念结构</li>
-<li>功能行为</li>
-<li>不同于数据流组织、控制逻辑实现和物理实现</li>
-</ul>
-<h4 id="计算机体系结构"><a href="#计算机体系结构" class="headerlink" title="计算机体系结构"></a>计算机体系结构</h4><ul>
-<li>指令集体系结构+</li>
-<li>计算机组成（流水，存储层次，存储系统等）</li>
-</ul>
-<h4 id="计算机体系结构是计算机硬件和软件之间的“粘合剂”"><a href="#计算机体系结构是计算机硬件和软件之间的“粘合剂”" class="headerlink" title="计算机体系结构是计算机硬件和软件之间的“粘合剂”"></a>计算机体系结构是计算机硬件和软件之间的“粘合剂”</h4><h4 id="计算机体系结构将确定计算机系统中软硬件之间的功能分配"><a href="#计算机体系结构将确定计算机系统中软硬件之间的功能分配" class="headerlink" title="计算机体系结构将确定计算机系统中软硬件之间的功能分配"></a>计算机体系结构将确定计算机系统中软硬件之间的功能分配</h4><h3 id="计算机体系结构图示"><a href="#计算机体系结构图示" class="headerlink" title="计算机体系结构图示"></a>计算机体系结构图示</h3><p><img src="/./1.PNG"></p>
-<h3 id="计算机体系结构的现在定义"><a href="#计算机体系结构的现在定义" class="headerlink" title="计算机体系结构的现在定义"></a>计算机体系结构的现在定义</h3><ul>
-<li><p>定义：设计符合目标和功能需求的组成和硬件</p>
-</li>
-<li><p>组成：计算机系统高层设计，也成为微结构</p>
-<ul>
-<li>内容：存储系统、存储器内敛、内部处理器设计等</li>
-<li>两个处理器可以有相同的指令集但不同的组成</li>
-<li>多核：内置多个处理器的微处理器</li>
-</ul>
-</li>
-<li><p>硬件：计算机系统的细节</p>
-<ul>
-<li>内容：详细逻辑设计、计算机包装技术</li>
-<li>计算机系统可以有相同的指令集体系结构核非常相似的组成</li>
-</ul>
-</li>
-</ul>
-<h3 id="计算机体系结构的发展趋势"><a href="#计算机体系结构的发展趋势" class="headerlink" title="计算机体系结构的发展趋势"></a>计算机体系结构的发展趋势</h3><ul>
-<li>指令集并行性TLP</li>
-<li>性能提升的新途径<ul>
-<li>数据级DLP</li>
-<li>线程级TLP</li>
-<li>仓储计算机WSC</li>
-<li>请求级RLP</li>
-</ul>
-</li>
-<li>显示并行性需要重新编写应用程序<ul>
-<li>隐式并行性（透明的）：ILP<ul>
-<li>由编译器和硬件完成，不需要程序员关注</li>
-</ul>
-</li>
-<li>显式并行性（不透明的）：DLP、TLP、RLP</li>
-</ul>
-</li>
-</ul>
-<h3 id="计算机架构师（Computer-Architect）"><a href="#计算机架构师（Computer-Architect）" class="headerlink" title="计算机架构师（Computer Architect）"></a>计算机架构师（Computer Architect）</h3><ul>
-<li>设计一台计算机必须满足<ul>
-<li>功能性需求</li>
-<li>价格、功耗、性能和可行性目标</li>
-</ul>
-</li>
-<li>了解最重要的功能需求<ul>
-<li>应用领域</li>
-<li>软件兼容性</li>
-<li>操作系统需求</li>
-<li>标准</li>
-</ul>
-</li>
-<li>关注相关技术和应用两方面的趋势<ul>
-<li>影响未来的成本</li>
-<li>影响架构的寿命</li>
-</ul>
-</li>
-</ul>
-<h3 id="五种关键实现技术"><a href="#五种关键实现技术" class="headerlink" title="五种关键实现技术"></a>五种关键实现技术</h3><ul>
-<li><p>集成电路逻辑</p>
-</li>
-<li><p>半导体DRAM</p>
-</li>
-<li><p>半导体闪存SRAM</p>
-</li>
-<li><p>磁盘技术</p>
-</li>
-<li><p>网络技术</p>
-</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA1%E6%A6%82%E8%BF%B020210906/" data-id="cl5alduz00004gour737dey3u" data-title="CA1 概述" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-2021Fall 计算机体系结构笔记/CA12仓库级计算机" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA12%E4%BB%93%E5%BA%93%E7%BA%A7%E8%AE%A1%E7%AE%97%E6%9C%BA/" class="article-date">
-  <time class="dt-published" datetime="2022-07-07T05:20:00.562Z" itemprop="datePublished">2022-07-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA12%E4%BB%93%E5%BA%93%E7%BA%A7%E8%AE%A1%E7%AE%97%E6%9C%BA/">CA12 仓库级计算机</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="CA-12-仓库级计算机"><a href="#CA-12-仓库级计算机" class="headerlink" title="CA 12 仓库级计算机"></a>CA 12 仓库级计算机</h1><p>20211213</p>
-<h2 id="仓库级计算机WSC"><a href="#仓库级计算机WSC" class="headerlink" title="仓库级计算机WSC"></a>仓库级计算机WSC</h2><p>提供互联网服务</p>
-<p>不同于高性能计算“集群”</p>
-<ul>
-<li>集群有更高的计算性能</li>
-<li>集群强调线程级并行，仓库级强调请求级并行性</li>
-</ul>
-<p>不同于数据中心</p>
-<ul>
-<li>数据中心将不同的机器和软件整合到同一个地点</li>
-<li>数据中心强调虚拟机和硬件异构性以服务不同客户</li>
-</ul>
-<h2 id="重要设计因素"><a href="#重要设计因素" class="headerlink" title="重要设计因素"></a>重要设计因素</h2><h3 id="成本-性能"><a href="#成本-性能" class="headerlink" title="成本-性能"></a>成本-性能</h3><p>累加大量的较小节约，积少成多</p>
-<h3 id="能效"><a href="#能效" class="headerlink" title="能效"></a>能效</h3><p>峰值功率和功耗影响着配电系统和冷却系统的成本</p>
-<p>每焦耳做的功才是关键</p>
-<h3 id="通过冗余实现可靠性"><a href="#通过冗余实现可靠性" class="headerlink" title="通过冗余实现可靠性"></a>通过冗余实现可靠性</h3><h3 id="网络IO"><a href="#网络IO" class="headerlink" title="网络IO"></a>网络IO</h3><p>交互负载和批处理负载</p>
-<h3 id="交互负载和批处理负载"><a href="#交互负载和批处理负载" class="headerlink" title="交互负载和批处理负载"></a>交互负载和批处理负载</h3><h3 id="并行量的充足与否并不重要"><a href="#并行量的充足与否并不重要" class="headerlink" title="并行量的充足与否并不重要"></a>并行量的充足与否并不重要</h3><h3 id="运营成本、地理位置"><a href="#运营成本、地理位置" class="headerlink" title="运营成本、地理位置"></a>运营成本、地理位置</h3>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA12%E4%BB%93%E5%BA%93%E7%BA%A7%E8%AE%A1%E7%AE%97%E6%9C%BA/" data-id="cl5alduyx0002gourdmtlbwzu" data-title="CA12 仓库级计算机" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-2021Fall 计算机体系结构笔记/CA11线程级并行性" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA11%E7%BA%BF%E7%A8%8B%E7%BA%A7%E5%B9%B6%E8%A1%8C%E6%80%A7/" class="article-date">
-  <time class="dt-published" datetime="2022-07-07T05:20:00.553Z" itemprop="datePublished">2022-07-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA11%E7%BA%BF%E7%A8%8B%E7%BA%A7%E5%B9%B6%E8%A1%8C%E6%80%A7/">CA11 线程级并行</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="CA11-线程级并行"><a href="#CA11-线程级并行" class="headerlink" title="CA11 线程级并行"></a>CA11 线程级并行</h1><h2 id="性能"><a href="#性能" class="headerlink" title="性能"></a>性能</h2><p>Cache 性能</p>
-<ul>
-<li>单处理器 Cache 未命中流量</li>
-<li>失效操作和后续 Cache 未命中流量</li>
-</ul>
-<p>一致性未命中：由处理器间通信引起的未命中</p>
-<ul>
-<li>真实共享不命中：通过 Cache 一致性机制由数据通信引起的未命中<ul>
-<li>处理器第一次对共享 Cache 块写操作引起的不命中</li>
-<li>另一个处理器对该 Cache 块中被修改数据字读操作未命中引起的</li>
-</ul>
-</li>
-<li>虚假共享不命中：使用每个缓存块单个有效位的失效一致性算法引起的未命中</li>
-</ul>
-<h2 id="目录协议"><a href="#目录协议" class="headerlink" title="目录协议"></a>目录协议</h2><p>为了保证缓存数据的一致性，监听协议在每次缓存中不命中时均要求所有缓存之间进行通信</p>
-<ul>
-<li>基本优势：成本低廉</li>
-<li>致命弱点：可扩展性差</li>
-</ul>
-<p>目录协议</p>
-<ul>
-<li>目录保存每个缓存数据块的状态</li>
-<li>目录内容<ul>
-<li>哪个缓存拥有数据块副本</li>
-<li>数据块是否处于脏状态</li>
-</ul>
-</li>
-</ul>
-<p>在共享L3缓存中实现</p>
-<ul>
-<li>每个数据块中保存比特矢量，矢量长度位处理器核数目</li>
-<li>每个比特矢量表示私有L2中是否包含L3数据块的副本</li>
-<li>无法扩展到L3之外</li>
-</ul>
-<h2 id="分布式目录"><a href="#分布式目录" class="headerlink" title="分布式目录"></a>分布式目录</h2><p>特点</p>
-<ul>
-<li>内存和目录共同分布存储，以便不同的一致性请求转到不同的目录</li>
-<li>在每个结点上添加目录以实现缓存一致性</li>
-</ul>
-<h2 id="同步"><a href="#同步" class="headerlink" title="同步"></a>同步</h2><p>同步机制一般是由用户级软件程序构建的，而这些软件程序是以硬件提供的同步指令为基础的</p>
-<p>需要一组具有原子读和修改内存内容的硬件原语。</p>
-<ul>
-<li>primitive 原语是构建各种用户级同步操作的基本构建</li>
-<li>通常由系统程序员来编写</li>
-</ul>
-<p>原子交换</p>
-<ul>
-<li>内存位置的数值和寄存器中数值进行交换。</li>
-<li>锁</li>
-<li>交换应该是原子的</li>
-<li>两个同时的交换将由写串行机制排序</li>
-</ul>
-<p>测试且设置 test-and-set</p>
-<ul>
-<li>如果测试通过，则置位</li>
-</ul>
-<p>读取且递增 fetch-and-increment</p>
-<p>单条不可中断指令完成内存读和写操作</p>
-<h2 id="基本构件"><a href="#基本构件" class="headerlink" title="基本构件"></a>基本构件</h2><p>指令对</p>
-<p>保留加载&#x2F;条件存储</p>
-<ul>
-<li>连接加载和加锁加载</li>
-<li>保留加载指令 将rs1指定内存地址的内容加载到rd中，且在该内存位置设置保留地</li>
-<li>条件存储指令 将rs2中数值存储到由rs1指定的内存位置</li>
-<li>如果保留地内容被写入相同地址位置的其它指令破坏，则条件存储指令失效，在rs2中写入非0数值，如果成功写入0.</li>
-<li>如果交换两条指令上下文内容，则条件存储指令永远失效</li>
-</ul>
-<h2 id="自旋锁"><a href="#自旋锁" class="headerlink" title="自旋锁"></a>自旋锁</h2><h2 id="内存一致性模型"><a href="#内存一致性模型" class="headerlink" title="内存一致性模型"></a>内存一致性模型</h2><h1 id="期末考试题型"><a href="#期末考试题型" class="headerlink" title="期末考试题型"></a>期末考试题型</h1><p>选择题 6 * 5’ 类似于课堂测验</p>
-<p>简答题 几句话回答 4 * 5’</p>
-<p>计算题 关于指令并行性（tomasulo算法）10’</p>
-<p>指令时空图 10’</p>
-<p>线程级并行性 15’</p>
-<p>存储层次（未命中） 15’</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA11%E7%BA%BF%E7%A8%8B%E7%BA%A7%E5%B9%B6%E8%A1%8C%E6%80%A7/" data-id="cl5alduyz0003gourgjwj4a7m" data-title="CA11 线程级并行" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-2021Fall 计算机体系结构笔记/CA10数据级并行性" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA10%E6%95%B0%E6%8D%AE%E7%BA%A7%E5%B9%B6%E8%A1%8C%E6%80%A7/" class="article-date">
-  <time class="dt-published" datetime="2022-07-07T05:20:00.544Z" itemprop="datePublished">2022-07-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA10%E6%95%B0%E6%8D%AE%E7%BA%A7%E5%B9%B6%E8%A1%8C%E6%80%A7/">CA10 数据级并行性</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="CA10-数据级并行性"><a href="#CA10-数据级并行性" class="headerlink" title="CA10 数据级并行性"></a>CA10 数据级并行性</h1><h2 id="图形处理单元"><a href="#图形处理单元" class="headerlink" title="图形处理单元"></a>图形处理单元</h2><ul>
-<li>GPU和CPU没有共同的祖先<ul>
-<li>GPU前身是图形加速器，做好图形处理是其存在的原因</li>
-<li>GPU在走向主流计算的同时，仍然不能放弃自己在图形处理上的责任</li>
-</ul>
-</li>
-<li>GPU与矢量处理器和SIMD体系结构不同！</li>
-</ul>
-<p>要点</p>
-<ul>
-<li>异构计算模式需要协作良好的计算调度：CPU是主机，GPU是设备</li>
-<li>编程环境具备多种类型的并行性：多线程、MIMD、SIMD和指令级</li>
-<li>GPU专用的类C编程语言——CUDA</li>
-<li>将所有类型的并行性统一为CUDA线程</li>
-<li>编程模型为单指令多线程</li>
-</ul>
-<h2 id="GPU-编程"><a href="#GPU-编程" class="headerlink" title="GPU 编程"></a>GPU 编程</h2><p>线程块 Thread Block 被限制在一起执行的线程</p>
-<p>网格 Grid 线程块的集合</p>
-<p>多线程SIMD处理器：执行全部线程块的硬件</p>
-<p>技术术语</p>
-<ul>
-<li>dimGrid 网格维度</li>
-<li>dimBlock 线程块维度</li>
-<li>blockIdx 线程块索引</li>
-<li>threadIdx 线程索引</li>
-<li>blockDim 线程块的大小</li>
-</ul>
-<p>GPU中的并行执行和线程管理由硬件处理，而不是由应用程序或者操作系统来完成。</p>
-<h2 id="CUDA"><a href="#CUDA" class="headerlink" title="CUDA"></a>CUDA</h2><p>要求线程块能够以任何顺序独立执行，且不同线程块之间不能直接通信，而是通过全局存储器交换数据</p>
-<p>关注性能需要牢记CUDA的硬件结构</p>
-<p>对于CUDA，编程效率和性能之间的折中方案是让程序员能够通过代码来控制硬件</p>
-<h2 id="英伟达GPU计算结构和矢量体系结构的对比"><a href="#英伟达GPU计算结构和矢量体系结构的对比" class="headerlink" title="英伟达GPU计算结构和矢量体系结构的对比"></a>英伟达GPU计算结构和矢量体系结构的对比</h2><p>相似点</p>
-<ul>
-<li>很好的处理数据级并行性问题</li>
-<li>搜集-分散数据传输</li>
-<li>掩码寄存器</li>
-<li>更大的寄存器文件</li>
-</ul>
-<p>不同点</p>
-<ul>
-<li>没有标量处理器</li>
-<li>使用多线程来隐藏存储器延迟</li>
-<li>具有许多功能单元，而不是深度流水单元</li>
-</ul>
-<h2 id="英伟达GPU-计算结构"><a href="#英伟达GPU-计算结构" class="headerlink" title="英伟达GPU 计算结构"></a>英伟达GPU 计算结构</h2><p>网格：运行在GPU上的代码，由一组线程块组成</p>
-<ul>
-<li>网格-矢量化循环</li>
-<li>线程块-循环体</li>
-</ul>
-<p>线程块通过线程块调度器分配给执行该代码的多线程SIMD处理器</p>
-<p>线程块</p>
-<h2 id="多线程SIMD处理器"><a href="#多线程SIMD处理器" class="headerlink" title="多线程SIMD处理器"></a>多线程SIMD处理器</h2><p>SIMD通道：SIMD处理器并行功能单元</p>
-<ul>
-<li>与矢量体系结构中的矢量通道相似</li>
-</ul>
-<p>32-bit宽的SIMD指令组成SIMD线程或warp</p>
-<ul>
-<li>映射到16个物理通道</li>
-<li>每条SIMD指令需要两个时钟周期</li>
-</ul>
-<p>每个SIMD处理器上最多调度32个warp</p>
-<ul>
-<li>每个warp拥有自己的PC</li>
-<li>线程调度程序使用计分板来调度warp中准备好运行的SIMD指令</li>
-<li>warp之间不存在数据相关</li>
-<li>将warp调度到流水线中</li>
-</ul>
-<p>寄存器</p>
-<ul>
-<li>包含32-64k个32bit寄存器</li>
-</ul>
-<h3 id="多线程SIMD处理器的两级硬件调度器"><a href="#多线程SIMD处理器的两级硬件调度器" class="headerlink" title="多线程SIMD处理器的两级硬件调度器"></a>多线程SIMD处理器的两级硬件调度器</h3><p>线程块调度器：将线程块非陪给多线程SIMD处理器</p>
-<p>SIMD线程调度器：在多线程SIMD处理器内，调度SIMD指令线程执行</p>
-<ul>
-<li>假设存在足够多的SIMD指令线程来隐藏DRAM延迟和提高多线程SIMD处理器的利用率</li>
-</ul>
-<h2 id="条件分支"><a href="#条件分支" class="headerlink" title="条件分支"></a>条件分支</h2><p>与矢量体系结构，GPU分支硬件也是用内部掩码</p>
-<ul>
-<li>分支同步堆栈：内容由每个SIMD通道掩码组成</li>
-</ul>
-<h2 id="GPU的存储器结构"><a href="#GPU的存储器结构" class="headerlink" title="GPU的存储器结构"></a>GPU的存储器结构</h2><p>每个SIMD通道都有片外DRAM私有部分</p>
-<ul>
-<li>私有存储器</li>
-<li>用途：堆栈帧、溢出存储器和不适合放在寄存器中的私有变量</li>
-<li>SIMD通道不共享私有存储器</li>
-<li>GPU在L1和L2缓存器中缓存这个私有存储器</li>
-</ul>
-<p>每个多线程SIMD处理器也有局部存储器</p>
-<ul>
-<li>低延迟、高带宽、小型暂存存储器——48KiB</li>
-<li>由块内的SIMD通道&#x2F;线程共享</li>
-<li>创建线程块时动态申请，线程块退出时释放</li>
-</ul>
-<p>由SIMD处理器共享的存储器是GPU存储器</p>
-<ul>
-<li>主机可以读写GPU存储器</li>
-</ul>
-<h2 id="GPU与矢量体系结构的对应"><a href="#GPU与矢量体系结构的对应" class="headerlink" title="GPU与矢量体系结构的对应"></a>GPU与矢量体系结构的对应</h2><p>SIMD处理器类似于矢量处理器，GPU中多个SIMD处理器作为独立的MIMD核</p>
-<p>最大不同：多线程是GPU的基础，绝大多数矢量处理器没有。</p>
-<h2 id="CPU与SIMD体系结构"><a href="#CPU与SIMD体系结构" class="headerlink" title="CPU与SIMD体系结构"></a>CPU与SIMD体系结构</h2><p>GPU有多个SIMD通道</p>
-<p>GPU硬件支持更多的线程</p>
-<p>二者的双精度和单精度的性能之比2：1</p>
-<p>二者都是64位地址，但GPU有更小的存储器</p>
-<h2 id="循环级并行性"><a href="#循环级并行性" class="headerlink" title="循环级并行性"></a>循环级并行性</h2><p>循环承载相关性：循环不同迭代之间的数据相关性</p>
-<p>循环承载相关性通常是重现的：如a[i]&#x3D;a[i]+a[i-1]，发生在使用先前迭代中该变量的取值定义该变量时</p>
-<h2 id="发现相关性"><a href="#发现相关性" class="headerlink" title="发现相关性"></a>发现相关性</h2><p>相关性分析复杂性来源于编程语言中的数组和指针的引用</p>
-<ul>
-<li>因为标量变量访问时使用名称的</li>
-</ul>
-<p>所有相关性分析算法均基于数组索引是仿射前提</p>
-<ul>
-<li>a*i+b</li>
-</ul>
-<p>一般情况下，编译时很难确定相关性</p>
-<p>稀疏矩阵访问时非仿射访问</p>
-<p>m&lt;&#x3D;a&lt;&#x3D;n, m&lt;&#x3D;b&lt;&#x3D;n</p>
-<p>最大公约数测试：如果存在循环承载相关性，则GCD(c,a)mod(d-b)&#x3D;0</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA10%E6%95%B0%E6%8D%AE%E7%BA%A7%E5%B9%B6%E8%A1%8C%E6%80%A7/" data-id="cl5alduyu0001goureq249w9c" data-title="CA10 数据级并行性" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-2021Fall 计算机体系结构笔记/CA9数据级并行性(1)" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA9%E6%95%B0%E6%8D%AE%E7%BA%A7%E5%B9%B6%E8%A1%8C%E6%80%A7(1)/" class="article-date">
-  <time class="dt-published" datetime="2022-07-07T05:20:00.535Z" itemprop="datePublished">2022-07-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA9%E6%95%B0%E6%8D%AE%E7%BA%A7%E5%B9%B6%E8%A1%8C%E6%80%A7(1)/">CA9 数据级并行性(1)</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="CA9-数据级并行性-1"><a href="#CA9-数据级并行性-1" class="headerlink" title="CA9 数据级并行性(1)"></a>CA9 数据级并行性(1)</h1><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>SIMD 体系结构利用了数据并行性</p>
-<ul>
-<li>面向矩阵的科学计算</li>
-<li>面向多媒体的图像和声音处理</li>
-<li>机器学习算法</li>
-</ul>
-<p>SIMD比MIMD更节能</p>
-<ul>
-<li>与MIMD相比，SIMD单挑指令可以同时对许多数据进行操作</li>
-<li>个人移动设备使SIMD更具吸引力</li>
-</ul>
-<p>在SIMD架构中，程序员从代码顺序执行的角度来思考问题，获得代码并行执行的加速比。</p>
-<h2 id="SIMD-并行性"><a href="#SIMD-并行性" class="headerlink" title="SIMD 并行性"></a>SIMD 并行性</h2><p>SIMD 的三种变形</p>
-<ul>
-<li>矢量体系结构</li>
-<li>SIMD 扩展指令集</li>
-<li>图形处理单元GPUs</li>
-</ul>
-<p>Intel x86</p>
-<ul>
-<li>预计每年每个芯片处理器增加两个处理核</li>
-<li>SIMD 宽度每四年翻一倍</li>
-<li>SIMD 的潜在加速比是 MIMD 的两倍</li>
-</ul>
-<p>矢量体系结构</p>
-<ul>
-<li>将许多数据操作扩展为流水执行</li>
-<li>对微处理器来说，代价昂贵<ul>
-<li>需要更多的晶体管资源</li>
-<li>需要最够的DRAM带宽</li>
-</ul>
-</li>
-</ul>
-<p>SIMD 扩展指令集</p>
-<ul>
-<li>1996年，MMX multimedia extensions</li>
-<li>SSE streaming SIMD extensions</li>
-<li>AVX advanced vector extensions</li>
-</ul>
-<p>图形处理单元</p>
-<ul>
-<li>与矢量体系结构共享特征，但具有自己的特性</li>
-<li>独特的生态环境：系统处理器与系统内存+GPU 与图形内存</li>
-</ul>
-<h2 id="矢量体系结构"><a href="#矢量体系结构" class="headerlink" title="矢量体系结构"></a>矢量体系结构</h2><p>基本思路</p>
-<ul>
-<li>将一组分散在内存中的元素读入矢量寄存器</li>
-<li>对这些矢量寄存器进行操作</li>
-<li>把操作结果放回内存中</li>
-</ul>
-<p>对矢量数据执行一条指令，将获得对独立数据元素进行的多条寄存器-寄存器操作</p>
-<p>大型寄存器文件作为编译器可控的缓存器</p>
-<ul>
-<li>隐藏内存延迟：每次矢量加载或存储将导致一次内存延迟，而非每个元素一次，因此均摊了延迟时间</li>
-<li>降低读写次数：利用内存带宽</li>
-</ul>
-<p>矢量体系结构在提供良好的性能的同时，没有付出乱序超标量处理器在能耗和设计复杂性方面的代价。</p>
-<p><img src="/./10.png"></p>
-<h2 id="RV64V-架构"><a href="#RV64V-架构" class="headerlink" title="RV64V 架构"></a>RV64V 架构</h2><p>32个64bit矢量寄存器</p>
-<ul>
-<li>寄存器文件有16个读端口和8个写端口</li>
-</ul>
-<p>矢量功能单元</p>
-<ul>
-<li>全流水</li>
-<li>检测数据和控制相关</li>
-</ul>
-<p>矢量加载-存储单元</p>
-<ul>
-<li>全流水</li>
-<li>在初始延迟后每个时钟周期一个字</li>
-</ul>
-<p>标量寄存器</p>
-<ul>
-<li>31个通用寄存器</li>
-<li>32个浮点寄存器</li>
-</ul>
-<h2 id="特色指令"><a href="#特色指令" class="headerlink" title="特色指令"></a>特色指令</h2><p>跨步装载和存储</p>
-<p>索引装载</p>
-<p>索引存储</p>
-<p>谓词：在计算机语言环境下，是指条件表达式的求值过程</p>
-<h2 id="数据类型和长度"><a href="#数据类型和长度" class="headerlink" title="数据类型和长度"></a>数据类型和长度</h2><p>多种数据大小</p>
-<ul>
-<li>32个64bit元素 128个16bit元素，256个8bit元素</li>
-<li>适合多媒体应用和科学计算</li>
-</ul>
-<h2 id="动态寄存器类型"><a href="#动态寄存器类型" class="headerlink" title="动态寄存器类型"></a>动态寄存器类型</h2><p>创新点</p>
-<ul>
-<li>数据类型与大小和每个矢量寄存器相关联，而不是指令相关联</li>
-<li>指令执行之前，程序配置矢量寄存器用于特定的数据类型和宽度</li>
-</ul>
-<p>动态寄存器类型将所有矢量内存分配给启用的矢量寄存器作为长矢量使用</p>
-<ul>
-<li>最大矢量长度：每个矢量寄存器可以容纳的元素个数</li>
-</ul>
-<h2 id="若干概念"><a href="#若干概念" class="headerlink" title="若干概念"></a>若干概念</h2><ul>
-<li><p>可矢量化</p>
-<p>当循环程序相邻迭代之间不存在相关性时，可矢量化</p>
-</li>
-<li><p>链接</p>
-<p>同时执行相关数据的矢量指令</p>
-<p>一旦源矢量操作数的一个元素有效是，可以立即启动矢量操作</p>
-</li>
-<li><p>执行时间</p>
-<p>是操作数矢量长度，结构危害和数据相关的函数</p>
-</li>
-<li><p>道：在矢量功能单元中配置的多个并行流水线</p>
-</li>
-<li><p>引发速率：矢量单元消耗操作数的速度</p>
-</li>
-<li><p>编队：可以同时开始执行的一组矢量指令</p>
-</li>
-<li><p>定时：执行一个指令编队所需要的时间</p>
-</li>
-</ul>
-<h2 id="发出限制"><a href="#发出限制" class="headerlink" title="发出限制"></a>发出限制</h2><p>启动时间</p>
-<ul>
-<li>等待矢量功能单元满负荷运行的延迟时钟周期数</li>
-<li>所有功能单元全流水<ul>
-<li>浮点数加法 6 cycle</li>
-<li>浮点数乘法 7 cycle</li>
-<li>浮点数除法 20 cycle</li>
-<li>矢量加载 12 cycle</li>
-</ul>
-</li>
-</ul>
-<p>改进方法</p>
-<ul>
-<li>每个时钟周期处理超过1个矢量元素</li>
-<li>非64bit宽矢量</li>
-<li>矢量代码中的取值令声明</li>
-<li>优化存储系统来支持矢量处理器</li>
-<li>多维矩阵和稀疏矩阵</li>
-<li>编程矢量计算机</li>
-</ul>
-<h2 id="多通道概念"><a href="#多通道概念" class="headerlink" title="多通道概念"></a>多通道概念</h2><h2 id="矢量长度寄存器"><a href="#矢量长度寄存器" class="headerlink" title="矢量长度寄存器"></a>矢量长度寄存器</h2><ul>
-<li>控制任何矢量操作长度，包括矢量装入和存储操作</li>
-<li>不能大于最大矢量长度</li>
-</ul>
-<h2 id="谓词寄存器"><a href="#谓词寄存器" class="headerlink" title="谓词寄存器"></a>谓词寄存器</h2><h2 id="存储体"><a href="#存储体" class="headerlink" title="存储体"></a>存储体</h2><p>没有足够的存储器带宽，矢量执行是徒劳的</p>
-<p>装入指令启动时间</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA9%E6%95%B0%E6%8D%AE%E7%BA%A7%E5%B9%B6%E8%A1%8C%E6%80%A7(1)/" data-id="cl5alduzd000bgour9pqs8894" data-title="CA9 数据级并行性(1)" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-2021Fall 计算机体系结构笔记/CA8指令级并行性(2)" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA8%E6%8C%87%E4%BB%A4%E7%BA%A7%E5%B9%B6%E8%A1%8C%E6%80%A7(2)/" class="article-date">
-  <time class="dt-published" datetime="2022-07-07T05:20:00.525Z" itemprop="datePublished">2022-07-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA8%E6%8C%87%E4%BB%A4%E7%BA%A7%E5%B9%B6%E8%A1%8C%E6%80%A7(2)/">CA8 指令级并行性(2)</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="CA8-指令级并行性-2"><a href="#CA8-指令级并行性-2" class="headerlink" title="CA8 指令级并行性(2)"></a>CA8 指令级并行性(2)</h1><h2 id="Tomasulo-算法"><a href="#Tomasulo-算法" class="headerlink" title="Tomasulo 算法"></a>Tomasulo 算法</h2><ul>
-<li><p>提出</p>
-<ul>
-<li>动态确定某条指令何时可以执行</li>
-<li>重命名寄存器以避免不必要的危害</li>
-</ul>
-</li>
-<li><p>基本思路</p>
-<ul>
-<li>保留站尽快取入和缓存有效的操作数</li>
-<li>待执行指令说明为其提供操作数的功能单元</li>
-<li>在重叠执行期间，对同一个寄存器连续写操作，只有最后一个写操作用来实际更新寄存器</li>
-</ul>
-</li>
-<li><p>特点</p>
-<ul>
-<li>跟踪指令的操作数何时可用——最小化RAW危害</li>
-<li>寄存器重命名——最小化WAW和WAR危害</li>
-</ul>
-</li>
-<li><p>亮点</p>
-<ul>
-<li>保留站 reservation station：缓存待发出指令的操作数或关联的功能单元——完成寄存器重命名的工作<ul>
-<li>缓存等待发出指令的操作数，并与功能单元关联</li>
-<li>指令不再需要从寄存器中获取操作数</li>
-</ul>
-</li>
-<li>公共数据总线 common data bus：“广播”功能单元的执行结果</li>
-</ul>
-</li>
-<li><p>总线特点</p>
-<ul>
-<li>普通数据总线：数据+目——“去哪儿”总线</li>
-<li>公共数据总线：数据+源——“从哪来”总线</li>
-</ul>
-</li>
-</ul>
-<h2 id="Tomasulo算法处理器的基本结构"><a href="#Tomasulo算法处理器的基本结构" class="headerlink" title="Tomasulo算法处理器的基本结构"></a>Tomasulo算法处理器的基本结构</h2><p><img src="/./9.png"></p>
-<h2 id="四个步骤"><a href="#四个步骤" class="headerlink" title="四个步骤"></a>四个步骤</h2><ol>
-<li>发出issue&#x2F;派遣dispatch<ul>
-<li>从指令队列头部获得下已条指令（FIFO方式保证正确的数据流）</li>
-<li>如果保留站RS可用，则向其发出带有操作数数值的指令</li>
-<li>如果保留站RS不可用，则停顿该指令发出（结构危害）</li>
-<li>提示：使用保留站RS完成寄存器重命名，消除WAR和WAW危害</li>
-</ul>
-</li>
-<li>执行<ul>
-<li>当操作数可用时，将其存储到所有等待该操作数的保留站RS中</li>
-<li>当所有操作数都准备好时，发出该指令（对应功能单元执行操作）</li>
-<li>通过有效的地址计算，保持load和store指令的程序顺序</li>
-<li>分支指令完成执行前，其程序次序之后的指令不允许执行</li>
-<li>提示：直到所有操作数有效才执行指令，防止了RAW</li>
-</ul>
-</li>
-<li>写结果<ul>
-<li>讲计算结果写到公共数据总线上，供使用它的寄存器和保留站读取</li>
-</ul>
-</li>
-</ol>
-<h2 id="几个问题"><a href="#几个问题" class="headerlink" title="几个问题"></a>几个问题</h2><ul>
-<li><p>在一个周期内某个功能单元中可能有多条指令ready</p>
-<ul>
-<li>对于浮点数保留站，随机选择一条指令执行</li>
-<li>对于Load和Store指令执行还需要考虑附加的问题</li>
-</ul>
-</li>
-<li><p>load和store指令需要两部执行</p>
-<ul>
-<li>当基址寄存器有效时，计算有效地址，放入load和store缓存器</li>
-<li>当存储单元有效时，马上执行load缓存器中load指令；store缓存器中的store指令需要等待将呗存储的数据有效后才被执行</li>
-<li>提示：load和store指令通过有效地址计算来维持程序次序，防止发生危害</li>
-</ul>
-</li>
-<li><p>维持中断行为</p>
-<ul>
-<li>分支转移指令执行完毕之前，不允许在程序顺序中其后的任何指令开始执行</li>
-<li>提示：保证在执行过程正引起中断的指令肯定会被执行</li>
-</ul>
-</li>
-<li><p>公共数据总线实现了向前和旁路机制</p>
-<ul>
-<li>生产者指令和消费者指令之间的有效延迟至少比功能单元产生结果延迟一个周期——原因是二者的匹配要在写结果后进行</li>
-</ul>
-</li>
-</ul>
-<h2 id="Tomasulo-算法具体实现"><a href="#Tomasulo-算法具体实现" class="headerlink" title="Tomasulo 算法具体实现"></a>Tomasulo 算法具体实现</h2><h3 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h3><p>将产生的源操作数的缓存器或单元</p>
-<h3 id="保留站"><a href="#保留站" class="headerlink" title="保留站"></a>保留站</h3><ul>
-<li>Op：等待执行的操作</li>
-<li>Qj，Qk：产生对应源操作数的保留站号<ul>
-<li>数值为0时表示源操作数已经有效</li>
-</ul>
-</li>
-<li>Vj，Vk：源操作数的数值<ul>
-<li>对于load指令，Vk保存地址偏移量</li>
-</ul>
-</li>
-<li>A：用来保存load指令和store指令存储地址的计算信息</li>
-<li>Busy：表示该保留站和相应功能单元是否被占用</li>
-</ul>
-<h3 id="寄存器状态"><a href="#寄存器状态" class="headerlink" title="寄存器状态"></a>寄存器状态</h3><ul>
-<li>Qj：将向该寄存器存储计算结果的保留站号</li>
-</ul>
-<h3 id="延迟时间"><a href="#延迟时间" class="headerlink" title="延迟时间"></a>延迟时间</h3><p>load：1</p>
-<p>add sub：2</p>
-<p>mul：6</p>
-<p>div：12</p>
-<h2 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h2><h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><ul>
-<li>分布式危害检测逻辑<ul>
-<li>由分布式RS和CDB实现</li>
-</ul>
-</li>
-<li>消除了WAR危害和WAW危害引起的停顿</li>
-</ul>
-<h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><ul>
-<li>硬件复杂</li>
-<li>高速关联存储由于CDB导致性能限制</li>
-<li>非精确中断</li>
-</ul>
-<h2 id="基于硬件的检测"><a href="#基于硬件的检测" class="headerlink" title="基于硬件的检测"></a>基于硬件的检测</h2><h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><ul>
-<li>对于一个时钟周期执行多条指令的处理器，为了维持最大性能，每个时钟周期都需要执行分支指令</li>
-<li>准确的分支预测结果不足以产生足够的指令级并行性</li>
-<li>克服控制相关的限制，开发更多的并行性</li>
-</ul>
-<h3 id="推测"><a href="#推测" class="headerlink" title="推测"></a>推测</h3><ul>
-<li>推测分支指令的执行结果，并按照推测结果来执行程序</li>
-<li>不允许指令执行任何不可撤销的更改，直到这条指令不在基于推测执行</li>
-</ul>
-<h3 id="两者之间的差异"><a href="#两者之间的差异" class="headerlink" title="两者之间的差异"></a>两者之间的差异</h3><ul>
-<li>推测执行：根据预测结果，读入、发出和执行指令</li>
-<li>动态调度：根据预测结果，读入和发出指令</li>
-</ul>
-<h3 id="三个关键思路"><a href="#三个关键思路" class="headerlink" title="三个关键思路"></a>三个关键思路</h3><ul>
-<li><p>动态分支预测选择执行哪条指令</p>
-</li>
-<li><p>允许在解决控制相关之前，根据推测结果来执行指令</p>
-<ul>
-<li>必须具备撤销错误推测结果造成影响的能力</li>
-</ul>
-</li>
-<li><p>动态调度方法解决各种不同基本块之间组合的调度问题</p>
-</li>
-</ul>
-<h3 id="推测执行必须是数据流执行"><a href="#推测执行必须是数据流执行" class="headerlink" title="推测执行必须是数据流执行"></a>推测执行必须是数据流执行</h3><p>操作数一旦有效，马上执行</p>
-<h3 id="指令提交"><a href="#指令提交" class="headerlink" title="指令提交"></a>指令提交</h3><p>当指令执行不再基于推测，则允许指令去修改寄存器文件或存储器</p>
-<h3 id="实现推测的关键思路"><a href="#实现推测的关键思路" class="headerlink" title="实现推测的关键思路"></a>实现推测的关键思路</h3><ul>
-<li>乱序执行，按序提交</li>
-<li>在指令提交之前，防止发生任何不可撤销的操作（修改状态或发生中断）</li>
-</ul>
-<h2 id="ROB：重排序缓存器"><a href="#ROB：重排序缓存器" class="headerlink" title="ROB：重排序缓存器"></a>ROB：重排序缓存器</h2><p>缓存指令处于完成和提交两种状态之间时的执行结果</p>
-<p>与保留站相似方式提供的附加寄存器，以扩展寄存器组</p>
-<h3 id="关键不同"><a href="#关键不同" class="headerlink" title="关键不同"></a>关键不同</h3><ul>
-<li>在Tomasulo算法中，一旦指令写结果，则后续发出的指令将从寄存器文件中读取操作数</li>
-<li>加入推测机制后，指令提交后才更新寄存器文件，而在指令完成执行与指令提交之前时段内由ROB提供操作数</li>
-</ul>
-<h3 id="四个字段"><a href="#四个字段" class="headerlink" title="四个字段"></a>四个字段</h3><ul>
-<li>指令类型：是否时branch&#x2F;load&#x2F;register</li>
-<li>目标：指令结果将写入的寄存器号或存储器地址</li>
-<li>数值：保存指令执行结果数值直到指令提交</li>
-<li>就绪：表示指令执行完成状态</li>
-</ul>
-<h2 id="指令执行的四个步骤（带ROB）"><a href="#指令执行的四个步骤（带ROB）" class="headerlink" title="指令执行的四个步骤（带ROB）"></a>指令执行的四个步骤（带ROB）</h2><ul>
-<li>发出<ul>
-<li>指令队列头部获取一条指令</li>
-<li>如果RS和ROB有空闲单元<ul>
-<li>有效操作数和分配的ROB号放入RS</li>
-<li>否则停止指令发出，结构危害</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>执行<ul>
-<li>如果操作数无效，监视CDB等待——检查RAW危害</li>
-<li>当RS中两个操作数都有效，则执行操作——可能需要多个周期<ul>
-<li>load指令需要两部，store指令只需要基寄存器计算有效地址</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>写结果<ul>
-<li>当结果有效，将结果和ROB号写入CDB，且从CDB传到ROB，同时传到需要该结果的所有RS</li>
-<li>对store指令，则将</li>
-</ul>
-</li>
-<li>提交<ul>
-<li>当一条指令到达ROB头部且数据字段有效时，则使用数值更新寄存器，从ROB中移除该指令</li>
-<li>当store指令到达ROB头部且数据字段有效时，则使用数值更新存储器内容，从ROB中移除该指令</li>
-<li>当分支指令到达ROB头部<ul>
-<li>如果预测结果错误，则放弃ROB中所有内容，从该分支指令的正确后继指令开始重新执行</li>
-<li>如果预测正确，则完成分支指令</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="推测与动态调度"><a href="#推测与动态调度" class="headerlink" title="推测与动态调度"></a>推测与动态调度</h2><p>动态调度机制：按序完成原则</p>
-<p>推测机制：乱序完成原则</p>
-<h2 id="多发出和静态调度"><a href="#多发出和静态调度" class="headerlink" title="多发出和静态调度"></a>多发出和静态调度</h2><p>为了使CPI&lt;1</p>
-<p>多发出三种类型</p>
-<ul>
-<li>静态调度的超标量——按序执行</li>
-<li>超长指令字 VLIW 处理器</li>
-<li>动态调度的超标量——乱序执行</li>
-<li>EPIC 显式并行指令计算 静态调度</li>
-</ul>
-<h3 id="超长指令字处理器"><a href="#超长指令字处理器" class="headerlink" title="超长指令字处理器"></a>超长指令字处理器</h3><ul>
-<li>将多个操作封装在一条指令中<ul>
-<li>并行性有编译程序静态调度解决</li>
-</ul>
-</li>
-<li>增加代码量</li>
-<li>同步操作约束</li>
-<li>二进制代码兼容性</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA8%E6%8C%87%E4%BB%A4%E7%BA%A7%E5%B9%B6%E8%A1%8C%E6%80%A7(2)/" data-id="cl5alduzf000cgour61gfggc6" data-title="CA8 指令级并行性(2)" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-2021Fall 计算机体系结构笔记/CA7指令级并行性(1)" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA7%E6%8C%87%E4%BB%A4%E7%BA%A7%E5%B9%B6%E8%A1%8C%E6%80%A7(1)/" class="article-date">
-  <time class="dt-published" datetime="2022-07-07T05:20:00.512Z" itemprop="datePublished">2022-07-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA7%E6%8C%87%E4%BB%A4%E7%BA%A7%E5%B9%B6%E8%A1%8C%E6%80%A7(1)/">CA7 指令级并行性(1)</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="CA7-指令级并行性-ILP"><a href="#CA7-指令级并行性-ILP" class="headerlink" title="CA7 指令级并行性 ILP"></a>CA7 指令级并行性 ILP</h1><h4 id="20211101"><a href="#20211101" class="headerlink" title="20211101"></a>20211101</h4><h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><ul>
-<li><p>指令之间的重叠执行</p>
-</li>
-<li><p>开发指令级并行性的两类主要方法</p>
-<ul>
-<li>依靠硬件来动态发现和利用并行性<ul>
-<li>用于服务器和台式机处理器</li>
-<li>在个人移动设备中的处理器</li>
-<li>在 IoT，成本和功耗的约束，利用较低层次的指令级并行性</li>
-</ul>
-</li>
-<li>依靠软件在编译时静态地发现并行性<ul>
-<li>上世纪 80 年代开始尝试，1989年用于Intel安腾系列</li>
-<li>特定领域或带有明显数据级并行性的科学应用</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>局限性</p>
-<ul>
-<li>直接导致了多喝处理器</li>
-<li>了解局限性 以平衡指令级并行性与线程级并行性</li>
-</ul>
-</li>
-<li><p>Pipeline CPI &#x3D; Ideal pipeline CPI + Structural stalls + Data hazard stalls + Control stalls</p>
-</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">方法</th>
-<th align="center">解决问题</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">向前和旁路</td>
-<td align="center">潜在的数据危害</td>
-</tr>
-<tr>
-<td align="center">简单的分支指令调度和预测</td>
-<td align="center">控制危害</td>
-</tr>
-<tr>
-<td align="center">基本编译流水调度</td>
-<td align="center">数据危害</td>
-</tr>
-<tr>
-<td align="center">基本动态调度</td>
-<td align="center">真实依赖中的数据危害</td>
-</tr>
-<tr>
-<td align="center">循环展开</td>
-<td align="center">控制危害</td>
-</tr>
-<tr>
-<td align="center">高级分支预测</td>
-<td align="center">控制危害</td>
-</tr>
-<tr>
-<td align="center">重命名动态调度</td>
-<td align="center">输出依赖、数据危害</td>
-</tr>
-<tr>
-<td align="center">硬件推测技术</td>
-<td align="center">数据危害和控制危害</td>
-</tr>
-<tr>
-<td align="center">动态存储器消除二义性</td>
-<td align="center">涉及存储器的数据危害</td>
-</tr>
-<tr>
-<td align="center">每个周期发出多条指令</td>
-<td align="center">理想 CPI</td>
-</tr>
-<tr>
-<td align="center">编译器相关分析、软件流水线、跟踪调度</td>
-<td align="center">理想 CPI、数据危害</td>
-</tr>
-<tr>
-<td align="center">硬件支持的编译器推测</td>
-<td align="center">理想 CPI、数据危害、分支危害</td>
-</tr>
-</tbody></table>
-<h2 id="指令级并行性"><a href="#指令级并行性" class="headerlink" title="指令级并行性"></a>指令级并行性</h2><ul>
-<li>挖掘指令级并行性的所有技术都利用指令之间的并行性</li>
-<li>基本块<ul>
-<li>一段直线代码序列</li>
-<li>除了入口没有分支传入且除了出口没有分支转出</li>
-</ul>
-</li>
-<li>并行性<ul>
-<li>基本块一般长度为3~6条指令，基本块内可利用的并行度很小</li>
-<li>提高性能必须跨分支指令（跨基本块）并行化</li>
-</ul>
-</li>
-</ul>
-<h2 id="相关与危害"><a href="#相关与危害" class="headerlink" title="相关与危害"></a>相关与危害</h2><ul>
-<li><p>程序的本性：指令间存在相关</p>
-</li>
-<li><p>流水线结构的性质：</p>
-<ul>
-<li>相关是否导致检测到实际危害：不一定</li>
-<li>危害是实际上引起的停顿<ul>
-<li>停顿（阻塞、拖延和暂停）将直接造成流水线性能下降。</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>确定一条指令如何依赖另一条指令是关键的，它决定着程序中</p>
-<ul>
-<li>存在多少并行性</li>
-<li>如何开发并行性</li>
-</ul>
-</li>
-<li><p>三种类型的相关</p>
-<ul>
-<li>数据相关：先写后读</li>
-<li>名称相关<ul>
-<li>反相关：先读后写</li>
-<li>输出相关：先写后写</li>
-</ul>
-</li>
-<li>控制相关</li>
-</ul>
-</li>
-<li><p>指令 i 和 j 数据相关的条件是</p>
-<ul>
-<li>指令 i 产生的结果被指令 j 使用 或者 指令 j 与指令 k 数据相关，而指令 k 与 i 数据相关（相关链）</li>
-</ul>
-</li>
-</ul>
-<h3 id="数据相关"><a href="#数据相关" class="headerlink" title="数据相关"></a>数据相关</h3><ul>
-<li>必须按序执行，不能同时执行或完全重叠执行</li>
-<li>数据相关表示<ul>
-<li>危害的可能性</li>
-<li>必须遵守的计算顺序</li>
-<li>可能利用指令级并行性的上限</li>
-</ul>
-</li>
-<li>解决方法<ul>
-<li>维持数据相关，避免数据危害<ul>
-<li>调度代码是在不改变数据相关的情况下避免数据危害，由编译器和硬件完成</li>
-</ul>
-</li>
-<li>通过转换代码来消除数据相关</li>
-</ul>
-</li>
-<li>难点：存在于内存中的数据相关难以检测</li>
-</ul>
-<h3 id="名称相关"><a href="#名称相关" class="headerlink" title="名称相关"></a>名称相关</h3><ul>
-<li><p>两条指令使用相同的寄存器或内存位置，但关联指令不存在数据流</p>
-</li>
-<li><p>假设 i 在 j 之前</p>
-<ul>
-<li>反相关：j 写入和 i 读取的寄存器或内存位置相同</li>
-<li>输出相关：指令 i 和指令 j 写入的寄存器或内存位置是相同的</li>
-</ul>
-</li>
-<li><p>不是真正的数据相关，但在调度指令时会发生问题</p>
-</li>
-<li><p>通过改变指令的名称，使得指令不再冲突</p>
-<ul>
-<li>寄存器重命名技术解决名称相关问题</li>
-<li>可以通过编译器静态完成，也可以通过硬件动态地实现</li>
-</ul>
-</li>
-</ul>
-<h3 id="寄存器重命名"><a href="#寄存器重命名" class="headerlink" title="寄存器重命名"></a>寄存器重命名</h3><ul>
-<li>通过重命名消除WAR和WAW的危害：需要更多的寄存器资源</li>
-<li>寄存器<ul>
-<li>逻辑寄存器：名称，编程模型中使用的寄存器</li>
-<li>物理寄存器：位置，硬件设备中存在的寄存器</li>
-</ul>
-</li>
-</ul>
-<h4 id="数据危害"><a href="#数据危害" class="headerlink" title="数据危害"></a>数据危害</h4><p>目标：影响程序执行结果的覅放维持程序顺序来开发并行性</p>
-<p>程序顺序：源程序所确定的指令逐条执行的顺序</p>
-<p>数据危害依赖于指令中读和写的顺序</p>
-<ul>
-<li>RAW：写后读，真正的数据相关</li>
-<li>WAW：顺序写，输出相关<ul>
-<li>若流水线中有多个流水段可写 或 允许指令乱序执行 可能会导致WAW危害</li>
-</ul>
-</li>
-<li>RAW<ul>
-<li>指令在流水线早期写结果，在晚期读结果，或指令被重排序</li>
-</ul>
-</li>
-</ul>
-<h3 id="控制相关"><a href="#控制相关" class="headerlink" title="控制相关"></a>控制相关</h3><ul>
-<li><p>控制相关：if 语句 then 部分终端指令对分支指令的相关</p>
-</li>
-<li><p>控制相关施加两条约束</p>
-<ol>
-<li>与分支指令存在的控制相关的指令不能移动到分支指令之前，以使得它的执行不再受分支指令的控制</li>
-<li>与分支指令不存在控制相关的指令不能移动到分支指令之后，以使得它的执行受分支指令的影响</li>
-</ol>
-</li>
-<li><p>因为违反控制相关不一定影响程序的正确性，故</p>
-<ul>
-<li>控制相关不是必须维持的</li>
-<li>中断行为和数据流是必须维持的</li>
-</ul>
-</li>
-<li><p>中断行为：改变指令执行顺序不能改变程序中引发中断的方式</p>
-<ul>
-<li>指令执行的重新排序不能在程序中引起任何新的中断</li>
-</ul>
-</li>
-<li><p>违反控制相关可能不会影响中断行为或数据流</p>
-</li>
-<li><p>通过完成对引起控制停顿的控制危害的检测来维持控制相关</p>
-<ul>
-<li>控制停顿可以通过硬件或软件技术消除或减少</li>
-</ul>
-</li>
-</ul>
-<h2 id="利用指令级并行性的基本编译技术"><a href="#利用指令级并行性的基本编译技术" class="headerlink" title="利用指令级并行性的基本编译技术"></a>利用指令级并行性的基本编译技术</h2><h3 id="基本流水线调度"><a href="#基本流水线调度" class="headerlink" title="基本流水线调度"></a>基本流水线调度</h3><ul>
-<li>为了防止流水线停顿，相关指令的执行必须与源指令相距一定的周期</li>
-<li>相距的周期数等于指令流水线中源指令的延迟周期数</li>
-</ul>
-<p>编译器的调度能力取决于程序中 ILP 和功能单元的延迟</p>
-<h3 id="循环并行性"><a href="#循环并行性" class="headerlink" title="循环并行性"></a>循环并行性</h3><p>循环迭代之间的并行性</p>
-<ul>
-<li>增加指令级并行性的最简单且最常用的方式</li>
-<li>静态或动态的循环展开</li>
-<li>使用 SIMD 矢量处理器或 GPU</li>
-</ul>
-<h3 id="循环展开"><a href="#循环展开" class="headerlink" title="循环展开"></a>循环展开</h3><p>增加有效指令的相对数量</p>
-<ul>
-<li>简单地多次复制循环体</li>
-<li>调整循环终止代码</li>
-</ul>
-<p>strip mining：一种拆分循环以利用缓存技术的编译技术</p>
-<h3 id="调度-循环展开"><a href="#调度-循环展开" class="headerlink" title="调度+循环展开"></a>调度+循环展开</h3><p>何时、如何更改指令顺序</p>
-<p>步骤</p>
-<ul>
-<li>确定是否可以展开，不是所有的循环都可以展开</li>
-<li>使用不同的寄存器来避免不必要的约束</li>
-<li>消除额外的测试和分支指令</li>
-<li>通过观察来自不同迭代的 load 和 store 是否独立，来确定展开循环中 load 和 store 是否可以互换</li>
-<li>调度代码，保留产生与原始代码相同结果所需的所有相关项</li>
-</ul>
-<p>关键需求</p>
-<ul>
-<li>理解一条指令是如何依赖于另一条指令的</li>
-<li>根据相关性，如何更改或重排指令</li>
-</ul>
-<p>限制</p>
-<ul>
-<li>展开所分摊的开销减少</li>
-<li>代码大小的限制</li>
-<li>寄存器的限制</li>
-</ul>
-<h2 id="高级分支预测技术降低分支代价"><a href="#高级分支预测技术降低分支代价" class="headerlink" title="高级分支预测技术降低分支代价"></a>高级分支预测技术降低分支代价</h2><h3 id="关联分支预测"><a href="#关联分支预测" class="headerlink" title="关联分支预测"></a>关联分支预测</h3><p>基本 2 bit 预测方法</p>
-<ul>
-<li>只使用单条分支指令的近期行为来预测它未来的行为</li>
-<li>对每条分支指令预测转移或不转移，如果连续两次错误，改变预测结果</li>
-</ul>
-<p>关联预测方法 两级预测方法</p>
-<ul>
-<li>同时考虑其它分支指令最近的行为</li>
-<li>(m, n)预测器：使用最近m条分支指令的行为来从$2^m$个分支预测中进行选择， 其中每个分支预测器都是一条分支指令的n位预测器<ul>
-<li>最近m条分支指令的全局历史记录在一个m位移位寄存器中，每一位记录看该分支指令是转移还是未转移</li>
-</ul>
-</li>
-</ul>
-<h3 id="锦标预测器"><a href="#锦标预测器" class="headerlink" title="锦标预测器"></a>锦标预测器</h3><ul>
-<li>合金预测器：结合局部分支历史和全局分支历史</li>
-<li>锦标预测器：自适应结合局部预测器和全局预测器</li>
-</ul>
-<p>问题：错误预测时需要改变全局预测器、局部预测器和预测器</p>
-<h3 id="标记混合预测器"><a href="#标记混合预测器" class="headerlink" title="标记混合预测器"></a>标记混合预测器</h3><p>最好的分支预测方法时组合多个预测器</p>
-<ul>
-<li><p>多个预测器：跟踪预测是否可能与当前分支相关</p>
-</li>
-<li><p>问题：意味着巨大的数据表</p>
-</li>
-</ul>
-<p>部分匹配预测法 PPM</p>
-<p>标记混合预测器</p>
-<ul>
-<li>一类基于 PPM 思路的分支预测器</li>
-<li>使用一组使用不同长度历史所以的全局预测器</li>
-</ul>
-<h3 id="预测器初始化问题"><a href="#预测器初始化问题" class="headerlink" title="预测器初始化问题"></a>预测器初始化问题</h3><ul>
-<li>随机初始化</li>
-<li>设置有效位</li>
-<li>根据分支方向设置初始预测</li>
-</ul>
-<h2 id="动态调度"><a href="#动态调度" class="headerlink" title="动态调度"></a>动态调度</h2><p>静态调度（最小化停顿）</p>
-<ul>
-<li>取指令——发指令</li>
-<li>如果存在数据相关，且旁路或向前不能解决</li>
-<li>危害检测硬件从使用结果指令开始停顿</li>
-</ul>
-<p>动态调度（避免停顿）</p>
-<p>在维持数据流和中断行为的同时，硬件重新排列指令执行顺序以减少停顿</p>
-<p>特点</p>
-<ul>
-<li>代码编译不考虑微体系结构</li>
-<li>能够处理编译时处理不了的相关性的一些情况</li>
-<li>允许处理器容忍延迟</li>
-<li>硬件复杂性提高</li>
-</ul>
-<p>动态调度意味着</p>
-<ul>
-<li>乱序执行</li>
-<li>乱序完成</li>
-</ul>
-<p>拆分 ID 流水段为两部分</p>
-<ul>
-<li>发出：译码、检测结构危害</li>
-<li>读操作数：等待数据危害的小时，读取操作数</li>
-</ul>
-<p>特点</p>
-<ul>
-<li>保持按序发出</li>
-<li>能够乱序执行，暗示乱序完成</li>
-</ul>
-<p>乱序执行：一旦指令的操作数有效则马上开始执行</p>
-<h3 id="乱序执行"><a href="#乱序执行" class="headerlink" title="乱序执行"></a>乱序执行</h3><ul>
-<li>乱序完成可能导致不精确中断</li>
-<li>不精确中断：当发生中断时处理器状态看起来不完全像指令以严格程序次序顺序执行的结果<ul>
-<li>流水线中已经完成的指令在程序次序上比引起中断的指令晚</li>
-<li>还未完成的指令在程序次序上比引起中断的指令早</li>
-</ul>
-</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA7%E6%8C%87%E4%BB%A4%E7%BA%A7%E5%B9%B6%E8%A1%8C%E6%80%A7(1)/" data-id="cl5alduz9000agour68dwfifn" data-title="CA7 指令级并行性(1)" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-  <nav id="page-nav">
-    
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-  </nav>
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/07/">July 2022</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA4%E5%AD%98%E5%82%A8%E5%B1%82%E6%AC%A120211011/">CA4 存储层次</a>
-          </li>
-        
-          <li>
-            <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA3%E6%8C%87%E4%BB%A4%E9%9B%86%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%8420210927/">CA3 指令集体系结构</a>
-          </li>
-        
-          <li>
-            <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA2%E9%87%8F%E5%8C%96%E8%AE%BE%E8%AE%A1%E4%B8%8E%E8%AF%84%E4%BC%B020210918/">CA2 量化设计与评估</a>
-          </li>
-        
-          <li>
-            <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA1%E6%A6%82%E8%BF%B020210906/">CA1 概述</a>
-          </li>
-        
-          <li>
-            <a href="/2022/07/07/2021Fall%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E7%AC%94%E8%AE%B0/CA12%E4%BB%93%E5%BA%93%E7%BA%A7%E8%AE%A1%E7%AE%97%E6%9C%BA/">CA12 仓库级计算机</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2022 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
-</body>
-</html>
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">1</div></a></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">TINSIR888's ZION</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">TINSIR888's ZION</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/post/9623a09e.html" title="CA4 存储层次"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CA4 存储层次"></a></div><div class="recent-post-info"><a class="article-title" href="/post/9623a09e.html" title="CA4 存储层次">CA4 存储层次</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-07-07T05:20:00.603Z" title="Created 2022-07-07 13:20:00">2022-07-07</time></span></div><div class="content">20210927存储层次设计存储层次重要性
+性能差距：处理器访存的请求时间和DRAM访问延时时间
+
+引言问题期望拥有无限容量的快速存储器，但是快速存储器的比特价格远远高于慢速存储器的比特价格
+解决方法：存储层次 memory hierarchy
+性能和价格之间的权衡
+整个寻址空间——慢速大容量存储器
+容量越小、速度越快、比特价格越贵的存储器越靠近处理器
+
+
+局部性：时间&#x2F;空间局部性
+保证每次访问的数据都高概率地存储在最快访问速度的物理存储器
+
+
+
+从处理器来看
+存储空间的容量：容量最大的物理存储器的存储容量
+存储空间的速度：速度最快的物理存储器的访问速度
+
+典型存储层次 
+存储层次的重要性
+对多核处理器来说，存储层次变得更加重要
+总峰值带宽随处理器核数目增加而增加
+intel core i7 处理器每核每周期发出两次访存请求
+DRAM 带宽远远小于期望值（&lt;10%）
+解决途径
+多端口，流水Cache
+每核两级Cache
+片上共享三级 Cache
+
+
+
+
+再高端微处理器芯片中，一般 Cache 容量&gt;10MB
+消耗大量的芯片面积核功率预算
+
+
+
+Cache
+当数据在 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/post/7371aa30.html" title="CA3 指令集体系结构"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CA3 指令集体系结构"></a></div><div class="recent-post-info"><a class="article-title" href="/post/7371aa30.html" title="CA3 指令集体系结构">CA3 指令集体系结构</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-07-07T05:20:00.601Z" title="Created 2022-07-07 13:20:00">2022-07-07</time></span></div><div class="content">20210927指令集体系结构机器指令包含：存储地址、寄存器地址、立即数
+
+操作码 opcode
+操作内容 add，mult
+操作数 int，fp
+
+
+操作数 operand
+位置（寄存器或储存器）
+操作数个数不定（1个或2个）
+
+
+
+指令运行
+PC 存放的当前执行的指令在内存中的地址（32bit or 64bit）
+PC 输出到指令存储器 IM（只读）
+IM 传到 IR
+IR 译码器 到 通用寄存器 GPRs 
+GPRs 包含 rs1-&gt;rd1 rs2-&gt;rd2 ws wd
+输出到  A B 两个寄存器，通过 MUX 选择输出到 ALU
+ALU 运算输出结果，可以写到 DM 中，也可以写入 寄存器 wd 中
+
+定义
+是软件和硬件之间的边界
+是程序员或编译器所见到的计算机
+在某种意义上，是由一组所使用的汇编语言及它们所完成的工作来定义的
+
+指令集体系结构里包含的基本内容寄存器、存储器寻址和寻址方式、指令操作数、有效操作、控制流指令、指令编码……
+设计目标较短的指令宽度
+
+最小化指令宽度，从而最小化程序长度
+
+较好的指令密度（完成一件事情需要的指令数要少）
+
+最小化指令数目， ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/post/38641a8b.html" title="CA2 量化设计与评估"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CA2 量化设计与评估"></a></div><div class="recent-post-info"><a class="article-title" href="/post/38641a8b.html" title="CA2 量化设计与评估">CA2 量化设计与评估</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-07-07T05:20:00.598Z" title="Created 2022-07-07 13:20:00">2022-07-07</time></span></div><div class="content">2021.9.18量化设计与评估性能度量
+如何评估计算机系统的性能？
+
+运行时间：运行程序有多快
+吞吐量：每天能运行多少程序？
+
+……
+
+对比两台计算机的性能
+
+计算机 x 比计算机 y 快 n 倍
+$\frac{ExcutionTime(y)}{ExcutionTime(x)}&#x3D;n$
+
+性能表示为运行时间的倒数，即运行时间越短，性能越高
+$n&#x3D;\frac{ExcutionTime(y)}{ExcutionTime(x)}&#x3D;\frac{Performance(x)}{Performance(y)}$
+
+
+
+挂钟时间
+
+观测到的程序运行时间，也成为响应时间或实耗时间
+影响因素
+系统负载
+I&#x2F;O延迟
+操作系统开销
+
+
+
+
+CPU时间
+
+运行特定程序花费的时间
+User time：程序本身花费的时间
+System time：操作系统花费的时间
+
+
+不包含等待 I&#x2F;O 和运行其它程序的时间，但包含操作系统运行时间
+
+
+方法：运行 一段代码 来比较两台计算机系统的性能
+
+
+代码内容
+代码内容应该反应对计算机系统的功能需求，与该计算机系统的用途密切 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/post/bff0fbb8.html" title="CA 12 仓库级计算机"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CA 12 仓库级计算机"></a></div><div class="recent-post-info"><a class="article-title" href="/post/bff0fbb8.html" title="CA 12 仓库级计算机">CA 12 仓库级计算机</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-07-07T05:20:00.562Z" title="Created 2022-07-07 13:20:00">2022-07-07</time></span></div><div class="content">CA 12 仓库级计算机20211213
+仓库级计算机WSC提供互联网服务
+不同于高性能计算“集群”
+
+集群有更高的计算性能
+集群强调线程级并行，仓库级强调请求级并行性
+
+不同于数据中心
+
+数据中心将不同的机器和软件整合到同一个地点
+数据中心强调虚拟机和硬件异构性以服务不同客户
+
+重要设计因素成本-性能累加大量的较小节约，积少成多
+能效峰值功率和功耗影响着配电系统和冷却系统的成本
+每焦耳做的功才是关键
+通过冗余实现可靠性网络IO交互负载和批处理负载
+交互负载和批处理负载并行量的充足与否并不重要运营成本、地理位置</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/post/b2643f4b.html" title="CA11 线程级并行"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CA11 线程级并行"></a></div><div class="recent-post-info"><a class="article-title" href="/post/b2643f4b.html" title="CA11 线程级并行">CA11 线程级并行</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-07-07T05:20:00.553Z" title="Created 2022-07-07 13:20:00">2022-07-07</time></span></div><div class="content">CA11 线程级并行性能Cache 性能
+
+单处理器 Cache 未命中流量
+失效操作和后续 Cache 未命中流量
+
+一致性未命中：由处理器间通信引起的未命中
+
+真实共享不命中：通过 Cache 一致性机制由数据通信引起的未命中
+处理器第一次对共享 Cache 块写操作引起的不命中
+另一个处理器对该 Cache 块中被修改数据字读操作未命中引起的
+
+
+虚假共享不命中：使用每个缓存块单个有效位的失效一致性算法引起的未命中
+
+目录协议为了保证缓存数据的一致性，监听协议在每次缓存中不命中时均要求所有缓存之间进行通信
+
+基本优势：成本低廉
+致命弱点：可扩展性差
+
+目录协议
+
+目录保存每个缓存数据块的状态
+目录内容
+哪个缓存拥有数据块副本
+数据块是否处于脏状态
+
+
+
+在共享L3缓存中实现
+
+每个数据块中保存比特矢量，矢量长度位处理器核数目
+每个比特矢量表示私有L2中是否包含L3数据块的副本
+无法扩展到L3之外
+
+分布式目录特点
+
+内存和目录共同分布存储，以便不同的一致性请求转到不同的目录
+在每个结点上添加目录以实现缓存一致性
+
+同步同步机制一般是由用户级软件程序构建的，而这些软件程序是以硬件提 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/post/fd42e8e7.html" title="CA10 数据级并行性"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CA10 数据级并行性"></a></div><div class="recent-post-info"><a class="article-title" href="/post/fd42e8e7.html" title="CA10 数据级并行性">CA10 数据级并行性</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-07-07T05:20:00.544Z" title="Created 2022-07-07 13:20:00">2022-07-07</time></span></div><div class="content">CA10 数据级并行性图形处理单元
+GPU和CPU没有共同的祖先
+GPU前身是图形加速器，做好图形处理是其存在的原因
+GPU在走向主流计算的同时，仍然不能放弃自己在图形处理上的责任
+
+
+GPU与矢量处理器和SIMD体系结构不同！
+
+要点
+
+异构计算模式需要协作良好的计算调度：CPU是主机，GPU是设备
+编程环境具备多种类型的并行性：多线程、MIMD、SIMD和指令级
+GPU专用的类C编程语言——CUDA
+将所有类型的并行性统一为CUDA线程
+编程模型为单指令多线程
+
+GPU 编程线程块 Thread Block 被限制在一起执行的线程
+网格 Grid 线程块的集合
+多线程SIMD处理器：执行全部线程块的硬件
+技术术语
+
+dimGrid 网格维度
+dimBlock 线程块维度
+blockIdx 线程块索引
+threadIdx 线程索引
+blockDim 线程块的大小
+
+GPU中的并行执行和线程管理由硬件处理，而不是由应用程序或者操作系统来完成。
+CUDA要求线程块能够以任何顺序独立执行，且不同线程块之间不能直接通信，而是通过全局存储器交换数据
+关注性能需要牢记CUDA的硬件结构
+对于CU ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/post/334b002f.html" title="CA9 数据级并行性(1)"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CA9 数据级并行性(1)"></a></div><div class="recent-post-info"><a class="article-title" href="/post/334b002f.html" title="CA9 数据级并行性(1)">CA9 数据级并行性(1)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-07-07T05:20:00.535Z" title="Created 2022-07-07 13:20:00">2022-07-07</time></span></div><div class="content">CA9 数据级并行性(1)引言SIMD 体系结构利用了数据并行性
+
+面向矩阵的科学计算
+面向多媒体的图像和声音处理
+机器学习算法
+
+SIMD比MIMD更节能
+
+与MIMD相比，SIMD单挑指令可以同时对许多数据进行操作
+个人移动设备使SIMD更具吸引力
+
+在SIMD架构中，程序员从代码顺序执行的角度来思考问题，获得代码并行执行的加速比。
+SIMD 并行性SIMD 的三种变形
+
+矢量体系结构
+SIMD 扩展指令集
+图形处理单元GPUs
+
+Intel x86
+
+预计每年每个芯片处理器增加两个处理核
+SIMD 宽度每四年翻一倍
+SIMD 的潜在加速比是 MIMD 的两倍
+
+矢量体系结构
+
+将许多数据操作扩展为流水执行
+对微处理器来说，代价昂贵
+需要更多的晶体管资源
+需要最够的DRAM带宽
+
+
+
+SIMD 扩展指令集
+
+1996年，MMX multimedia extensions
+SSE streaming SIMD extensions
+AVX advanced vector extensions
+
+图形处理单元
+
+与矢量体系结构共享特征，但具有自己的特性
+独特的生态环境：系统处理器与系统 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/post/8b36f49c.html" title="CA8 指令级并行性(2)"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CA8 指令级并行性(2)"></a></div><div class="recent-post-info"><a class="article-title" href="/post/8b36f49c.html" title="CA8 指令级并行性(2)">CA8 指令级并行性(2)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-07-07T05:20:00.525Z" title="Created 2022-07-07 13:20:00">2022-07-07</time></span></div><div class="content">CA8 指令级并行性(2)Tomasulo 算法
+提出
+
+动态确定某条指令何时可以执行
+重命名寄存器以避免不必要的危害
+
+
+基本思路
+
+保留站尽快取入和缓存有效的操作数
+待执行指令说明为其提供操作数的功能单元
+在重叠执行期间，对同一个寄存器连续写操作，只有最后一个写操作用来实际更新寄存器
+
+
+特点
+
+跟踪指令的操作数何时可用——最小化RAW危害
+寄存器重命名——最小化WAW和WAR危害
+
+
+亮点
+
+保留站 reservation station：缓存待发出指令的操作数或关联的功能单元——完成寄存器重命名的工作
+缓存等待发出指令的操作数，并与功能单元关联
+指令不再需要从寄存器中获取操作数
+
+
+公共数据总线 common data bus：“广播”功能单元的执行结果
+
+
+总线特点
+
+普通数据总线：数据+目——“去哪儿”总线
+公共数据总线：数据+源——“从哪来”总线
+
+
+
+Tomasulo算法处理器的基本结构
+四个步骤
+发出issue&#x2F;派遣dispatch
+从指令队列头部获得下已条指令（FIFO方式保证正确的数据流）
+如果保留站RS可用，则向其发出带有操作数数值的指令
+如果保留站R ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/post/d61b7cd7.html" title="CA7 指令级并行性(1)"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CA7 指令级并行性(1)"></a></div><div class="recent-post-info"><a class="article-title" href="/post/d61b7cd7.html" title="CA7 指令级并行性(1)">CA7 指令级并行性(1)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-07-07T05:20:00.512Z" title="Created 2022-07-07 13:20:00">2022-07-07</time></span></div><div class="content">CA7 指令级并行性 ILP20211101概念
+指令之间的重叠执行
+
+开发指令级并行性的两类主要方法
+
+依靠硬件来动态发现和利用并行性
+用于服务器和台式机处理器
+在个人移动设备中的处理器
+在 IoT，成本和功耗的约束，利用较低层次的指令级并行性
+
+
+依靠软件在编译时静态地发现并行性
+上世纪 80 年代开始尝试，1989年用于Intel安腾系列
+特定领域或带有明显数据级并行性的科学应用
+
+
+
+
+局限性
+
+直接导致了多喝处理器
+了解局限性 以平衡指令级并行性与线程级并行性
+
+
+Pipeline CPI &#x3D; Ideal pipeline CPI + Structural stalls + Data hazard stalls + Control stalls
+
+
+
+
+
+方法
+解决问题
+
+
+
+向前和旁路
+潜在的数据危害
+
+
+简单的分支指令调度和预测
+控制危害
+
+
+基本编译流水调度
+数据危害
+
+
+基本动态调度
+真实依赖中的数据危害
+
+
+循环展开
+控制危害
+
+
+高级分支预测
+控制危害
+
+
+重命名动态调度
+输出依赖、数据危害
+
+
+硬件推测技术
+数据危害和控制危害
+
+
+动态存储器消除二义性 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/post/15030b34.html" title="CA 6 流水线技术(2)"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CA 6 流水线技术(2)"></a></div><div class="recent-post-info"><a class="article-title" href="/post/15030b34.html" title="CA 6 流水线技术(2)">CA 6 流水线技术(2)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-07-07T05:20:00.478Z" title="Created 2022-07-07 13:20:00">2022-07-07</time></span></div><div class="content">CA 6 流水线技术（2）20211025流水线控制的实现
+指令发出：让一条指令从指令译码阶段移动到执行阶段的过程
+在ID段检测所有数据危害
+如果存在危害，则在发出指令之前停止（插入NOP）
+同样，确定是否需要向前通道
+
+
+也可以在使用操作数的时钟周期前检测危害或向前通道
+如EX和MEM的流水段
+
+
+
+异常
+异常：以意想不到的方式改变指令执行顺序
+问题：指令重叠执行使得难于确定哪条指令可以安全修改处理器状态
+术语：
+中断
+故障
+异常
+
+
+
+异常类型
+IO设备请求
+
+用户程序调用操作系统服务
+
+跟踪指令执行
+
+断点（程序员请求中断）
+
+整数算数溢出
+
+浮点数算术异常
+
+页面失效（没在主存中）
+
+未对齐内存访问
+
+违反内存保护
+
+使用未定义或未生效的指令
+
+硬件故障
+
+电源故障
+
+
+异常的特性
+异常的特性将决定硬件需要采取的动作
+同步或异步
+如果每次使用相同的数据和内存分配执行程序时，事件都发生在同一位置，则该事件时同步的
+除了硬件故障，异步是由处理器和内存之外的失败引起的，一般可以在当前指令完成后再处理。
+
+
+用户请求的或强制的
+如果用户任务直接请求，称为用户请求事件。有时可预测，总是可 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">tinsir888</div><div class="author-info__description">Willkommen bei tinsir888s Zion! :-)</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">1</div></a></div><a id="card-info-btn" href="https://tinsir888.github.io"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/post/9623a09e.html" title="CA4 存储层次"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CA4 存储层次"/></a><div class="content"><a class="title" href="/post/9623a09e.html" title="CA4 存储层次">CA4 存储层次</a><time datetime="2022-07-07T05:20:00.603Z" title="Created 2022-07-07 13:20:00">2022-07-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/7371aa30.html" title="CA3 指令集体系结构"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CA3 指令集体系结构"/></a><div class="content"><a class="title" href="/post/7371aa30.html" title="CA3 指令集体系结构">CA3 指令集体系结构</a><time datetime="2022-07-07T05:20:00.601Z" title="Created 2022-07-07 13:20:00">2022-07-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/38641a8b.html" title="CA2 量化设计与评估"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CA2 量化设计与评估"/></a><div class="content"><a class="title" href="/post/38641a8b.html" title="CA2 量化设计与评估">CA2 量化设计与评估</a><time datetime="2022-07-07T05:20:00.598Z" title="Created 2022-07-07 13:20:00">2022-07-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/bff0fbb8.html" title="CA 12 仓库级计算机"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CA 12 仓库级计算机"/></a><div class="content"><a class="title" href="/post/bff0fbb8.html" title="CA 12 仓库级计算机">CA 12 仓库级计算机</a><time datetime="2022-07-07T05:20:00.562Z" title="Created 2022-07-07 13:20:00">2022-07-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/b2643f4b.html" title="CA11 线程级并行"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CA11 线程级并行"/></a><div class="content"><a class="title" href="/post/b2643f4b.html" title="CA11 线程级并行">CA11 线程级并行</a><time datetime="2022-07-07T05:20:00.553Z" title="Created 2022-07-07 13:20:00">2022-07-07</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>Categories</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">计算机体系结构课程笔记</span><span class="card-category-list-count">1</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/" style="font-size: 1.1em; color: #999">计算机体系结构</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/07/"><span class="card-archive-list-date">July 2022</span><span class="card-archive-list-count">12</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/09/"><span class="card-archive-list-date">September 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/07/"><span class="card-archive-list-date">July 2021</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">14</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-07-09T08:59:20.427Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By tinsir888</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

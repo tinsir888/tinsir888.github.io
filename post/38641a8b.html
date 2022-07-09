@@ -1,0 +1,408 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>CA2 量化设计与评估 | TINSIR888's ZION</title><meta name="keywords" content="Learning"><meta name="author" content="tinsir888"><meta name="copyright" content="tinsir888"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="2021.9.18量化设计与评估性能度量 如何评估计算机系统的性能？  运行时间：运行程序有多快 吞吐量：每天能运行多少程序？  ……  对比两台计算机的性能  计算机 x 比计算机 y 快 n 倍 $\frac{ExcutionTime(y)}{ExcutionTime(x)}&#x3D;n$  性能表示为运行时间的倒数，即运行时间越短，性能越高 $n&#x3D;\frac{ExcutionTi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CA2 量化设计与评估">
+<meta property="og:url" content="https://tinsir888.github.io/post/38641a8b.html">
+<meta property="og:site_name" content="TINSIR888&#39;s ZION">
+<meta property="og:description" content="2021.9.18量化设计与评估性能度量 如何评估计算机系统的性能？  运行时间：运行程序有多快 吞吐量：每天能运行多少程序？  ……  对比两台计算机的性能  计算机 x 比计算机 y 快 n 倍 $\frac{ExcutionTime(y)}{ExcutionTime(x)}&#x3D;n$  性能表示为运行时间的倒数，即运行时间越短，性能越高 $n&#x3D;\frac{ExcutionTi">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+<meta property="article:published_time" content="2022-07-07T05:20:00.598Z">
+<meta property="article:modified_time" content="2022-07-09T08:36:17.042Z">
+<meta property="article:author" content="tinsir888">
+<meta property="article:tag" content="Learning">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://tinsir888.github.io/post/38641a8b"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'CA2 量化设计与评估',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-07-09 16:36:17'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">1</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">TINSIR888's ZION</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">CA2 量化设计与评估</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-07-07T05:20:00.598Z" title="Created 2022-07-07 13:20:00">2022-07-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-07-09T08:36:17.042Z" title="Updated 2022-07-09 16:36:17">2022-07-09</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="CA2 量化设计与评估"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="2021-9-18"><a href="#2021-9-18" class="headerlink" title="2021.9.18"></a>2021.9.18</h1><h1 id="量化设计与评估"><a href="#量化设计与评估" class="headerlink" title="量化设计与评估"></a>量化设计与评估</h1><h2 id="性能度量"><a href="#性能度量" class="headerlink" title="性能度量"></a>性能度量</h2><ul>
+<li><p>如何评估计算机系统的性能？</p>
+<ul>
+<li>运行时间：运行程序有多快</li>
+<li>吞吐量：每天能运行多少程序？</li>
+</ul>
+<p>……</p>
+</li>
+<li><p>对比两台计算机的性能</p>
+<ul>
+<li><p>计算机 x 比计算机 y 快 n 倍</p>
+<p>$\frac{ExcutionTime(y)}{ExcutionTime(x)}&#x3D;n$</p>
+</li>
+<li><p>性能表示为运行时间的倒数，即运行时间越短，性能越高</p>
+<p>$n&#x3D;\frac{ExcutionTime(y)}{ExcutionTime(x)}&#x3D;\frac{Performance(x)}{Performance(y)}$</p>
+</li>
+</ul>
+</li>
+<li><p>挂钟时间</p>
+<ul>
+<li>观测到的程序运行时间，也成为响应时间或实耗时间</li>
+<li>影响因素<ul>
+<li>系统负载</li>
+<li>I&#x2F;O延迟</li>
+<li>操作系统开销</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>CPU时间</p>
+<ul>
+<li>运行特定程序花费的时间<ul>
+<li>User time：程序本身花费的时间</li>
+<li>System time：操作系统花费的时间</li>
+</ul>
+</li>
+<li>不包含等待 I&#x2F;O 和运行其它程序的时间，但包含操作系统运行时间</li>
+</ul>
+</li>
+<li><p>方法：运行 <em>一段代码</em> 来比较两台计算机系统的性能</p>
+</li>
+</ul>
+<h2 id="代码内容"><a href="#代码内容" class="headerlink" title="代码内容"></a>代码内容</h2><ul>
+<li>代码内容应该反应对计算机系统的功能需求，与该计算机系统的用途密切相关</li>
+<li>问题<ul>
+<li>比较计算机系统性能时，需要运行什么程序</li>
+<li>如何使用基准程序来进行评价</li>
+</ul>
+</li>
+<li>基准程序 benchmark：生产商用来确定他们所生产计算机系统的相对性能</li>
+<li>挑战：购买者需要的是与他功能需求相关的基准程序</li>
+</ul>
+<h2 id="基准程序"><a href="#基准程序" class="headerlink" title="基准程序"></a>基准程序</h2><h3 id="测量性能的基准程序的最佳候选是实际使用的应用程序"><a href="#测量性能的基准程序的最佳候选是实际使用的应用程序" class="headerlink" title="测量性能的基准程序的最佳候选是实际使用的应用程序"></a>测量性能的基准程序的最佳候选是实际使用的应用程序</h3><ul>
+<li>购买后计算机系统运行的<em>就是</em>测试性能时运行的</li>
+<li>运行比实际使用的应用程序简单得多的测试程序会导致<em>性能陷阱</em></li>
+</ul>
+<h3 id="早期基准程序的类型"><a href="#早期基准程序的类型" class="headerlink" title="早期基准程序的类型"></a>早期基准程序的类型</h3><ul>
+<li>核心 kernel：实际应用程序的关键小片段，如矩阵乘法</li>
+<li>简单程序 toy programs：节选自初级程序设计作业，如快速排序</li>
+<li>综合基准 synthetic benchmarks：为了匹配实际应用程序的配置和行为而开发的“假程序”，如 Dhrystone</li>
+</ul>
+<h2 id="存在的问题"><a href="#存在的问题" class="headerlink" title="存在的问题"></a>存在的问题</h2><h3 id="基准测试游戏"><a href="#基准测试游戏" class="headerlink" title="基准测试游戏"></a>基准测试游戏</h3><p>编译程序的生产者与计算机架构师合谋，使得计算机系统在这些”替身”程序上的表现优于在实际应用程序上的表现</p>
+<h3 id="运行条件上造假"><a href="#运行条件上造假" class="headerlink" title="运行条件上造假"></a>运行条件上造假</h3><ul>
+<li>特定基准程序的编译器标志<ul>
+<li>程序的非法改善</li>
+<li>在其它计算机上性能夏季那个</li>
+</ul>
+</li>
+<li>是否允许修改源代码<ul>
+<li>不允许修改</li>
+<li>允许修改，但基本上不可能修改</li>
+<li>允许修改，但输出结果不变</li>
+</ul>
+</li>
+</ul>
+<h2 id="基准程序包"><a href="#基准程序包" class="headerlink" title="基准程序包"></a>基准程序包</h2><p>针对各种应用的常用处理器性能测试程序</p>
+<ul>
+<li>优势：任何一个基准程序的弱点都由其它基准程序来密闭</li>
+</ul>
+<h3 id="台式机的基准程序"><a href="#台式机的基准程序" class="headerlink" title="台式机的基准程序"></a>台式机的基准程序</h3><ul>
+<li>处理器密集型：SPEC CPU 2017</li>
+<li>图形密集型</li>
+</ul>
+<h3 id="服务器基准程序"><a href="#服务器基准程序" class="headerlink" title="服务器基准程序"></a>服务器基准程序</h3><ul>
+<li>处理器吞吐量：SPEC rate</li>
+<li>文件服务器和Java服务器：SPECSFS</li>
+<li>面向事务处理：TPC基准程序</li>
+</ul>
+<h3 id="嵌入式基准程序"><a href="#嵌入式基准程序" class="headerlink" title="嵌入式基准程序"></a>嵌入式基准程序</h3><ul>
+<li>EEMBC: <strong>E</strong>lectronic Design News <strong>E</strong>mbedded <strong>M</strong>icroprocessor <strong>B</strong>enchmark <strong>C</strong>onsortium</li>
+</ul>
+<h2 id="性能结果"><a href="#性能结果" class="headerlink" title="性能结果"></a>性能结果</h2><p>测试报告的关键：重复性、再现性</p>
+<h3 id="汇总测量数据"><a href="#汇总测量数据" class="headerlink" title="汇总测量数据"></a>汇总测量数据</h3><ul>
+<li>算术均值<ul>
+<li>各个程序的运行时间的算术均值或加权算术均值</li>
+<li>权值的意义？看重哪一部分，就将哪一部分权重加大</li>
+</ul>
+</li>
+</ul>
+<h3 id="归一化运行时间：SPECRatio"><a href="#归一化运行时间：SPECRatio" class="headerlink" title="归一化运行时间：SPECRatio"></a>归一化运行时间：SPECRatio</h3><p>$SPECRatio_A&#x3D;\frac{ExcutionTime_{ref}}{ExcutionTime_A}$</p>
+<p>$\frac{Performance_A}{Performance_B}&#x3D;\frac{\frac{ExcutionTime_{ref}}{ExcutionTime_A}}{\frac{ExcutionTime_{ref}}{ExcutionTime_B}}&#x3D;\frac{SPECRatio_A}{SPECRatio_B}$</p>
+<h3 id="几何均值"><a href="#几何均值" class="headerlink" title="几何均值"></a>几何均值</h3><p>计算几何均值</p>
+<p>$GeometricMean&#x3D;\sqrt[n]{\prod_{i&#x3D;1}^n sample_i}&#x3D;\sqrt[n]{\prod_{i&#x3D;1}^n SPECRatio_i}$</p>
+<p>几何均值的性质</p>
+<ul>
+<li>比值的几何均值&#x3D;几何均值的比值</li>
+<li>几何均值的比值&#x3D;性能比值的几何均值</li>
+</ul>
+<p>几何均值的缺点</p>
+<ul>
+<li>对于工作负载，归一化运行时间的几何均值导致明显的不真实结论</li>
+<li>几何均值“奖励”简单的改进</li>
+</ul>
+<h2 id="理想的性能测试步骤"><a href="#理想的性能测试步骤" class="headerlink" title="理想的性能测试步骤"></a>理想的性能测试步骤</h2><ol>
+<li>测量实际工作负载</li>
+<li>建立实际应用程序与基准程序的相似度</li>
+<li>按照相速度确定每个基准程序结果的权值</li>
+<li>计算加权算术均值</li>
+</ol>
+<p><strong>关键：了解对计算机系统的真实需求</strong></p>
+<h2 id="躲避陷阱"><a href="#躲避陷阱" class="headerlink" title="躲避陷阱"></a>躲避陷阱</h2><ul>
+<li>从错误的、未知的应用领域选择基准程序</li>
+<li>使用简单的基准程序</li>
+<li>与所关心的特性不匹配的基准程序，如关系大容量Cache而选择SPEC基准程序</li>
+<li>草率地确定基准程序规模</li>
+<li>草率地抽取或构造基准程序</li>
+<li>简单案例太多或太少</li>
+</ul>
+<h2 id="错误观点"><a href="#错误观点" class="headerlink" title="错误观点"></a>错误观点</h2><ul>
+<li>使用时钟时钟频率或单个基准程序包的性能来判断具有相同指令集体系结构的两种处理器之间的相对性能——性能的比值与频率不是线性的</li>
+<li>计算机系统的最佳设计是对主要目标优化而不考虑具体时间——上市时间、错误设计概率</li>
+<li>评估系统性能或性价比时，忽略软件版本——软件费用可能占总成本的“大头”</li>
+</ul>
+<h2 id="计算机设计的量化原理"><a href="#计算机设计的量化原理" class="headerlink" title="计算机设计的量化原理"></a>计算机设计的量化原理</h2><h3 id="利用并行性——提高吞吐性能"><a href="#利用并行性——提高吞吐性能" class="headerlink" title="利用并行性——提高吞吐性能"></a>利用并行性——提高吞吐性能</h3><ul>
+<li><p>系统级并行性——提高吞吐量性能</p>
+<ul>
+<li>扩展性：扩展内存和处理器数目</li>
+<li>数据级并行性：使用多存储系统来并行化数据读&#x2F;写操作</li>
+</ul>
+</li>
+<li><p>指令级并行性——提高性能的关键</p>
+<p>指令流水操作：指令重叠执行</p>
+</li>
+<li><p>数据级并行性——数字化设计细节</p>
+<ul>
+<li>组关联Cache使用多个存储体</li>
+<li>算术逻辑使用先行进位</li>
+</ul>
+</li>
+</ul>
+<h3 id="局部性原理"><a href="#局部性原理" class="headerlink" title="局部性原理"></a>局部性原理</h3><ul>
+<li><p>程序倾向于重复使用它们最近使用过的数据和指令</p>
+</li>
+<li><p>局部性类型</p>
+<ul>
+<li>时间局部性，如分支指令预测</li>
+<li>空间局部性，如Cache块结构</li>
+</ul>
+</li>
+<li><p>计算机系统设计的最重要和最普遍原则是：make the common case fast</p>
+</li>
+<li><p>聚焦常见情形（Common Case）</p>
+<ul>
+<li><p>聚焦能源、资源配置和性能方面的常见情形</p>
+<p>处理器的取指和译码单元</p>
+</li>
+<li><p>常见情形相比不常见的情形更简单，可以更快完成</p>
+</li>
+</ul>
+</li>
+<li><p>关键</p>
+<ul>
+<li>what：确定常见情形是什么</li>
+<li>how much：优化常见情形可以对性能有多少提升</li>
+</ul>
+</li>
+</ul>
+<h2 id="Amdahl定律"><a href="#Amdahl定律" class="headerlink" title="Amdahl定律"></a>Amdahl定律</h2><h3 id="加速比"><a href="#加速比" class="headerlink" title="加速比"></a>加速比</h3><p>$SpeedUp&#x3D;\frac{perf_{Enhancement}}{perf_{w&#x2F;oEnhancement}}&#x3D;\frac{ExecTime_{w&#x2F;oEnhancement}}{ExecTime_{Enhancement}}$</p>
+<h3 id="定律内容"><a href="#定律内容" class="headerlink" title="定律内容"></a>定律内容</h3><ul>
+<li>决定因素<ul>
+<li>$fraction_{enhanced}$系统优化前，运行时间中将被优化那部分所占的比例</li>
+<li>$speedup_{enhanced}$系统优化后，被优化部分的加速比</li>
+</ul>
+</li>
+<li>优化后的运行时间<ul>
+<li>$ExecTime_{enhanced}&#x3D;ExecTime×((1-fraction_{enhanced})+\frac{fraction_{enchanced}}{speedup_{enhanced}})$</li>
+</ul>
+</li>
+</ul>
+<h3 id="整体加速比"><a href="#整体加速比" class="headerlink" title="整体加速比"></a>整体加速比</h3><p>​			$speedup_{overall}&#x3D;\frac{1}{((1-fraction_{enhanced})+\frac{fraction_{enchanced}}{speedup_{enhanced}}}$</p>
+<h3 id="收益递减规则"><a href="#收益递减规则" class="headerlink" title="收益递减规则"></a>收益递减规则</h3><ul>
+<li><p>加速比上限</p>
+<p>​	$speedup_{enhanced}≤\frac{1}{((1-fraction_{enhanced})}$</p>
+</li>
+</ul>
+<h3 id="定律的应用"><a href="#定律的应用" class="headerlink" title="定律的应用"></a>定律的应用</h3><p>主要用途：比较两个设计方案的优劣</p>
+<p>计算公式：$speedup&#x3D;\frac{1}{(1-f)+\frac{f}{s}}$</p>
+<ul>
+<li>当$f\rightarrow0,speedup&#x3D;1$</li>
+<li>当$f\rightarrow1,speedup&#x3D;\inf$</li>
+<li>当$s\rightarrow0$</li>
+<li>当$s\rightarrow1$</li>
+</ul>
+<h2 id="CPU-性能方程"><a href="#CPU-性能方程" class="headerlink" title="CPU 性能方程"></a>CPU 性能方程</h2><p>所有计算机系统组成中都包含一个固定频率的时钟</p>
+<p>程序运行所需的CPU时间为</p>
+<p>$CPUTime&#x3D;\frac{CPUClockCyclesForAProgram}{ClockRate}&#x3D;\frac{IC×CPI}{ClockRate}$</p>
+<ul>
+<li><p>指令计数 instruction count， IC 程序运行的指令数目</p>
+</li>
+<li><p>指令周期数（Cycles Per Instruction， CPI），时钟指令数IPC是CPI的倒数</p>
+<p>$CPI&#x3D;\frac{CPUClockCyclesForAProgram}{InstructionCount}$</p>
+</li>
+<li><p>时钟频率（硬件和组成） CPI（组成和指令集） IC（指令集和编译技术） 均与体系结构特性有关，彼此不是独立的。增强某个部分，会对另外两部分有影响</p>
+</li>
+<li><p>如果</p>
+<ul>
+<li>程序有n种不同指令，$IC_i$表示第i种指令的数目</li>
+<li>$CPI_i$是第i种指令的平均时钟周期数</li>
+</ul>
+</li>
+</ul>
+<p><img src="D:\dyt\Studie\5Junior\C_Rechnerarchitektur\Notes\2.PNG"></p>
+<p>。。。。。。梦回组成原理</p>
+<h2 id="确定参数"><a href="#确定参数" class="headerlink" title="确定参数"></a>确定参数</h2><ul>
+<li><p>所有方程都包含CPU time，clock rate，IC和CPI</p>
+</li>
+<li><p>指令计数IC</p>
+<ul>
+<li>只查看源代码很难确定，因为程序运行路径不可测</li>
+<li>可通过运行配置文件，记录完成的指令流<ul>
+<li>处理器的硬件计数器</li>
+<li>检测运行来增减软件计数器</li>
+<li>解释器仿真运行</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>指令平均周期数CPI</p>
+<ul>
+<li>对于简单系统，可通过查询每种指令实现方式和每种指令的周期数来确定CPI</li>
+<li>实际系统复杂得多，处理器在某种情形下会减少指令的周期数，而存储系统也会引入许多延迟周期</li>
+</ul>
+</li>
+</ul>
+<h2 id="谬误：应该避免的错误理念和误解"><a href="#谬误：应该避免的错误理念和误解" class="headerlink" title="谬误：应该避免的错误理念和误解"></a>谬误：应该避免的错误理念和误解</h2><ul>
+<li>多处理器是一颗银弹<ul>
+<li>银弹：某种策略技术或技巧可以极大提高程序员的生产力</li>
+<li>近年来多处理器每代只增加2核，性能改进</li>
+</ul>
+</li>
+<li>提升性能的硬件……</li>
+<li>靳准程序无限期有效</li>
+</ul>
+<h2 id="陷阱：容易犯的错误"><a href="#陷阱：容易犯的错误" class="headerlink" title="陷阱：容易犯的错误"></a>陷阱：容易犯的错误</h2><ul>
+<li>所有指数定律都必须结束</li>
+<li>成为阿姆达尔定律的牺牲品</li>
+<li>单点失效</li>
+<li>故障检测降低了可用性</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="https://tinsir888.github.io">tinsir888</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://tinsir888.github.io/post/38641a8b.html">https://tinsir888.github.io/post/38641a8b.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/post/7371aa30.html"><img class="prev-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">CA3 指令集体系结构</div></div></a></div><div class="next-post pull-right"><a href="/post/bff0fbb8.html"><img class="next-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">CA 12 仓库级计算机</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">tinsir888</div><div class="author-info__description">Willkommen bei tinsir888s Zion! :-)</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">1</div></a></div><a id="card-info-btn" href="https://tinsir888.github.io"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#2021-9-18"><span class="toc-number">1.</span> <span class="toc-text">2021.9.18</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%87%8F%E5%8C%96%E8%AE%BE%E8%AE%A1%E4%B8%8E%E8%AF%84%E4%BC%B0"><span class="toc-number">2.</span> <span class="toc-text">量化设计与评估</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%A7%E8%83%BD%E5%BA%A6%E9%87%8F"><span class="toc-number">2.1.</span> <span class="toc-text">性能度量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%86%85%E5%AE%B9"><span class="toc-number">2.2.</span> <span class="toc-text">代码内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E5%87%86%E7%A8%8B%E5%BA%8F"><span class="toc-number">2.3.</span> <span class="toc-text">基准程序</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%8B%E9%87%8F%E6%80%A7%E8%83%BD%E7%9A%84%E5%9F%BA%E5%87%86%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%9C%80%E4%BD%B3%E5%80%99%E9%80%89%E6%98%AF%E5%AE%9E%E9%99%85%E4%BD%BF%E7%94%A8%E7%9A%84%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F"><span class="toc-number">2.3.1.</span> <span class="toc-text">测量性能的基准程序的最佳候选是实际使用的应用程序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A9%E6%9C%9F%E5%9F%BA%E5%87%86%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.3.2.</span> <span class="toc-text">早期基准程序的类型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%98%E5%9C%A8%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-number">2.4.</span> <span class="toc-text">存在的问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E5%87%86%E6%B5%8B%E8%AF%95%E6%B8%B8%E6%88%8F"><span class="toc-number">2.4.1.</span> <span class="toc-text">基准测试游戏</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E6%9D%A1%E4%BB%B6%E4%B8%8A%E9%80%A0%E5%81%87"><span class="toc-number">2.4.2.</span> <span class="toc-text">运行条件上造假</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E5%87%86%E7%A8%8B%E5%BA%8F%E5%8C%85"><span class="toc-number">2.5.</span> <span class="toc-text">基准程序包</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%B0%E5%BC%8F%E6%9C%BA%E7%9A%84%E5%9F%BA%E5%87%86%E7%A8%8B%E5%BA%8F"><span class="toc-number">2.5.1.</span> <span class="toc-text">台式机的基准程序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%9F%BA%E5%87%86%E7%A8%8B%E5%BA%8F"><span class="toc-number">2.5.2.</span> <span class="toc-text">服务器基准程序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%9F%BA%E5%87%86%E7%A8%8B%E5%BA%8F"><span class="toc-number">2.5.3.</span> <span class="toc-text">嵌入式基准程序</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%A7%E8%83%BD%E7%BB%93%E6%9E%9C"><span class="toc-number">2.6.</span> <span class="toc-text">性能结果</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B1%87%E6%80%BB%E6%B5%8B%E9%87%8F%E6%95%B0%E6%8D%AE"><span class="toc-number">2.6.1.</span> <span class="toc-text">汇总测量数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BD%92%E4%B8%80%E5%8C%96%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4%EF%BC%9ASPECRatio"><span class="toc-number">2.6.2.</span> <span class="toc-text">归一化运行时间：SPECRatio</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%A0%E4%BD%95%E5%9D%87%E5%80%BC"><span class="toc-number">2.6.3.</span> <span class="toc-text">几何均值</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%90%86%E6%83%B3%E7%9A%84%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E6%AD%A5%E9%AA%A4"><span class="toc-number">2.7.</span> <span class="toc-text">理想的性能测试步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BA%B2%E9%81%BF%E9%99%B7%E9%98%B1"><span class="toc-number">2.8.</span> <span class="toc-text">躲避陷阱</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%94%99%E8%AF%AF%E8%A7%82%E7%82%B9"><span class="toc-number">2.9.</span> <span class="toc-text">错误观点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AE%BE%E8%AE%A1%E7%9A%84%E9%87%8F%E5%8C%96%E5%8E%9F%E7%90%86"><span class="toc-number">2.10.</span> <span class="toc-text">计算机设计的量化原理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A9%E7%94%A8%E5%B9%B6%E8%A1%8C%E6%80%A7%E2%80%94%E2%80%94%E6%8F%90%E9%AB%98%E5%90%9E%E5%90%90%E6%80%A7%E8%83%BD"><span class="toc-number">2.10.1.</span> <span class="toc-text">利用并行性——提高吞吐性能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B1%80%E9%83%A8%E6%80%A7%E5%8E%9F%E7%90%86"><span class="toc-number">2.10.2.</span> <span class="toc-text">局部性原理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Amdahl%E5%AE%9A%E5%BE%8B"><span class="toc-number">2.11.</span> <span class="toc-text">Amdahl定律</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A0%E9%80%9F%E6%AF%94"><span class="toc-number">2.11.1.</span> <span class="toc-text">加速比</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9A%E5%BE%8B%E5%86%85%E5%AE%B9"><span class="toc-number">2.11.2.</span> <span class="toc-text">定律内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B4%E4%BD%93%E5%8A%A0%E9%80%9F%E6%AF%94"><span class="toc-number">2.11.3.</span> <span class="toc-text">整体加速比</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%94%B6%E7%9B%8A%E9%80%92%E5%87%8F%E8%A7%84%E5%88%99"><span class="toc-number">2.11.4.</span> <span class="toc-text">收益递减规则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9A%E5%BE%8B%E7%9A%84%E5%BA%94%E7%94%A8"><span class="toc-number">2.11.5.</span> <span class="toc-text">定律的应用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CPU-%E6%80%A7%E8%83%BD%E6%96%B9%E7%A8%8B"><span class="toc-number">2.12.</span> <span class="toc-text">CPU 性能方程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A1%AE%E5%AE%9A%E5%8F%82%E6%95%B0"><span class="toc-number">2.13.</span> <span class="toc-text">确定参数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B0%AC%E8%AF%AF%EF%BC%9A%E5%BA%94%E8%AF%A5%E9%81%BF%E5%85%8D%E7%9A%84%E9%94%99%E8%AF%AF%E7%90%86%E5%BF%B5%E5%92%8C%E8%AF%AF%E8%A7%A3"><span class="toc-number">2.14.</span> <span class="toc-text">谬误：应该避免的错误理念和误解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%99%B7%E9%98%B1%EF%BC%9A%E5%AE%B9%E6%98%93%E7%8A%AF%E7%9A%84%E9%94%99%E8%AF%AF"><span class="toc-number">2.15.</span> <span class="toc-text">陷阱：容易犯的错误</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/post/9623a09e.html" title="CA4 存储层次"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CA4 存储层次"/></a><div class="content"><a class="title" href="/post/9623a09e.html" title="CA4 存储层次">CA4 存储层次</a><time datetime="2022-07-07T05:20:00.603Z" title="Created 2022-07-07 13:20:00">2022-07-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/7371aa30.html" title="CA3 指令集体系结构"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CA3 指令集体系结构"/></a><div class="content"><a class="title" href="/post/7371aa30.html" title="CA3 指令集体系结构">CA3 指令集体系结构</a><time datetime="2022-07-07T05:20:00.601Z" title="Created 2022-07-07 13:20:00">2022-07-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/38641a8b.html" title="CA2 量化设计与评估"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CA2 量化设计与评估"/></a><div class="content"><a class="title" href="/post/38641a8b.html" title="CA2 量化设计与评估">CA2 量化设计与评估</a><time datetime="2022-07-07T05:20:00.598Z" title="Created 2022-07-07 13:20:00">2022-07-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/bff0fbb8.html" title="CA 12 仓库级计算机"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CA 12 仓库级计算机"/></a><div class="content"><a class="title" href="/post/bff0fbb8.html" title="CA 12 仓库级计算机">CA 12 仓库级计算机</a><time datetime="2022-07-07T05:20:00.562Z" title="Created 2022-07-07 13:20:00">2022-07-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/b2643f4b.html" title="CA11 线程级并行"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CA11 线程级并行"/></a><div class="content"><a class="title" href="/post/b2643f4b.html" title="CA11 线程级并行">CA11 线程级并行</a><time datetime="2022-07-07T05:20:00.553Z" title="Created 2022-07-07 13:20:00">2022-07-07</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By tinsir888</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
