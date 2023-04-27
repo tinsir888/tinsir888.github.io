@@ -51,7 +51,7 @@
   isHome: true,
   isHighlightShrink: true,
   isToc: false,
-  postUpdate: '2023-04-27 17:02:48'
+  postUpdate: '2023-04-27 22:53:33'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -213,7 +213,66 @@ TCP/IP 协议的设计与运用，实现异构网络互联
 TCP/IP 协议基于开放的网络体系结构，开放性、兼容 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/8756275d.html" title="德语学习 A1 Kapitel 1 bis 3"><img class="post_bg" src="/img/deutsch-a1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="德语学习 A1 Kapitel 1 bis 3"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/8756275d.html" title="德语学习 A1 Kapitel 1 bis 3">德语学习 A1 Kapitel 1 bis 3</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-09-14T16:00:00.000Z" title="Created 2021-09-15 00:00:00">2021-09-15</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BE%B7%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">德语学习笔记</a></span></div><div class="content"> Kapitel 1 bis 3
 Die Kapitel 1 bis 3 waren so einfach, dass man sich keine Notizen machen muss.😁
 前面三章太简单了，就没做笔记。😁
-</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/posts/2dc76deb.html" title="汇编语言与逆向技术基础 一、汇编语言基本概念"><img class="post_bg" src="/img/assembler.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="汇编语言与逆向技术基础 一、汇编语言基本概念"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/2dc76deb.html" title="汇编语言与逆向技术基础 一、汇编语言基本概念">汇编语言与逆向技术基础 一、汇编语言基本概念</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-09-13T16:00:00.000Z" title="Created 2021-09-14 00:00:00">2021-09-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E4%B8%8E%E9%80%86%E5%90%91%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/">汇编语言与逆向技术基础课程笔记</a></span></div><div class="content"> 汇编语言与逆向技术基础 一、汇编语言基本概念
+</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/posts/fdfb587b.html" title="网络技术与应用 第二章 以太网"><img class="post_bg" src="/img/nettech.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="网络技术与应用 第二章 以太网"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/fdfb587b.html" title="网络技术与应用 第二章 以太网">网络技术与应用 第二章 以太网</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-09-13T16:00:00.000Z" title="Created 2021-09-14 00:00:00">2021-09-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF%E4%B8%8E%E5%BA%94%E7%94%A8%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/">网络技术与应用课程笔记</a></span></div><div class="content"> 共享式以太网
+ 以太网
+
+目前最具影响力的局域网，几乎占有有线局域网的所有市场
+
+ 共享式以太网
+
+
+拓扑构型：总线型和星型
+
+
+结点通过相应的网络接口适配器直接连接到作为公共传输介质的总线上，信息的传输采用共享介质的方式
+
+
+数据传输单位：帧
+
+
+ 以太网帧结构
+
+前导码 7B 和帧前定界符 1B
+目的地址 6B 和源地址 6B 16进制表示
+
+硬件地址-MAC地址-物理地址-以太网地址
+48位组成
+单播地址（第一位为0）、多播地址（第一位为1）和广播地址（48位全为1）
+
+
+长度/类型
+
+长度（小于0800H时表示）
+类型（大于等于0800H时表示）
+
+
+数据
+
+最长1500B，最短46B
+不足46B的需要填充
+可变长度
+
+
+帧校验码
+
+验证帧的正确性
+32位 CRC 校验
+
+
+
+ 共享式以太网的介质访问控制方法
+ 共享式以太网
+
+数据传输方式：半双工
+需要结局：共享介质网络中多结点同时发送产生的冲突问题——介质访问控制方法
+Ethernet 的介质访问控制方法：带有冲突检测的载波侦听多路访问（CSMA/CD）
+
+ CSMA/CD 发送流程
+
+先听后发
+边听边发
+冲突停止
+延迟重 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/2dc76deb.html" title="汇编语言与逆向技术基础 一、汇编语言基本概念"><img class="post_bg" src="/img/assembler.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="汇编语言与逆向技术基础 一、汇编语言基本概念"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/2dc76deb.html" title="汇编语言与逆向技术基础 一、汇编语言基本概念">汇编语言与逆向技术基础 一、汇编语言基本概念</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-09-13T16:00:00.000Z" title="Created 2021-09-14 00:00:00">2021-09-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E4%B8%8E%E9%80%86%E5%90%91%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/">汇编语言与逆向技术基础课程笔记</a></span></div><div class="content"> 汇编语言与逆向技术基础 一、汇编语言基本概念
  知识点
 
 计算机编程语言
@@ -278,66 +337,7 @@ C++可以嵌入汇编语言
 
  虚拟机
  概念
-抽象出计算机软硬件 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/fdfb587b.html" title="网络技术与应用 第二章 以太网"><img class="post_bg" src="/img/nettech.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="网络技术与应用 第二章 以太网"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/fdfb587b.html" title="网络技术与应用 第二章 以太网">网络技术与应用 第二章 以太网</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-09-13T16:00:00.000Z" title="Created 2021-09-14 00:00:00">2021-09-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF%E4%B8%8E%E5%BA%94%E7%94%A8%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/">网络技术与应用课程笔记</a></span></div><div class="content"> 共享式以太网
- 以太网
-
-目前最具影响力的局域网，几乎占有有线局域网的所有市场
-
- 共享式以太网
-
-
-拓扑构型：总线型和星型
-
-
-结点通过相应的网络接口适配器直接连接到作为公共传输介质的总线上，信息的传输采用共享介质的方式
-
-
-数据传输单位：帧
-
-
- 以太网帧结构
-
-前导码 7B 和帧前定界符 1B
-目的地址 6B 和源地址 6B 16进制表示
-
-硬件地址-MAC地址-物理地址-以太网地址
-48位组成
-单播地址（第一位为0）、多播地址（第一位为1）和广播地址（48位全为1）
-
-
-长度/类型
-
-长度（小于0800H时表示）
-类型（大于等于0800H时表示）
-
-
-数据
-
-最长1500B，最短46B
-不足46B的需要填充
-可变长度
-
-
-帧校验码
-
-验证帧的正确性
-32位 CRC 校验
-
-
-
- 共享式以太网的介质访问控制方法
- 共享式以太网
-
-数据传输方式：半双工
-需要结局：共享介质网络中多结点同时发送产生的冲突问题——介质访问控制方法
-Ethernet 的介质访问控制方法：带有冲突检测的载波侦听多路访问（CSMA/CD）
-
- CSMA/CD 发送流程
-
-先听后发
-边听边发
-冲突停止
-延迟重 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/posts/71c549e3.html" title="德语学习 发音入门"><img class="post_bg" src="/img/deutsch-a1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="德语学习 发音入门"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/71c549e3.html" title="德语学习 发音入门">德语学习 发音入门</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-09-11T16:00:00.000Z" title="Created 2021-09-12 00:00:00">2021-09-12</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BE%B7%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">德语学习笔记</a></span></div><div class="content"> Kapitel 0 德语发音入门
+抽象出计算机软硬件 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/posts/71c549e3.html" title="德语学习 发音入门"><img class="post_bg" src="/img/deutsch-a1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="德语学习 发音入门"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/71c549e3.html" title="德语学习 发音入门">德语学习 发音入门</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-09-11T16:00:00.000Z" title="Created 2021-09-12 00:00:00">2021-09-12</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BE%B7%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">德语学习笔记</a></span></div><div class="content"> Kapitel 0 德语发音入门
  Lektion 1 基础发音
  了解德国 Deutschland
  美食 Speisen
@@ -434,7 +434,38 @@ Porsche Stuttgar ...</div></div></div><div class="recent-post-item"><div class="
 第二种信号是：
 
 离散的、待研究的、规律不明的
-通 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/posts/1cbb3465.html" title="汇编语言与逆向技术基础 零、绪论"><img class="post_bg" src="/img/assembler.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="汇编语言与逆向技术基础 零、绪论"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/1cbb3465.html" title="汇编语言与逆向技术基础 零、绪论">汇编语言与逆向技术基础 零、绪论</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-09-06T16:00:00.000Z" title="Created 2021-09-07 00:00:00">2021-09-07</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E4%B8%8E%E9%80%86%E5%90%91%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/">汇编语言与逆向技术基础课程笔记</a></span></div><div class="content"> 汇编语言与逆向技术基础 零、绪论
+通 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/posts/39cffa60.html" title="网络技术与应用 第一章 概述"><img class="post_bg" src="/img/nettech.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="网络技术与应用 第一章 概述"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/39cffa60.html" title="网络技术与应用 第一章 概述">网络技术与应用 第一章 概述</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-09-06T16:00:00.000Z" title="Created 2021-09-07 00:00:00">2021-09-07</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF%E4%B8%8E%E5%BA%94%E7%94%A8%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/">网络技术与应用课程笔记</a></span></div><div class="content"> 计算机网络的基本概念
+ 计算机网络的定义
+利用通信线路将具有独立功能的计算机连接起来而形成的计算机集合，计算机之间借助于通信线路传递信息，共享软件、硬件、数据等资源
+前提：建立在通信网络上
+目的：资源共享和在线通信
+安全、可靠传送
+ 计算机网络的组成部件
+ 主机：信息资源和网络服务的载体，是对终端设备的总称
+
+
+客户-服务器模式
+
+服务器：网络服务和网络资源的提供者
+客户机：网络服务和网络资源的使用者
+
+
+
+对等计算模式：主机之间地位平等
+一台主机既是网络资源的提供者和网络资源的使用者
+
+
+例子：大型机、小型机、微型机、个人数字助理、Pad
+ 通信设备：接受源主机或其它通信设备传入的数据，在对数据进行处理后转发给下一通信设备或目的主机
+处理：差错校验、路由选择等
+一半位于计算机网络路径的交叉路口，指挥数据按照正确路径前进
+例子：集线器、网桥、交换机、路由器等
+ 传输介质：用于互联主机-通信设备、通信设备-通信设备
+传输介质不同，特性不同，距离和速度相差很大
+链路：传输介质在 主机-通信设备 或 通信设备-通信设备 形成的数据传输通道
+传输介质分类
+
+有线：非屏蔽/屏蔽双绞线、同轴电缆 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/1cbb3465.html" title="汇编语言与逆向技术基础 零、绪论"><img class="post_bg" src="/img/assembler.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="汇编语言与逆向技术基础 零、绪论"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/1cbb3465.html" title="汇编语言与逆向技术基础 零、绪论">汇编语言与逆向技术基础 零、绪论</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-09-06T16:00:00.000Z" title="Created 2021-09-07 00:00:00">2021-09-07</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E4%B8%8E%E9%80%86%E5%90%91%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/">汇编语言与逆向技术基础课程笔记</a></span></div><div class="content"> 汇编语言与逆向技术基础 零、绪论
  成绩评定
 
 平时成绩 10% 考勤、课上回答问题（雨课堂）
@@ -503,38 +534,7 @@ Windows内核
 寄存器
 传送指令
 算数指令
-位运算指令 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/39cffa60.html" title="网络技术与应用 第一章 概述"><img class="post_bg" src="/img/nettech.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="网络技术与应用 第一章 概述"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/39cffa60.html" title="网络技术与应用 第一章 概述">网络技术与应用 第一章 概述</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-09-06T16:00:00.000Z" title="Created 2021-09-07 00:00:00">2021-09-07</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF%E4%B8%8E%E5%BA%94%E7%94%A8%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/">网络技术与应用课程笔记</a></span></div><div class="content"> 计算机网络的基本概念
- 计算机网络的定义
-利用通信线路将具有独立功能的计算机连接起来而形成的计算机集合，计算机之间借助于通信线路传递信息，共享软件、硬件、数据等资源
-前提：建立在通信网络上
-目的：资源共享和在线通信
-安全、可靠传送
- 计算机网络的组成部件
- 主机：信息资源和网络服务的载体，是对终端设备的总称
-
-
-客户-服务器模式
-
-服务器：网络服务和网络资源的提供者
-客户机：网络服务和网络资源的使用者
-
-
-
-对等计算模式：主机之间地位平等
-一台主机既是网络资源的提供者和网络资源的使用者
-
-
-例子：大型机、小型机、微型机、个人数字助理、Pad
- 通信设备：接受源主机或其它通信设备传入的数据，在对数据进行处理后转发给下一通信设备或目的主机
-处理：差错校验、路由选择等
-一半位于计算机网络路径的交叉路口，指挥数据按照正确路径前进
-例子：集线器、网桥、交换机、路由器等
- 传输介质：用于互联主机-通信设备、通信设备-通信设备
-传输介质不同，特性不同，距离和速度相差很大
-链路：传输介质在 主机-通信设备 或 通信设备-通信设备 形成的数据传输通道
-传输介质分类
-
-有线：非屏蔽/屏蔽双绞线、同轴电缆 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/posts/aed3c514.html" title="CA1 概述"><img class="post_bg" src="/img/cabook.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CA1 概述"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/aed3c514.html" title="CA1 概述">CA1 概述</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-09-05T16:00:00.000Z" title="Created 2021-09-06 00:00:00">2021-09-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/">计算机体系结构课程笔记</a></span></div><div class="content"> CA1 课程概述
+位运算指令 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/posts/aed3c514.html" title="CA1 概述"><img class="post_bg" src="/img/cabook.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CA1 概述"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/aed3c514.html" title="CA1 概述">CA1 概述</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-09-05T16:00:00.000Z" title="Created 2021-09-06 00:00:00">2021-09-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/">计算机体系结构课程笔记</a></span></div><div class="content"> CA1 课程概述
  成绩评定
  平时70%：
 
@@ -661,8 +661,8 @@ Digital Signal Processing DSP
             </div>
             <ul class="card-category-list" id="aside-cat-list">
             <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%B8%80%E7%94%9F%E4%B8%80%E8%8A%AF/"><span class="card-category-list-name">一生一芯</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%8A%A8%E6%89%8B%E5%AD%A6%E4%B9%A0%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">动手学习强化学习课程笔记</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%B7%A5%E4%BD%9C/"><span class="card-category-list-name">工作</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%BE%B7%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">德语学习笔记</span><span class="card-category-list-count">25</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%84%9F%E7%9F%A5%E6%8A%80%E6%9C%AF%E4%B8%8E%E5%BA%94%E7%94%A8%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/"><span class="card-category-list-name">感知技术与应用期末复习</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">数字信号处理课程笔记</span><span class="card-category-list-count">8</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">数据库课程笔记</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%99%BA%E8%83%BD%E8%AE%A1%E7%AE%97%E7%B3%BB%E7%BB%9F%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">智能计算系统课程笔记</span><span class="card-category-list-count">8</span></a></li>
-            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/" style="font-size: 1.15em; color: rgb(168, 141, 49)">日常记录</a><a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 1.45em; color: rgb(198, 22, 72)">笔记</a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/" style="font-size: 1.35em; color: rgb(155, 182, 17)">计算机体系结构</a><a href="/tags/%E6%99%BA%E8%83%BD%E8%AE%A1%E7%AE%97%E7%B3%BB%E7%BB%9F/" style="font-size: 1.29em; color: rgb(115, 80, 133)">智能计算系统</a><a href="/tags/APS/" style="font-size: 1.39em; color: rgb(135, 132, 198)">APS</a><a href="/tags/%E5%BE%B7%E5%9B%BD/" style="font-size: 1.41em; color: rgb(136, 30, 100)">德国</a><a href="/tags/%E5%A5%A5%E5%9C%B0%E5%88%A9/" style="font-size: 1.21em; color: rgb(24, 113, 21)">奥地利</a><a href="/tags/%E7%95%99%E5%AD%A6/" style="font-size: 1.43em; color: rgb(109, 97, 97)">留学</a><a href="/tags/%E5%AE%9E%E4%B9%A0%E7%BB%8F%E5%8E%86/" style="font-size: 1.15em; color: rgb(92, 116, 130)">实习经历</a><a href="/tags/%E5%8D%8E%E4%B8%BA/" style="font-size: 1.15em; color: rgb(121, 153, 91)">华为</a><a href="/tags/%E6%B1%87%E7%BC%96/" style="font-size: 1.31em; color: rgb(191, 137, 39)">汇编</a><a href="/tags/%E9%80%86%E5%90%91/" style="font-size: 1.27em; color: rgb(7, 65, 76)">逆向</a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" style="font-size: 1.37em; color: rgb(41, 172, 83)">计算机网络</a><a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/" style="font-size: 1.17em; color: rgb(111, 147, 69)">数据库系统</a><a href="/tags/%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/" style="font-size: 1.29em; color: rgb(43, 22, 72)">数字信号处理</a><a href="/tags/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/" style="font-size: 1.21em; color: rgb(11, 169, 19)">强化学习</a><a href="/tags/%E6%84%9F%E7%9F%A5%E6%8A%80%E6%9C%AF/" style="font-size: 1.23em; color: rgb(35, 44, 106)">感知技术</a><a href="/tags/%E4%BC%A0%E6%84%9F%E5%99%A8/" style="font-size: 1.23em; color: rgb(190, 21, 75)">传感器</a><a href="/tags/%E7%89%A9%E7%90%86/" style="font-size: 1.25em; color: rgb(119, 45, 32)">物理</a><a href="/tags/%E5%8C%97%E6%AC%A7/" style="font-size: 1.23em; color: rgb(177, 3, 169)">北欧</a><a href="/tags/%E4%B8%B9%E9%BA%A6/" style="font-size: 1.19em; color: rgb(168, 64, 89)">丹麦</a><a href="/tags/%E8%8A%AC%E5%85%B0/" style="font-size: 1.19em; color: rgb(48, 174, 20)">芬兰</a><a href="/tags/%E7%91%9E%E5%85%B8/" style="font-size: 1.19em; color: rgb(87, 41, 111)">瑞典</a><a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" style="font-size: 1.21em; color: rgb(147, 45, 169)">操作系统</a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/" style="font-size: 1.17em; color: rgb(146, 144, 58)">计算机系统设计</a><a href="/tags/RISC-V/" style="font-size: 1.17em; color: rgb(65, 17, 8)">RISC-V</a><a href="/tags/NEMU/" style="font-size: 1.17em; color: rgb(46, 111, 10)">NEMU</a><a href="/tags/%E6%95%B0%E5%AD%97%E7%94%B5%E8%B7%AF/" style="font-size: 1.19em; color: rgb(175, 74, 180)">数字电路</a><a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 1.17em; color: rgb(88, 2, 79)">算法</a><a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 1.17em; color: rgb(83, 72, 158)">数据结构</a><a href="/tags/DFS/" style="font-size: 1.15em; color: rgb(161, 54, 40)">DFS</a><a href="/tags/LCA/" style="font-size: 1.15em; color: rgb(197, 63, 137)">LCA</a><a href="/tags/Codeforces/" style="font-size: 1.15em; color: rgb(9, 18, 178)">Codeforces</a><a href="/tags/APS-%E9%87%8D%E7%82%B9%E5%A4%8D%E4%B9%A0%E8%AF%BE%E7%A8%8B/" style="font-size: 1.33em; color: rgb(98, 124, 90)">APS 重点复习课程</a><a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" style="font-size: 1.15em; color: rgb(68, 111, 4)">深度学习</a><a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AF%BC%E8%AE%BA/" style="font-size: 1.15em; color: rgb(72, 54, 41)">人工智能导论</a><a href="/tags/%E5%B9%B6%E8%A1%8C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" style="font-size: 1.15em; color: rgb(167, 160, 101)">并行程序设计</a><a href="/tags/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/" style="font-size: 1.15em; color: rgb(84, 101, 94)">编译原理</a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" style="font-size: 1.15em; color: rgb(62, 61, 93)">计算机组成原理</a><a href="/tags/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/" style="font-size: 1.15em; color: rgb(8, 63, 151)">概率论与数理统计</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span><a class="card-more-btn" href="/archives/" title="More">
-    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">March 2023</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/02/"><span class="card-archive-list-date">February 2023</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/01/"><span class="card-archive-list-date">January 2023</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/12/"><span class="card-archive-list-date">December 2022</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/11/"><span class="card-archive-list-date">November 2022</span><span class="card-archive-list-count">16</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/10/"><span class="card-archive-list-date">October 2022</span><span class="card-archive-list-count">20</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/09/"><span class="card-archive-list-date">September 2022</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/08/"><span class="card-archive-list-date">August 2022</span><span class="card-archive-list-count">5</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">133</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-04-27T09:02:47.258Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/doorobear1.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By tinsir888</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function subtitleType () {
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/" style="font-size: 1.15em; color: rgb(72, 154, 200)">日常记录</a><a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 1.45em; color: rgb(50, 162, 71)">笔记</a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/" style="font-size: 1.35em; color: rgb(132, 62, 67)">计算机体系结构</a><a href="/tags/APS/" style="font-size: 1.39em; color: rgb(166, 41, 107)">APS</a><a href="/tags/%E5%BE%B7%E5%9B%BD/" style="font-size: 1.41em; color: rgb(156, 17, 179)">德国</a><a href="/tags/%E5%A5%A5%E5%9C%B0%E5%88%A9/" style="font-size: 1.21em; color: rgb(47, 30, 35)">奥地利</a><a href="/tags/%E7%95%99%E5%AD%A6/" style="font-size: 1.43em; color: rgb(187, 131, 114)">留学</a><a href="/tags/%E6%99%BA%E8%83%BD%E8%AE%A1%E7%AE%97%E7%B3%BB%E7%BB%9F/" style="font-size: 1.29em; color: rgb(125, 14, 53)">智能计算系统</a><a href="/tags/%E5%AE%9E%E4%B9%A0%E7%BB%8F%E5%8E%86/" style="font-size: 1.15em; color: rgb(46, 167, 28)">实习经历</a><a href="/tags/%E5%8D%8E%E4%B8%BA/" style="font-size: 1.15em; color: rgb(41, 190, 32)">华为</a><a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F/" style="font-size: 1.17em; color: rgb(178, 34, 174)">数据库系统</a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" style="font-size: 1.37em; color: rgb(30, 180, 188)">计算机网络</a><a href="/tags/%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/" style="font-size: 1.29em; color: rgb(163, 34, 61)">数字信号处理</a><a href="/tags/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/" style="font-size: 1.21em; color: rgb(199, 7, 42)">强化学习</a><a href="/tags/%E6%B1%87%E7%BC%96/" style="font-size: 1.31em; color: rgb(94, 130, 197)">汇编</a><a href="/tags/%E9%80%86%E5%90%91/" style="font-size: 1.27em; color: rgb(75, 47, 12)">逆向</a><a href="/tags/%E6%84%9F%E7%9F%A5%E6%8A%80%E6%9C%AF/" style="font-size: 1.23em; color: rgb(175, 112, 138)">感知技术</a><a href="/tags/%E4%BC%A0%E6%84%9F%E5%99%A8/" style="font-size: 1.23em; color: rgb(94, 5, 130)">传感器</a><a href="/tags/%E7%89%A9%E7%90%86/" style="font-size: 1.25em; color: rgb(31, 54, 57)">物理</a><a href="/tags/%E5%8C%97%E6%AC%A7/" style="font-size: 1.23em; color: rgb(16, 156, 44)">北欧</a><a href="/tags/%E4%B8%B9%E9%BA%A6/" style="font-size: 1.19em; color: rgb(22, 80, 58)">丹麦</a><a href="/tags/%E7%91%9E%E5%85%B8/" style="font-size: 1.19em; color: rgb(74, 145, 116)">瑞典</a><a href="/tags/%E8%8A%AC%E5%85%B0/" style="font-size: 1.19em; color: rgb(199, 188, 178)">芬兰</a><a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" style="font-size: 1.21em; color: rgb(15, 136, 179)">操作系统</a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/" style="font-size: 1.17em; color: rgb(122, 167, 23)">计算机系统设计</a><a href="/tags/RISC-V/" style="font-size: 1.17em; color: rgb(23, 157, 114)">RISC-V</a><a href="/tags/NEMU/" style="font-size: 1.17em; color: rgb(31, 95, 175)">NEMU</a><a href="/tags/%E6%95%B0%E5%AD%97%E7%94%B5%E8%B7%AF/" style="font-size: 1.19em; color: rgb(198, 88, 46)">数字电路</a><a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 1.17em; color: rgb(73, 102, 74)">算法</a><a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 1.17em; color: rgb(21, 191, 162)">数据结构</a><a href="/tags/DFS/" style="font-size: 1.15em; color: rgb(37, 5, 34)">DFS</a><a href="/tags/LCA/" style="font-size: 1.15em; color: rgb(5, 170, 166)">LCA</a><a href="/tags/Codeforces/" style="font-size: 1.15em; color: rgb(195, 105, 173)">Codeforces</a><a href="/tags/APS-%E9%87%8D%E7%82%B9%E5%A4%8D%E4%B9%A0%E8%AF%BE%E7%A8%8B/" style="font-size: 1.33em; color: rgb(18, 152, 148)">APS 重点复习课程</a><a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" style="font-size: 1.15em; color: rgb(14, 115, 137)">深度学习</a><a href="/tags/%E5%B9%B6%E8%A1%8C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" style="font-size: 1.15em; color: rgb(93, 61, 117)">并行程序设计</a><a href="/tags/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/" style="font-size: 1.15em; color: rgb(52, 105, 84)">编译原理</a><a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%AF%BC%E8%AE%BA/" style="font-size: 1.15em; color: rgb(99, 137, 87)">人工智能导论</a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" style="font-size: 1.15em; color: rgb(151, 142, 149)">计算机组成原理</a><a href="/tags/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/" style="font-size: 1.15em; color: rgb(171, 95, 35)">概率论与数理统计</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span><a class="card-more-btn" href="/archives/" title="More">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">March 2023</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/02/"><span class="card-archive-list-date">February 2023</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/01/"><span class="card-archive-list-date">January 2023</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/12/"><span class="card-archive-list-date">December 2022</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/11/"><span class="card-archive-list-date">November 2022</span><span class="card-archive-list-count">16</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/10/"><span class="card-archive-list-date">October 2022</span><span class="card-archive-list-count">20</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/09/"><span class="card-archive-list-date">September 2022</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/08/"><span class="card-archive-list-date">August 2022</span><span class="card-archive-list-count">5</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">133</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-04-27T14:53:31.579Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/doorobear1.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By tinsir888</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function subtitleType () {
   if (true) { 
     window.typed = new Typed("#subtitle", {
       strings: ["Welcome to my blog!","Wilkommen auf meinem Blog!","歡迎來到我的博客！","Benvenuti nel mio blog!","欢迎来到我的博客！","Bienvenue sur mon blog!","私のブログへようこそ！","Bem-vindo ao meu blog!","Добро пожаловать на мой блог!","Bienvenido/a a mi blog!","내 블로그에 오신 것을 환영합니다!","Καλώς ήρθατε στο μπλογκ μου!"],
