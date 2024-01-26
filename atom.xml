@@ -6,7 +6,7 @@
   <link href="https://tinsir888.github.io/atom.xml" rel="self"/>
   
   <link href="https://tinsir888.github.io/"/>
-  <updated>2024-01-22T17:20:40.207Z</updated>
+  <updated>2024-01-22T17:21:21.713Z</updated>
   <id>https://tinsir888.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://tinsir888.github.io/posts/27a2575b.html"/>
     <id>https://tinsir888.github.io/posts/27a2575b.html</id>
     <published>2024-01-21T23:00:00.000Z</published>
-    <updated>2024-01-22T17:20:40.207Z</updated>
+    <updated>2024-01-22T17:21:21.713Z</updated>
     
     <content type="html"><![CDATA[<h1 id="缘起"><a class="markdownIt-Anchor" href="#缘起"></a> 缘起</h1><p>最近手上拿到了几本书的 PDF 扫描版本，可惜分辨率过低，看着辣眼睛。急切需要将这几份 PDF 文件恢复到较高的分辨率。</p><p>Adobe Acrobat 这款商用软件应该提供了这个功能。但是，一是之前 NKU 给的教育账号早已失效，二是我既不想用盗版软件也不想使用付费的<a href="https://en.wikipedia.org/wiki/Proprietary_software">专有软件</a>，因此我希望找到 <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">FOSS</a> 的替代方案。</p><h1 id="工具简介"><a class="markdownIt-Anchor" href="#工具简介"></a> 工具简介</h1><p>这两天在 GitHub 上偶然搜到了一个名为“书之溯源 SourceBook”的仓库。该仓库实现了使用超分辨率技术将低分辨率的扫描书恢复为高分辨率的功能。</p><h2 id="模型"><a class="markdownIt-Anchor" href="#模型"></a> 模型</h2><p>作者在 Readme 中介绍，本软件使用的模型是 <a href="https://github.com/xinntao/Real-ESRGAN/">Real-ESRGAN</a>。想深究具体原理的朋友可以读读 <a href="https://arxiv.org/abs/1809.00219">ESRGAN</a> 和 <a href="https://arxiv.org/abs/2107.10833">Real-ESRGAN</a> 等相关论文。</p><p><a href="https://github.com/tumuyan/SourceBook-Dataset">模型训练使用的数据集</a> 是由作者自行搜集的。</p><h2 id="使用工具"><a class="markdownIt-Anchor" href="#使用工具"></a> 使用工具</h2><p>作者提供了两种方式：</p><p>一种是在<a href="https://github.com/tumuyan/SourceBook-Dataset/releases/tag/1.0.1">本地 Windows/Linux 系统上运行的软件包（需要安装 Java 依赖）</a>。由于我特别不希望在本地安装这些乱七八糟的依赖工具来“污染”我的硬盘，遂弃之。本文也不涉及此种方式的使用。</p><p>另一种是在谷歌 Colab 平台上白嫖算力，作者也贴心地把 <a href="https://colab.research.google.com/drive/1E2IEo1zUapxMuOb2Px3VYy_zhDsu9OTR?usp=sharing">链接</a> 放出来了。本文大概描述一下使用这种方式的流程：</p><ol><li><p>首先运行初始化的代码，下载相应的包。</p></li><li><p>上传 PDF 文件到 Colab 平台上。⚠️这里建议先把 PDF 文件上传到谷歌网盘中，再装载谷歌云盘到 Colab。这样比直接上传到 Colab 平台上稳妥一些。</p><p>确认目标文件位于 <code>Real-ESRGAN/upload</code> 位置。</p></li><li><p>根据代码提示，输入文件名，设置导出图片，操作的相关参数。运行对应的代码片段。</p><p>代码的逻辑大概是：先把 PDF 拆分成一张一张的图片，暂存到 <code>Real-ESRGAN/upload/(文件名)_pdfimg/</code> 文件夹中；然后使用训练好的模型对这些图片一张一张的提升分辨率，结果暂存到 <code>Real-ESRGAN/upload/(文件名)_pdfimg_2x/</code> 文件夹中。</p></li><li><p>运行”把图片打包回 pdf 文件“的代码片段。</p><p>这一步就是用 <code>Real-ESRGAN/upload/(文件名)_pdfimg_2x/</code> 的图片去替换掉原来 pdf 文件中对应的页面，执行完的结果另存为 <code>Real-ESRGAN/upload/(文件名)[source-book].pdf</code>。</p><p>得到的这个结果就是最终想要的，可以直接下载，也可以扔硬盘里再下载。</p><p>之后的代码片段我就没管了。朋友们使用的时候按需运行即可。</p></li></ol><h2 id="待改进的地方"><a class="markdownIt-Anchor" href="#待改进的地方"></a> 待改进的地方</h2><p>首先感谢作者提供了一个不错的工具🌹</p><p>但此处也提出一些值得改进的地方：</p><ul><li><p>有的 PDF 文件中的页面虽然很糊，但是分辨率很高。在这种情况下根据代码设置会直接跳过。因此需要手动的去将这种页面的分辨率调低，不方便。</p></li><li><p>待处理的文件不能太糊，否则重建出来太奇怪了。一个特别糊的拉丁字母文档经过分辨率增强后亲测可能会变成”希伯来语字母“文档😓</p></li></ul>]]></content>
     
