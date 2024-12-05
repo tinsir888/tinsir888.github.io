@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>min hjemmeside</title>
+  <title>tinsir888s hjemmeside</title>
   <icon>https://tinsir888.github.io/icon.png</icon>
   <subtitle>Some notes/articles and so on...</subtitle>
   <link href="https://tinsir888.github.io/atom.xml" rel="self"/>
@@ -103,9 +103,9 @@
     
     <category term="笔记" scheme="https://tinsir888.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="人工智能" scheme="https://tinsir888.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
-    
     <category term="算法博弈论" scheme="https://tinsir888.github.io/tags/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
+    
+    <category term="人工智能" scheme="https://tinsir888.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     
   </entry>
   
@@ -293,9 +293,9 @@
     
     <category term="笔记" scheme="https://tinsir888.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="人工智能" scheme="https://tinsir888.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
-    
     <category term="算法博弈论" scheme="https://tinsir888.github.io/tags/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
+    
+    <category term="人工智能" scheme="https://tinsir888.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     
   </entry>
   
@@ -368,20 +368,18 @@
   </entry>
   
   <entry>
-    <title>算法和计算复杂度 13 Random Access Machine</title>
-    <link href="https://tinsir888.github.io/posts/6c19248d.html"/>
-    <id>https://tinsir888.github.io/posts/6c19248d.html</id>
+    <title>算法和计算复杂度 12 PCP-based Inapproximability</title>
+    <link href="https://tinsir888.github.io/posts/375beefd.html"/>
+    <id>https://tinsir888.github.io/posts/375beefd.html</id>
     <published>2024-10-31T23:00:00.000Z</published>
-    <updated>2024-11-01T13:53:47.564Z</updated>
+    <updated>2024-11-01T13:53:47.567Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;More precise model&lt;/p&gt;
-&lt;p&gt;Problem of integer multiplication.&lt;/p&gt;
-&lt;p&gt;Registers can contain arbitrary integers. Consider repeated squaring</summary>
+    <summary type="html">&lt;p&gt;For &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math</summary>
         
       
     
@@ -401,18 +399,20 @@
   </entry>
   
   <entry>
-    <title>算法和计算复杂度 12 PCP-based Inapproximability</title>
-    <link href="https://tinsir888.github.io/posts/375beefd.html"/>
-    <id>https://tinsir888.github.io/posts/375beefd.html</id>
+    <title>算法和计算复杂度 13 Random Access Machine</title>
+    <link href="https://tinsir888.github.io/posts/6c19248d.html"/>
+    <id>https://tinsir888.github.io/posts/6c19248d.html</id>
     <published>2024-10-31T23:00:00.000Z</published>
-    <updated>2024-11-01T13:53:47.567Z</updated>
+    <updated>2024-11-01T13:53:47.564Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;For &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math</summary>
+    <summary type="html">&lt;p&gt;More precise model&lt;/p&gt;
+&lt;p&gt;Problem of integer multiplication.&lt;/p&gt;
+&lt;p&gt;Registers can contain arbitrary integers. Consider repeated squaring</summary>
         
       
     
@@ -458,9 +458,9 @@
     
     <category term="笔记" scheme="https://tinsir888.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="人工智能" scheme="https://tinsir888.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
-    
     <category term="算法博弈论" scheme="https://tinsir888.github.io/tags/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
+    
+    <category term="人工智能" scheme="https://tinsir888.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     
   </entry>
   
@@ -555,9 +555,9 @@
     
     <category term="笔记" scheme="https://tinsir888.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="人工智能" scheme="https://tinsir888.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
-    
     <category term="算法博弈论" scheme="https://tinsir888.github.io/tags/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
+    
+    <category term="人工智能" scheme="https://tinsir888.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     
   </entry>
   
@@ -652,9 +652,9 @@
     
     <category term="笔记" scheme="https://tinsir888.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="人工智能" scheme="https://tinsir888.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
-    
     <category term="算法博弈论" scheme="https://tinsir888.github.io/tags/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
+    
+    <category term="人工智能" scheme="https://tinsir888.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     
   </entry>
   
