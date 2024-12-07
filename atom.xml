@@ -6,7 +6,7 @@
   <link href="https://tinsir888.github.io/atom.xml" rel="self"/>
   
   <link href="https://tinsir888.github.io/"/>
-  <updated>2024-11-28T23:46:12.580Z</updated>
+  <updated>2024-12-07T11:29:11.454Z</updated>
   <id>https://tinsir888.github.io/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>丹麦语 DU 3.3 14 Bliv klar til 3.3-testen</title>
+    <link href="https://tinsir888.github.io/posts/d70a04e3.html"/>
+    <id>https://tinsir888.github.io/posts/d70a04e3.html</id>
+    <published>2024-12-06T23:00:00.000Z</published>
+    <updated>2024-12-07T11:29:11.454Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;3.3 模块考试只包含阅读和写作&lt;/p&gt;
+&lt;p&gt;考完模块三之后，暂停一学期。看之后的安排，如果继续在丹麦，就继续学模块四、五，争取考过 Prøve i Dansk 3。&lt;/p&gt;
+&lt;h1 id=&quot;写作部分-skrivning&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="语言学习" scheme="https://tinsir888.github.io/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="丹麦语学习笔记" scheme="https://tinsir888.github.io/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/%E4%B8%B9%E9%BA%A6%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="笔记" scheme="https://tinsir888.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="Dansk" scheme="https://tinsir888.github.io/tags/Dansk/"/>
+    
+    <category term="Midtvejs til dansk" scheme="https://tinsir888.github.io/tags/Midtvejs-til-dansk/"/>
+    
+  </entry>
   
   <entry>
     <title>丹麦皇冠——学生工体验（更新中）</title>
@@ -103,9 +136,9 @@
     
     <category term="笔记" scheme="https://tinsir888.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="人工智能" scheme="https://tinsir888.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
-    
     <category term="算法博弈论" scheme="https://tinsir888.github.io/tags/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
+    
+    <category term="人工智能" scheme="https://tinsir888.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     
   </entry>
   
@@ -293,9 +326,9 @@
     
     <category term="笔记" scheme="https://tinsir888.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="人工智能" scheme="https://tinsir888.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
-    
     <category term="算法博弈论" scheme="https://tinsir888.github.io/tags/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
+    
+    <category term="人工智能" scheme="https://tinsir888.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     
   </entry>
   
@@ -458,9 +491,9 @@
     
     <category term="笔记" scheme="https://tinsir888.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="人工智能" scheme="https://tinsir888.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
-    
     <category term="算法博弈论" scheme="https://tinsir888.github.io/tags/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
+    
+    <category term="人工智能" scheme="https://tinsir888.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     
   </entry>
   
@@ -555,9 +588,9 @@
     
     <category term="笔记" scheme="https://tinsir888.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="人工智能" scheme="https://tinsir888.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
-    
     <category term="算法博弈论" scheme="https://tinsir888.github.io/tags/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
+    
+    <category term="人工智能" scheme="https://tinsir888.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     
   </entry>
   
@@ -622,39 +655,6 @@
     <category term="算法" scheme="https://tinsir888.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
     <category term="计算复杂度" scheme="https://tinsir888.github.io/tags/%E8%AE%A1%E7%AE%97%E5%A4%8D%E6%9D%82%E5%BA%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Fair AI/ML 3 PROP Fair Clustering Revisited</title>
-    <link href="https://tinsir888.github.io/posts/b69f1531.html"/>
-    <id>https://tinsir888.github.io/posts/b69f1531.html</id>
-    <published>2024-10-09T22:00:00.000Z</published>
-    <updated>2024-10-09T22:35:19.510Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Read the paper &lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="AUDatalogi" scheme="https://tinsir888.github.io/categories/AUDatalogi/"/>
-    
-    <category term="算法博弈论" scheme="https://tinsir888.github.io/categories/AUDatalogi/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
-    
-    <category term="AI/ML 公平性" scheme="https://tinsir888.github.io/categories/AUDatalogi/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/AI-ML-%E5%85%AC%E5%B9%B3%E6%80%A7/"/>
-    
-    
-    <category term="笔记" scheme="https://tinsir888.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="人工智能" scheme="https://tinsir888.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
-    
-    <category term="算法博弈论" scheme="https://tinsir888.github.io/tags/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
     
   </entry>
   
