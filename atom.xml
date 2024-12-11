@@ -6,7 +6,7 @@
   <link href="https://tinsir888.github.io/atom.xml" rel="self"/>
   
   <link href="https://tinsir888.github.io/"/>
-  <updated>2024-12-07T11:29:11.454Z</updated>
+  <updated>2024-12-11T11:04:20.774Z</updated>
   <id>https://tinsir888.github.io/</id>
   
   <author>
@@ -17,11 +17,44 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>算法和计算复杂度 17 LLL Algorithm</title>
+    <link href="https://tinsir888.github.io/posts/9415313b.html"/>
+    <id>https://tinsir888.github.io/posts/9415313b.html</id>
+    <published>2024-12-10T23:00:00.000Z</published>
+    <updated>2024-12-11T11:04:20.774Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;这课终于上完了。上得真挺难受😭&lt;/p&gt;
+&lt;p&gt;Lecture notes by Rothvoss, University of Washington&lt;/p&gt;
+&lt;h1 id=&quot;lattices&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="AUDatalogi" scheme="https://tinsir888.github.io/categories/AUDatalogi/"/>
+    
+    <category term="算法和计算复杂度" scheme="https://tinsir888.github.io/categories/AUDatalogi/%E7%AE%97%E6%B3%95%E5%92%8C%E8%AE%A1%E7%AE%97%E5%A4%8D%E6%9D%82%E5%BA%A6/"/>
+    
+    
+    <category term="笔记" scheme="https://tinsir888.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="算法" scheme="https://tinsir888.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="计算复杂度" scheme="https://tinsir888.github.io/tags/%E8%AE%A1%E7%AE%97%E5%A4%8D%E6%9D%82%E5%BA%A6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>丹麦语 DU 3.3 14 Bliv klar til 3.3-testen</title>
     <link href="https://tinsir888.github.io/posts/d70a04e3.html"/>
     <id>https://tinsir888.github.io/posts/d70a04e3.html</id>
-    <published>2024-12-06T23:00:00.000Z</published>
-    <updated>2024-12-07T11:29:11.454Z</updated>
+    <published>2024-12-07T11:36:00.000Z</published>
+    <updated>2024-12-07T11:36:32.218Z</updated>
     
     
       
@@ -80,8 +113,8 @@
     <title>丹麦语 DU 3.3 13 Smalltalk i hverdags- og arbejdsliv</title>
     <link href="https://tinsir888.github.io/posts/c6a52f83.html"/>
     <id>https://tinsir888.github.io/posts/c6a52f83.html</id>
-    <published>2024-11-25T23:00:00.000Z</published>
-    <updated>2024-11-25T22:43:46.725Z</updated>
+    <published>2024-11-26T16:34:23.000Z</published>
+    <updated>2024-12-07T11:36:57.097Z</updated>
     
     
       
@@ -178,8 +211,8 @@
     <title>丹麦语 DU 3.3 12 Jobansøgning og arbejdsmarked</title>
     <link href="https://tinsir888.github.io/posts/35531497.html"/>
     <id>https://tinsir888.github.io/posts/35531497.html</id>
-    <published>2024-11-17T23:00:00.000Z</published>
-    <updated>2024-11-18T19:07:52.098Z</updated>
+    <published>2024-11-18T13:52:01.000Z</published>
+    <updated>2024-12-07T11:37:16.012Z</updated>
     
     
       
@@ -360,9 +393,9 @@
     
     <category term="笔记" scheme="https://tinsir888.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="数据挖掘" scheme="https://tinsir888.github.io/tags/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/"/>
-    
     <category term="人工智能" scheme="https://tinsir888.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    <category term="数据挖掘" scheme="https://tinsir888.github.io/tags/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/"/>
     
     <category term="知识图谱" scheme="https://tinsir888.github.io/tags/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1/"/>
     
@@ -624,37 +657,6 @@
     <category term="Dansk" scheme="https://tinsir888.github.io/tags/Dansk/"/>
     
     <category term="Midtvejs til dansk" scheme="https://tinsir888.github.io/tags/Midtvejs-til-dansk/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>算法和计算复杂度 10 Interactive Proofs</title>
-    <link href="https://tinsir888.github.io/posts/47c9111e.html"/>
-    <id>https://tinsir888.github.io/posts/47c9111e.html</id>
-    <published>2024-10-18T22:00:00.000Z</published>
-    <updated>2024-10-19T21:22:16.596Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;interactive-turing-machine&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#interactive-turing-machine&quot;&gt;&lt;/a&gt; Interactive Turing</summary>
-        
-      
-    
-    
-    
-    <category term="AUDatalogi" scheme="https://tinsir888.github.io/categories/AUDatalogi/"/>
-    
-    <category term="算法和计算复杂度" scheme="https://tinsir888.github.io/categories/AUDatalogi/%E7%AE%97%E6%B3%95%E5%92%8C%E8%AE%A1%E7%AE%97%E5%A4%8D%E6%9D%82%E5%BA%A6/"/>
-    
-    
-    <category term="笔记" scheme="https://tinsir888.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="算法" scheme="https://tinsir888.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="计算复杂度" scheme="https://tinsir888.github.io/tags/%E8%AE%A1%E7%AE%97%E5%A4%8D%E6%9D%82%E5%BA%A6/"/>
     
   </entry>
   
