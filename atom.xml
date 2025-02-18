@@ -6,7 +6,7 @@
   <link href="https://tinsir888.github.io/atom.xml" rel="self"/>
   
   <link href="https://tinsir888.github.io/"/>
-  <updated>2024-12-11T11:04:20.774Z</updated>
+  <updated>2025-02-18T18:16:27.130Z</updated>
   <id>https://tinsir888.github.io/</id>
   
   <author>
@@ -15,6 +15,42 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Fair AI/ML 8 Split and Merge Algorithm on Average Cost</title>
+    <link href="https://tinsir888.github.io/posts/5449ffa2.html"/>
+    <id>https://tinsir888.github.io/posts/5449ffa2.html</id>
+    <published>2025-02-17T23:00:00.000Z</published>
+    <updated>2025-02-18T18:16:27.130Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;硕士论文就跟 Non-Centroid Clustering 杠上了。我和导师都希望能&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;探索 Split and Merge 算法的更多性质&lt;/li&gt;
+&lt;li&gt;扩展 Split and Merge</summary>
+        
+      
+    
+    
+    
+    <category term="AUDatalogi" scheme="https://tinsir888.github.io/categories/AUDatalogi/"/>
+    
+    <category term="算法博弈论" scheme="https://tinsir888.github.io/categories/AUDatalogi/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
+    
+    <category term="AI/ML 公平性" scheme="https://tinsir888.github.io/categories/AUDatalogi/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/AI-ML-%E5%85%AC%E5%B9%B3%E6%80%A7/"/>
+    
+    
+    <category term="笔记" scheme="https://tinsir888.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="算法博弈论" scheme="https://tinsir888.github.io/tags/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
+    
+    <category term="人工智能" scheme="https://tinsir888.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+  </entry>
   
   <entry>
     <title>算法和计算复杂度 17 LLL Algorithm</title>
@@ -393,9 +429,9 @@
     
     <category term="笔记" scheme="https://tinsir888.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="数据挖掘" scheme="https://tinsir888.github.io/tags/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/"/>
-    
     <category term="人工智能" scheme="https://tinsir888.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    <category term="数据挖掘" scheme="https://tinsir888.github.io/tags/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/"/>
     
     <category term="知识图谱" scheme="https://tinsir888.github.io/tags/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1/"/>
     
@@ -624,39 +660,6 @@
     <category term="算法博弈论" scheme="https://tinsir888.github.io/tags/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
     
     <category term="人工智能" scheme="https://tinsir888.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>丹麦语 DU 3.3 7-8 Arbejdspladskultur</title>
-    <link href="https://tinsir888.github.io/posts/7cf7771d.html"/>
-    <id>https://tinsir888.github.io/posts/7cf7771d.html</id>
-    <published>2024-10-23T22:00:00.000Z</published>
-    <updated>2024-10-24T11:09:18.146Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;有趣的表达：&lt;/p&gt;
-&lt;p&gt;tisse i bukserne for at holde varmen 直译：在裤子里撒尿来保持温暖 意译：饮鸩止渴&lt;/p&gt;
-&lt;h1 id=&quot;johanna-manu-og-anya&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="语言学习" scheme="https://tinsir888.github.io/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="丹麦语学习笔记" scheme="https://tinsir888.github.io/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/%E4%B8%B9%E9%BA%A6%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="笔记" scheme="https://tinsir888.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="Dansk" scheme="https://tinsir888.github.io/tags/Dansk/"/>
-    
-    <category term="Midtvejs til dansk" scheme="https://tinsir888.github.io/tags/Midtvejs-til-dansk/"/>
     
   </entry>
   
