@@ -6,7 +6,7 @@
   <link href="https://tinsir888.github.io/atom.xml" rel="self"/>
   
   <link href="https://tinsir888.github.io/"/>
-  <updated>2025-02-26T21:00:21.277Z</updated>
+  <updated>2025-03-05T18:59:10.302Z</updated>
   <id>https://tinsir888.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://tinsir888.github.io/posts/53f223fa.html"/>
     <id>https://tinsir888.github.io/posts/53f223fa.html</id>
     <published>2025-02-26T23:00:00.000Z</published>
-    <updated>2025-02-26T21:00:21.277Z</updated>
+    <updated>2025-03-05T18:59:10.302Z</updated>
     
     
       
@@ -79,7 +79,7 @@
     <link href="https://tinsir888.github.io/posts/5449ffa2.html"/>
     <id>https://tinsir888.github.io/posts/5449ffa2.html</id>
     <published>2025-02-17T23:00:00.000Z</published>
-    <updated>2025-02-18T18:17:12.826Z</updated>
+    <updated>2025-03-05T14:25:22.100Z</updated>
     
     
       
@@ -528,18 +528,20 @@
   </entry>
   
   <entry>
-    <title>算法和计算复杂度 12 PCP-based Inapproximability</title>
-    <link href="https://tinsir888.github.io/posts/375beefd.html"/>
-    <id>https://tinsir888.github.io/posts/375beefd.html</id>
+    <title>算法和计算复杂度 13 Random Access Machine</title>
+    <link href="https://tinsir888.github.io/posts/6c19248d.html"/>
+    <id>https://tinsir888.github.io/posts/6c19248d.html</id>
     <published>2024-10-31T23:00:00.000Z</published>
-    <updated>2024-11-01T13:53:47.567Z</updated>
+    <updated>2024-11-01T13:53:47.564Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;For &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math</summary>
+    <summary type="html">&lt;p&gt;More precise model&lt;/p&gt;
+&lt;p&gt;Problem of integer multiplication.&lt;/p&gt;
+&lt;p&gt;Registers can contain arbitrary integers. Consider repeated squaring</summary>
         
       
     
@@ -559,20 +561,18 @@
   </entry>
   
   <entry>
-    <title>算法和计算复杂度 13 Random Access Machine</title>
-    <link href="https://tinsir888.github.io/posts/6c19248d.html"/>
-    <id>https://tinsir888.github.io/posts/6c19248d.html</id>
+    <title>算法和计算复杂度 12 PCP-based Inapproximability</title>
+    <link href="https://tinsir888.github.io/posts/375beefd.html"/>
+    <id>https://tinsir888.github.io/posts/375beefd.html</id>
     <published>2024-10-31T23:00:00.000Z</published>
-    <updated>2024-11-01T13:53:47.564Z</updated>
+    <updated>2024-11-01T13:53:47.567Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;More precise model&lt;/p&gt;
-&lt;p&gt;Problem of integer multiplication.&lt;/p&gt;
-&lt;p&gt;Registers can contain arbitrary integers. Consider repeated squaring</summary>
+    <summary type="html">&lt;p&gt;For &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math</summary>
         
       
     
