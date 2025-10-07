@@ -26,11 +26,11 @@
             
             <tag> 留学 </tag>
             
+            <tag> 奥地利 </tag>
+            
             <tag> 德国 </tag>
             
             <tag> 意大利 </tag>
-            
-            <tag> 奥地利 </tag>
             
             <tag> 瑞典 </tag>
             
@@ -592,35 +592,6 @@
     
     
     <entry>
-      <title>算法博弈论（笔记已搬家）</title>
-      <link href="/posts/1b22e8c2.html"/>
-      <url>/posts/1b22e8c2.html</url>
-      
-        <content type="html"><![CDATA[<p>算法博弈论课程笔记已搬家至 <a href="https://tinsir888.codeberg.page/notes-mkdocs/site/audatalogi/23FAlgorithmicGameTheory/W35/">tinsir888’s Study Notes</a>！</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> AUDatalogi </category>
-          
-          <category> 算法博弈论 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 笔记 </tag>
-            
-            <tag> 算法博弈论 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>计算机视觉（笔记已搬家）</title>
       <link href="/posts/d7a12b7a.html"/>
       <url>/posts/d7a12b7a.html</url>
@@ -642,6 +613,35 @@
             <tag> 笔记 </tag>
             
             <tag> 计算机视觉 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>算法博弈论（笔记已搬家）</title>
+      <link href="/posts/1b22e8c2.html"/>
+      <url>/posts/1b22e8c2.html</url>
+      
+        <content type="html"><![CDATA[<p>算法博弈论课程笔记已搬家至 <a href="https://tinsir888.codeberg.page/notes-mkdocs/site/audatalogi/23FAlgorithmicGameTheory/W35/">tinsir888’s Study Notes</a>！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> AUDatalogi </category>
+          
+          <category> 算法博弈论 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 笔记 </tag>
+            
+            <tag> 算法博弈论 </tag>
             
         </tags>
       
@@ -672,9 +672,9 @@
             
             <tag> 留学 </tag>
             
-            <tag> 德国 </tag>
-            
             <tag> 奥地利 </tag>
+            
+            <tag> 德国 </tag>
             
             <tag> 瑞典 </tag>
             
@@ -792,9 +792,9 @@
             
             <tag> 留学 </tag>
             
-            <tag> 德国 </tag>
-            
             <tag> 奥地利 </tag>
+            
+            <tag> 德国 </tag>
             
             <tag> 瑞典 </tag>
             
@@ -912,9 +912,9 @@
             
             <tag> 留学 </tag>
             
-            <tag> 德国 </tag>
-            
             <tag> 奥地利 </tag>
+            
+            <tag> 德国 </tag>
             
             <tag> APS </tag>
             
@@ -1084,9 +1084,9 @@
       
         <tags>
             
-            <tag> LCA </tag>
-            
             <tag> Codeforces </tag>
+            
+            <tag> LCA </tag>
             
         </tags>
       
