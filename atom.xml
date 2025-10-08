@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>tinsir888s hjemmeside</title>
-  <icon>https://tinsir888.github.io/icon.png</icon>
+  <icon>https://tinsir888.codeberg.page/icon.png</icon>
   <subtitle>Some notes/articles and so on...</subtitle>
-  <link href="https://tinsir888.github.io/atom.xml" rel="self"/>
+  <link href="https://tinsir888.codeberg.page/atom.xml" rel="self"/>
   
-  <link href="https://tinsir888.github.io/"/>
+  <link href="https://tinsir888.codeberg.page/"/>
   <updated>2025-07-19T20:59:45.322Z</updated>
-  <id>https://tinsir888.github.io/</id>
+  <id>https://tinsir888.codeberg.page/</id>
   
   <author>
     <name>tinsir888</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>25 Fall CS PhD 申请历险记（终章：上岸！）</title>
-    <link href="https://tinsir888.github.io/posts/28a60d27.html"/>
-    <id>https://tinsir888.github.io/posts/28a60d27.html</id>
+    <link href="https://tinsir888.codeberg.page/posts/28a60d27.html"/>
+    <id>https://tinsir888.codeberg.page/posts/28a60d27.html</id>
     <published>2025-07-17T16:00:00.000Z</published>
     <updated>2025-07-19T20:59:45.322Z</updated>
     
@@ -35,31 +35,31 @@
     
     
     
-    <category term="留学申请" scheme="https://tinsir888.github.io/categories/%E7%95%99%E5%AD%A6%E7%94%B3%E8%AF%B7/"/>
+    <category term="留学申请" scheme="https://tinsir888.codeberg.page/categories/%E7%95%99%E5%AD%A6%E7%94%B3%E8%AF%B7/"/>
     
     
-    <category term="丹麦" scheme="https://tinsir888.github.io/tags/%E4%B8%B9%E9%BA%A6/"/>
+    <category term="丹麦" scheme="https://tinsir888.codeberg.page/tags/%E4%B8%B9%E9%BA%A6/"/>
     
-    <category term="奥地利" scheme="https://tinsir888.github.io/tags/%E5%A5%A5%E5%9C%B0%E5%88%A9/"/>
+    <category term="留学" scheme="https://tinsir888.codeberg.page/tags/%E7%95%99%E5%AD%A6/"/>
     
-    <category term="留学" scheme="https://tinsir888.github.io/tags/%E7%95%99%E5%AD%A6/"/>
+    <category term="德国" scheme="https://tinsir888.codeberg.page/tags/%E5%BE%B7%E5%9B%BD/"/>
     
-    <category term="德国" scheme="https://tinsir888.github.io/tags/%E5%BE%B7%E5%9B%BD/"/>
+    <category term="意大利" scheme="https://tinsir888.codeberg.page/tags/%E6%84%8F%E5%A4%A7%E5%88%A9/"/>
     
-    <category term="意大利" scheme="https://tinsir888.github.io/tags/%E6%84%8F%E5%A4%A7%E5%88%A9/"/>
+    <category term="奥地利" scheme="https://tinsir888.codeberg.page/tags/%E5%A5%A5%E5%9C%B0%E5%88%A9/"/>
     
-    <category term="瑞典" scheme="https://tinsir888.github.io/tags/%E7%91%9E%E5%85%B8/"/>
+    <category term="瑞典" scheme="https://tinsir888.codeberg.page/tags/%E7%91%9E%E5%85%B8/"/>
     
-    <category term="瑞士" scheme="https://tinsir888.github.io/tags/%E7%91%9E%E5%A3%AB/"/>
+    <category term="瑞士" scheme="https://tinsir888.codeberg.page/tags/%E7%91%9E%E5%A3%AB/"/>
     
-    <category term="北欧" scheme="https://tinsir888.github.io/tags/%E5%8C%97%E6%AC%A7/"/>
+    <category term="北欧" scheme="https://tinsir888.codeberg.page/tags/%E5%8C%97%E6%AC%A7/"/>
     
   </entry>
   
   <entry>
     <title>【整活】疑似 2025 年高考全国卷外语（丹麦语）试卷流出</title>
-    <link href="https://tinsir888.github.io/posts/a1455432.html"/>
-    <id>https://tinsir888.github.io/posts/a1455432.html</id>
+    <link href="https://tinsir888.codeberg.page/posts/a1455432.html"/>
+    <id>https://tinsir888.codeberg.page/posts/a1455432.html</id>
     <published>2025-06-06T16:00:00.000Z</published>
     <updated>2025-06-07T10:34:54.619Z</updated>
     
@@ -76,17 +76,17 @@
     
     
     
-    <category term="语言学习" scheme="https://tinsir888.github.io/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/"/>
+    <category term="语言学习" scheme="https://tinsir888.codeberg.page/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="Dansk" scheme="https://tinsir888.github.io/tags/Dansk/"/>
+    <category term="Dansk" scheme="https://tinsir888.codeberg.page/tags/Dansk/"/>
     
   </entry>
   
   <entry>
     <title>丹麦皇冠——学生工体验</title>
-    <link href="https://tinsir888.github.io/posts/d81e7e66.html"/>
-    <id>https://tinsir888.github.io/posts/d81e7e66.html</id>
+    <link href="https://tinsir888.codeberg.page/posts/d81e7e66.html"/>
+    <id>https://tinsir888.codeberg.page/posts/d81e7e66.html</id>
     <published>2024-11-27T16:00:00.000Z</published>
     <updated>2025-07-29T11:48:03.108Z</updated>
     
@@ -101,19 +101,19 @@
     
     
     
-    <category term="工作" scheme="https://tinsir888.github.io/categories/%E5%B7%A5%E4%BD%9C/"/>
+    <category term="工作" scheme="https://tinsir888.codeberg.page/categories/%E5%B7%A5%E4%BD%9C/"/>
     
     
-    <category term="实习经历" scheme="https://tinsir888.github.io/tags/%E5%AE%9E%E4%B9%A0%E7%BB%8F%E5%8E%86/"/>
+    <category term="实习经历" scheme="https://tinsir888.codeberg.page/tags/%E5%AE%9E%E4%B9%A0%E7%BB%8F%E5%8E%86/"/>
     
-    <category term="丹麦" scheme="https://tinsir888.github.io/tags/%E4%B8%B9%E9%BA%A6/"/>
+    <category term="丹麦" scheme="https://tinsir888.codeberg.page/tags/%E4%B8%B9%E9%BA%A6/"/>
     
   </entry>
   
   <entry>
     <title>Efficient ReliK（笔记已搬家）</title>
-    <link href="https://tinsir888.github.io/posts/3bdc648b.html"/>
-    <id>https://tinsir888.github.io/posts/3bdc648b.html</id>
+    <link href="https://tinsir888.codeberg.page/posts/3bdc648b.html"/>
+    <id>https://tinsir888.codeberg.page/posts/3bdc648b.html</id>
     <published>2024-09-14T16:00:00.000Z</published>
     <updated>2025-10-07T08:57:51.910Z</updated>
     
@@ -128,27 +128,27 @@
     
     
     
-    <category term="AUDatalogi" scheme="https://tinsir888.github.io/categories/AUDatalogi/"/>
+    <category term="AUDatalogi" scheme="https://tinsir888.codeberg.page/categories/AUDatalogi/"/>
     
-    <category term="数据挖掘" scheme="https://tinsir888.github.io/categories/AUDatalogi/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/"/>
+    <category term="数据挖掘" scheme="https://tinsir888.codeberg.page/categories/AUDatalogi/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/"/>
     
-    <category term="知识图谱嵌入可靠性衡量" scheme="https://tinsir888.github.io/categories/AUDatalogi/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E5%B5%8C%E5%85%A5%E5%8F%AF%E9%9D%A0%E6%80%A7%E8%A1%A1%E9%87%8F/"/>
+    <category term="知识图谱嵌入可靠性衡量" scheme="https://tinsir888.codeberg.page/categories/AUDatalogi/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E5%B5%8C%E5%85%A5%E5%8F%AF%E9%9D%A0%E6%80%A7%E8%A1%A1%E9%87%8F/"/>
     
     
-    <category term="笔记" scheme="https://tinsir888.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://tinsir888.codeberg.page/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="人工智能" scheme="https://tinsir888.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    <category term="人工智能" scheme="https://tinsir888.codeberg.page/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     
-    <category term="数据挖掘" scheme="https://tinsir888.github.io/tags/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/"/>
+    <category term="数据挖掘" scheme="https://tinsir888.codeberg.page/tags/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/"/>
     
-    <category term="知识图谱" scheme="https://tinsir888.github.io/tags/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1/"/>
+    <category term="知识图谱" scheme="https://tinsir888.codeberg.page/tags/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1/"/>
     
   </entry>
   
   <entry>
     <title>Fair AI/ML（笔记已搬家）</title>
-    <link href="https://tinsir888.github.io/posts/21c5a30c.html"/>
-    <id>https://tinsir888.github.io/posts/21c5a30c.html</id>
+    <link href="https://tinsir888.codeberg.page/posts/21c5a30c.html"/>
+    <id>https://tinsir888.codeberg.page/posts/21c5a30c.html</id>
     <published>2024-09-01T16:00:00.000Z</published>
     <updated>2025-10-07T08:59:09.241Z</updated>
     
@@ -163,25 +163,25 @@
     
     
     
-    <category term="AUDatalogi" scheme="https://tinsir888.github.io/categories/AUDatalogi/"/>
+    <category term="AUDatalogi" scheme="https://tinsir888.codeberg.page/categories/AUDatalogi/"/>
     
-    <category term="算法博弈论" scheme="https://tinsir888.github.io/categories/AUDatalogi/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
+    <category term="算法博弈论" scheme="https://tinsir888.codeberg.page/categories/AUDatalogi/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
     
-    <category term="AI/ML 公平性" scheme="https://tinsir888.github.io/categories/AUDatalogi/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/AI-ML-%E5%85%AC%E5%B9%B3%E6%80%A7/"/>
+    <category term="AI/ML 公平性" scheme="https://tinsir888.codeberg.page/categories/AUDatalogi/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/AI-ML-%E5%85%AC%E5%B9%B3%E6%80%A7/"/>
     
     
-    <category term="笔记" scheme="https://tinsir888.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://tinsir888.codeberg.page/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="算法博弈论" scheme="https://tinsir888.github.io/tags/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
+    <category term="算法博弈论" scheme="https://tinsir888.codeberg.page/tags/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
     
-    <category term="人工智能" scheme="https://tinsir888.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    <category term="人工智能" scheme="https://tinsir888.codeberg.page/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     
   </entry>
   
   <entry>
     <title>德语学习笔记已搬家</title>
-    <link href="https://tinsir888.github.io/posts/e09ce38.html"/>
-    <id>https://tinsir888.github.io/posts/e09ce38.html</id>
+    <link href="https://tinsir888.codeberg.page/posts/e09ce38.html"/>
+    <id>https://tinsir888.codeberg.page/posts/e09ce38.html</id>
     <published>2024-08-19T16:00:00.000Z</published>
     <updated>2025-10-07T09:15:24.626Z</updated>
     
@@ -196,21 +196,21 @@
     
     
     
-    <category term="语言学习" scheme="https://tinsir888.github.io/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/"/>
+    <category term="语言学习" scheme="https://tinsir888.codeberg.page/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="德语学习笔记" scheme="https://tinsir888.github.io/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/%E5%BE%B7%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="德语学习笔记" scheme="https://tinsir888.codeberg.page/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/%E5%BE%B7%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="笔记" scheme="https://tinsir888.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://tinsir888.codeberg.page/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="Deutsch" scheme="https://tinsir888.github.io/tags/Deutsch/"/>
+    <category term="Deutsch" scheme="https://tinsir888.codeberg.page/tags/Deutsch/"/>
     
   </entry>
   
   <entry>
     <title>Codeforces Round 963 (Div. 2) 部分题目总结</title>
-    <link href="https://tinsir888.github.io/posts/1ba06af0.html"/>
-    <id>https://tinsir888.github.io/posts/1ba06af0.html</id>
+    <link href="https://tinsir888.codeberg.page/posts/1ba06af0.html"/>
+    <id>https://tinsir888.codeberg.page/posts/1ba06af0.html</id>
     <published>2024-08-04T16:00:00.000Z</published>
     <updated>2024-08-04T21:10:28.954Z</updated>
     
@@ -227,17 +227,17 @@
     
     
     
-    <category term="算法与数据结构刷题" scheme="https://tinsir888.github.io/categories/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%88%B7%E9%A2%98/"/>
+    <category term="算法与数据结构刷题" scheme="https://tinsir888.codeberg.page/categories/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%88%B7%E9%A2%98/"/>
     
     
-    <category term="Codeforces" scheme="https://tinsir888.github.io/tags/Codeforces/"/>
+    <category term="Codeforces" scheme="https://tinsir888.codeberg.page/tags/Codeforces/"/>
     
   </entry>
   
   <entry>
     <title>Codeforces Round 957 (Div. 3) 解题思路</title>
-    <link href="https://tinsir888.github.io/posts/837cad8b.html"/>
-    <id>https://tinsir888.github.io/posts/837cad8b.html</id>
+    <link href="https://tinsir888.codeberg.page/posts/837cad8b.html"/>
+    <id>https://tinsir888.codeberg.page/posts/837cad8b.html</id>
     <published>2024-07-11T16:00:00.000Z</published>
     <updated>2024-08-04T18:43:22.892Z</updated>
     
@@ -254,17 +254,17 @@
     
     
     
-    <category term="算法与数据结构刷题" scheme="https://tinsir888.github.io/categories/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%88%B7%E9%A2%98/"/>
+    <category term="算法与数据结构刷题" scheme="https://tinsir888.codeberg.page/categories/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%88%B7%E9%A2%98/"/>
     
     
-    <category term="Codeforces" scheme="https://tinsir888.github.io/tags/Codeforces/"/>
+    <category term="Codeforces" scheme="https://tinsir888.codeberg.page/tags/Codeforces/"/>
     
   </entry>
   
   <entry>
     <title>算法和计算复杂度（笔记已搬家）</title>
-    <link href="https://tinsir888.github.io/posts/7f7103e4.html"/>
-    <id>https://tinsir888.github.io/posts/7f7103e4.html</id>
+    <link href="https://tinsir888.codeberg.page/posts/7f7103e4.html"/>
+    <id>https://tinsir888.codeberg.page/posts/7f7103e4.html</id>
     <published>2024-06-21T16:00:00.000Z</published>
     <updated>2025-10-07T08:56:52.063Z</updated>
     
@@ -279,23 +279,23 @@
     
     
     
-    <category term="AUDatalogi" scheme="https://tinsir888.github.io/categories/AUDatalogi/"/>
+    <category term="AUDatalogi" scheme="https://tinsir888.codeberg.page/categories/AUDatalogi/"/>
     
-    <category term="算法和计算复杂度" scheme="https://tinsir888.github.io/categories/AUDatalogi/%E7%AE%97%E6%B3%95%E5%92%8C%E8%AE%A1%E7%AE%97%E5%A4%8D%E6%9D%82%E5%BA%A6/"/>
+    <category term="算法和计算复杂度" scheme="https://tinsir888.codeberg.page/categories/AUDatalogi/%E7%AE%97%E6%B3%95%E5%92%8C%E8%AE%A1%E7%AE%97%E5%A4%8D%E6%9D%82%E5%BA%A6/"/>
     
     
-    <category term="笔记" scheme="https://tinsir888.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://tinsir888.codeberg.page/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="算法" scheme="https://tinsir888.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://tinsir888.codeberg.page/tags/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="计算复杂度" scheme="https://tinsir888.github.io/tags/%E8%AE%A1%E7%AE%97%E5%A4%8D%E6%9D%82%E5%BA%A6/"/>
+    <category term="计算复杂度" scheme="https://tinsir888.codeberg.page/tags/%E8%AE%A1%E7%AE%97%E5%A4%8D%E6%9D%82%E5%BA%A6/"/>
     
   </entry>
   
   <entry>
     <title>丹麦 IT 学生工求职记（已接 offer 版）</title>
-    <link href="https://tinsir888.github.io/posts/ecaaaba7.html"/>
-    <id>https://tinsir888.github.io/posts/ecaaaba7.html</id>
+    <link href="https://tinsir888.codeberg.page/posts/ecaaaba7.html"/>
+    <id>https://tinsir888.codeberg.page/posts/ecaaaba7.html</id>
     <published>2024-04-11T16:00:00.000Z</published>
     <updated>2024-11-29T00:00:47.086Z</updated>
     
@@ -310,19 +310,19 @@
     
     
     
-    <category term="工作" scheme="https://tinsir888.github.io/categories/%E5%B7%A5%E4%BD%9C/"/>
+    <category term="工作" scheme="https://tinsir888.codeberg.page/categories/%E5%B7%A5%E4%BD%9C/"/>
     
     
-    <category term="实习经历" scheme="https://tinsir888.github.io/tags/%E5%AE%9E%E4%B9%A0%E7%BB%8F%E5%8E%86/"/>
+    <category term="实习经历" scheme="https://tinsir888.codeberg.page/tags/%E5%AE%9E%E4%B9%A0%E7%BB%8F%E5%8E%86/"/>
     
-    <category term="丹麦" scheme="https://tinsir888.github.io/tags/%E4%B8%B9%E9%BA%A6/"/>
+    <category term="丹麦" scheme="https://tinsir888.codeberg.page/tags/%E4%B8%B9%E9%BA%A6/"/>
     
   </entry>
   
   <entry>
     <title>西语学习笔记已搬家</title>
-    <link href="https://tinsir888.github.io/posts/53825797.html"/>
-    <id>https://tinsir888.github.io/posts/53825797.html</id>
+    <link href="https://tinsir888.codeberg.page/posts/53825797.html"/>
+    <id>https://tinsir888.codeberg.page/posts/53825797.html</id>
     <published>2024-03-14T16:00:00.000Z</published>
     <updated>2025-10-07T09:19:40.960Z</updated>
     
@@ -337,21 +337,21 @@
     
     
     
-    <category term="语言学习" scheme="https://tinsir888.github.io/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/"/>
+    <category term="语言学习" scheme="https://tinsir888.codeberg.page/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="西班牙语学习笔记" scheme="https://tinsir888.github.io/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/%E8%A5%BF%E7%8F%AD%E7%89%99%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="西班牙语学习笔记" scheme="https://tinsir888.codeberg.page/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/%E8%A5%BF%E7%8F%AD%E7%89%99%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="笔记" scheme="https://tinsir888.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://tinsir888.codeberg.page/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="Español" scheme="https://tinsir888.github.io/tags/Espanol/"/>
+    <category term="Español" scheme="https://tinsir888.codeberg.page/tags/Espanol/"/>
     
   </entry>
   
   <entry>
     <title>意大利语学习笔记已搬家</title>
-    <link href="https://tinsir888.github.io/posts/55dc0d86.html"/>
-    <id>https://tinsir888.github.io/posts/55dc0d86.html</id>
+    <link href="https://tinsir888.codeberg.page/posts/55dc0d86.html"/>
+    <id>https://tinsir888.codeberg.page/posts/55dc0d86.html</id>
     <published>2024-02-28T16:00:00.000Z</published>
     <updated>2025-10-07T09:18:03.965Z</updated>
     
@@ -366,21 +366,21 @@
     
     
     
-    <category term="语言学习" scheme="https://tinsir888.github.io/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/"/>
+    <category term="语言学习" scheme="https://tinsir888.codeberg.page/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="意大利语学习笔记" scheme="https://tinsir888.github.io/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/%E6%84%8F%E5%A4%A7%E5%88%A9%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="意大利语学习笔记" scheme="https://tinsir888.codeberg.page/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/%E6%84%8F%E5%A4%A7%E5%88%A9%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="笔记" scheme="https://tinsir888.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://tinsir888.codeberg.page/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="Italiano" scheme="https://tinsir888.github.io/tags/Italiano/"/>
+    <category term="Italiano" scheme="https://tinsir888.codeberg.page/tags/Italiano/"/>
     
   </entry>
   
   <entry>
     <title>Fair Division（笔记已搬家）</title>
-    <link href="https://tinsir888.github.io/posts/92da76c1.html"/>
-    <id>https://tinsir888.github.io/posts/92da76c1.html</id>
+    <link href="https://tinsir888.codeberg.page/posts/92da76c1.html"/>
+    <id>https://tinsir888.codeberg.page/posts/92da76c1.html</id>
     <published>2024-02-01T16:00:00.000Z</published>
     <updated>2025-10-07T08:53:47.255Z</updated>
     
@@ -395,23 +395,23 @@
     
     
     
-    <category term="AUDatalogi" scheme="https://tinsir888.github.io/categories/AUDatalogi/"/>
+    <category term="AUDatalogi" scheme="https://tinsir888.codeberg.page/categories/AUDatalogi/"/>
     
-    <category term="算法博弈论" scheme="https://tinsir888.github.io/categories/AUDatalogi/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
+    <category term="算法博弈论" scheme="https://tinsir888.codeberg.page/categories/AUDatalogi/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
     
-    <category term="公平分配博弈" scheme="https://tinsir888.github.io/categories/AUDatalogi/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/%E5%85%AC%E5%B9%B3%E5%88%86%E9%85%8D%E5%8D%9A%E5%BC%88/"/>
+    <category term="公平分配博弈" scheme="https://tinsir888.codeberg.page/categories/AUDatalogi/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/%E5%85%AC%E5%B9%B3%E5%88%86%E9%85%8D%E5%8D%9A%E5%BC%88/"/>
     
     
-    <category term="笔记" scheme="https://tinsir888.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://tinsir888.codeberg.page/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="算法博弈论" scheme="https://tinsir888.github.io/tags/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
+    <category term="算法博弈论" scheme="https://tinsir888.codeberg.page/tags/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
     
   </entry>
   
   <entry>
     <title>数据挖掘（笔记已搬家）</title>
-    <link href="https://tinsir888.github.io/posts/aca7e38.html"/>
-    <id>https://tinsir888.github.io/posts/aca7e38.html</id>
+    <link href="https://tinsir888.codeberg.page/posts/aca7e38.html"/>
+    <id>https://tinsir888.codeberg.page/posts/aca7e38.html</id>
     <published>2024-01-28T16:00:00.000Z</published>
     <updated>2025-10-07T08:54:52.609Z</updated>
     
@@ -426,21 +426,21 @@
     
     
     
-    <category term="AUDatalogi" scheme="https://tinsir888.github.io/categories/AUDatalogi/"/>
+    <category term="AUDatalogi" scheme="https://tinsir888.codeberg.page/categories/AUDatalogi/"/>
     
-    <category term="数据挖掘" scheme="https://tinsir888.github.io/categories/AUDatalogi/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/"/>
+    <category term="数据挖掘" scheme="https://tinsir888.codeberg.page/categories/AUDatalogi/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/"/>
     
     
-    <category term="笔记" scheme="https://tinsir888.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://tinsir888.codeberg.page/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="数据挖掘" scheme="https://tinsir888.github.io/tags/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/"/>
+    <category term="数据挖掘" scheme="https://tinsir888.codeberg.page/tags/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/"/>
     
   </entry>
   
   <entry>
     <title>随机算法（笔记已搬家）</title>
-    <link href="https://tinsir888.github.io/posts/f202fd8f.html"/>
-    <id>https://tinsir888.github.io/posts/f202fd8f.html</id>
+    <link href="https://tinsir888.codeberg.page/posts/f202fd8f.html"/>
+    <id>https://tinsir888.codeberg.page/posts/f202fd8f.html</id>
     <published>2024-01-28T16:00:00.000Z</published>
     <updated>2025-10-07T08:55:52.139Z</updated>
     
@@ -455,21 +455,21 @@
     
     
     
-    <category term="AUDatalogi" scheme="https://tinsir888.github.io/categories/AUDatalogi/"/>
+    <category term="AUDatalogi" scheme="https://tinsir888.codeberg.page/categories/AUDatalogi/"/>
     
-    <category term="随机算法" scheme="https://tinsir888.github.io/categories/AUDatalogi/%E9%9A%8F%E6%9C%BA%E7%AE%97%E6%B3%95/"/>
+    <category term="随机算法" scheme="https://tinsir888.codeberg.page/categories/AUDatalogi/%E9%9A%8F%E6%9C%BA%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="笔记" scheme="https://tinsir888.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://tinsir888.codeberg.page/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="随机算法" scheme="https://tinsir888.github.io/tags/%E9%9A%8F%E6%9C%BA%E7%AE%97%E6%B3%95/"/>
+    <category term="随机算法" scheme="https://tinsir888.codeberg.page/tags/%E9%9A%8F%E6%9C%BA%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>書之溯源 SourceBook —— 使用超分辨率技术修复低清扫描书的一款工具</title>
-    <link href="https://tinsir888.github.io/posts/27a2575b.html"/>
-    <id>https://tinsir888.github.io/posts/27a2575b.html</id>
+    <link href="https://tinsir888.codeberg.page/posts/27a2575b.html"/>
+    <id>https://tinsir888.codeberg.page/posts/27a2575b.html</id>
     <published>2024-01-21T16:00:00.000Z</published>
     <updated>2024-01-22T17:21:21.713Z</updated>
     
@@ -485,19 +485,19 @@
     
     
     
-    <category term="工具分享" scheme="https://tinsir888.github.io/categories/%E5%B7%A5%E5%85%B7%E5%88%86%E4%BA%AB/"/>
+    <category term="工具分享" scheme="https://tinsir888.codeberg.page/categories/%E5%B7%A5%E5%85%B7%E5%88%86%E4%BA%AB/"/>
     
     
-    <category term="实用工具" scheme="https://tinsir888.github.io/tags/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
+    <category term="实用工具" scheme="https://tinsir888.codeberg.page/tags/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
     
-    <category term="PDF" scheme="https://tinsir888.github.io/tags/PDF/"/>
+    <category term="PDF" scheme="https://tinsir888.codeberg.page/tags/PDF/"/>
     
   </entry>
   
   <entry>
     <title>法语学习笔记已搬家</title>
-    <link href="https://tinsir888.github.io/posts/759edeae.html"/>
-    <id>https://tinsir888.github.io/posts/759edeae.html</id>
+    <link href="https://tinsir888.codeberg.page/posts/759edeae.html"/>
+    <id>https://tinsir888.codeberg.page/posts/759edeae.html</id>
     <published>2024-01-04T16:00:00.000Z</published>
     <updated>2025-10-07T09:16:53.522Z</updated>
     
@@ -512,21 +512,21 @@
     
     
     
-    <category term="语言学习" scheme="https://tinsir888.github.io/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/"/>
+    <category term="语言学习" scheme="https://tinsir888.codeberg.page/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="法语学习笔记" scheme="https://tinsir888.github.io/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/%E6%B3%95%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="法语学习笔记" scheme="https://tinsir888.codeberg.page/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/%E6%B3%95%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="笔记" scheme="https://tinsir888.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://tinsir888.codeberg.page/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="Français" scheme="https://tinsir888.github.io/tags/Francais/"/>
+    <category term="Français" scheme="https://tinsir888.codeberg.page/tags/Francais/"/>
     
   </entry>
   
   <entry>
     <title>算法博弈论 三篇不同方向的论文阅读</title>
-    <link href="https://tinsir888.github.io/posts/248b382e.html"/>
-    <id>https://tinsir888.github.io/posts/248b382e.html</id>
+    <link href="https://tinsir888.codeberg.page/posts/248b382e.html"/>
+    <id>https://tinsir888.codeberg.page/posts/248b382e.html</id>
     <published>2023-12-12T16:00:00.000Z</published>
     <updated>2024-01-26T10:51:59.253Z</updated>
     
@@ -542,23 +542,23 @@
     
     
     
-    <category term="AUDatalogi" scheme="https://tinsir888.github.io/categories/AUDatalogi/"/>
+    <category term="AUDatalogi" scheme="https://tinsir888.codeberg.page/categories/AUDatalogi/"/>
     
-    <category term="算法博弈论" scheme="https://tinsir888.github.io/categories/AUDatalogi/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
+    <category term="算法博弈论" scheme="https://tinsir888.codeberg.page/categories/AUDatalogi/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
     
     
-    <category term="笔记" scheme="https://tinsir888.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://tinsir888.codeberg.page/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="算法博弈论" scheme="https://tinsir888.github.io/tags/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
+    <category term="算法博弈论" scheme="https://tinsir888.codeberg.page/tags/%E7%AE%97%E6%B3%95%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
     
-    <category term="论文阅读" scheme="https://tinsir888.github.io/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/"/>
+    <category term="论文阅读" scheme="https://tinsir888.codeberg.page/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/"/>
     
   </entry>
   
   <entry>
     <title>丹麦语（已搬家）</title>
-    <link href="https://tinsir888.github.io/posts/42781bf6.html"/>
-    <id>https://tinsir888.github.io/posts/42781bf6.html</id>
+    <link href="https://tinsir888.codeberg.page/posts/42781bf6.html"/>
+    <id>https://tinsir888.codeberg.page/posts/42781bf6.html</id>
     <published>2023-09-06T16:00:00.000Z</published>
     <updated>2025-10-07T09:15:52.872Z</updated>
     
@@ -573,21 +573,21 @@
     
     
     
-    <category term="语言学习" scheme="https://tinsir888.github.io/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/"/>
+    <category term="语言学习" scheme="https://tinsir888.codeberg.page/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="丹麦语学习笔记" scheme="https://tinsir888.github.io/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/%E4%B8%B9%E9%BA%A6%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="丹麦语学习笔记" scheme="https://tinsir888.codeberg.page/categories/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/%E4%B8%B9%E9%BA%A6%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="笔记" scheme="https://tinsir888.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://tinsir888.codeberg.page/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="Dansk" scheme="https://tinsir888.github.io/tags/Dansk/"/>
+    <category term="Dansk" scheme="https://tinsir888.codeberg.page/tags/Dansk/"/>
     
   </entry>
   
   <entry>
     <title>计算几何 （笔记已搬家）</title>
-    <link href="https://tinsir888.github.io/posts/d326008c.html"/>
-    <id>https://tinsir888.github.io/posts/d326008c.html</id>
+    <link href="https://tinsir888.codeberg.page/posts/d326008c.html"/>
+    <id>https://tinsir888.codeberg.page/posts/d326008c.html</id>
     <published>2023-08-28T16:00:00.000Z</published>
     <updated>2025-10-07T08:51:09.560Z</updated>
     
@@ -602,14 +602,14 @@
     
     
     
-    <category term="AUDatalogi" scheme="https://tinsir888.github.io/categories/AUDatalogi/"/>
+    <category term="AUDatalogi" scheme="https://tinsir888.codeberg.page/categories/AUDatalogi/"/>
     
-    <category term="计算几何" scheme="https://tinsir888.github.io/categories/AUDatalogi/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95/"/>
+    <category term="计算几何" scheme="https://tinsir888.codeberg.page/categories/AUDatalogi/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95/"/>
     
     
-    <category term="笔记" scheme="https://tinsir888.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://tinsir888.codeberg.page/tags/%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="计算几何" scheme="https://tinsir888.github.io/tags/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95/"/>
+    <category term="计算几何" scheme="https://tinsir888.codeberg.page/tags/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95/"/>
     
   </entry>
   
