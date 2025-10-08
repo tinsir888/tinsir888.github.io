@@ -1186,6 +1186,35 @@
     
     
     <entry>
+      <title>网络技术与应用（已搬家）</title>
+      <link href="/posts/39cffa60.html"/>
+      <url>/posts/39cffa60.html</url>
+      
+        <content type="html"><![CDATA[<p>本课程所有笔记已经搬家至 <a href="https://tinsir888.codeberg.page/notes-mkdocs/site/nkucs/NetworkTechnology/Kapitel1/">tinsir888’s Study Notes</a>！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 南开计科 </category>
+          
+          <category> 网络技术与应用课程笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 笔记 </tag>
+            
+            <tag> 计算机网络 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>汇编语言与逆向技术基础（已搬家）</title>
       <link href="/posts/1cbb3465.html"/>
       <url>/posts/1cbb3465.html</url>
@@ -1209,35 +1238,6 @@
             <tag> 汇编 </tag>
             
             <tag> 逆向 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>网络技术与应用（已搬家）</title>
-      <link href="/posts/39cffa60.html"/>
-      <url>/posts/39cffa60.html</url>
-      
-        <content type="html"><![CDATA[<p>本课程所有笔记已经搬家至 <a href="https://tinsir888.codeberg.page/notes-mkdocs/site/nkucs/NetworkTechnology/Kapitel1/">tinsir888’s Study Notes</a>！</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 南开计科 </category>
-          
-          <category> 网络技术与应用课程笔记 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 笔记 </tag>
-            
-            <tag> 计算机网络 </tag>
             
         </tags>
       
