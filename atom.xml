@@ -6,7 +6,7 @@
   <link href="https://tinsir888.codeberg.page/atom.xml" rel="self"/>
   
   <link href="https://tinsir888.codeberg.page/"/>
-  <updated>2025-10-08T03:32:42.532Z</updated>
+  <updated>2025-12-10T22:45:59.914Z</updated>
   <id>https://tinsir888.codeberg.page/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>How to ...? Basis of working as a PhD Student.</title>
+    <link href="https://tinsir888.codeberg.page/posts/a1455432.html"/>
+    <id>https://tinsir888.codeberg.page/posts/a1455432.html</id>
+    <published>2025-12-09T23:00:00.000Z</published>
+    <updated>2025-12-10T22:45:59.914Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;how-to-referee-a-scientific-paper&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#how-to-referee-a-scientific-paper&quot;&gt;&lt;/a&gt; How to Referee a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="笔记" scheme="https://tinsir888.codeberg.page/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>博客瘦身计划——所有笔记均已搬家</title>
     <link href="https://tinsir888.codeberg.page/posts/960c56c6.html"/>
     <id>https://tinsir888.codeberg.page/posts/960c56c6.html</id>
-    <published>2025-10-07T16:00:00.000Z</published>
-    <updated>2025-10-08T03:32:42.532Z</updated>
+    <published>2025-10-07T22:00:00.000Z</published>
+    <updated>2025-12-10T22:36:50.814Z</updated>
     
     
       
@@ -35,10 +58,6 @@
     
     
     
-    <category term="南开计科" scheme="https://tinsir888.codeberg.page/categories/%E5%8D%97%E5%BC%80%E8%AE%A1%E7%A7%91/"/>
-    
-    <category term="AUDatalogi" scheme="https://tinsir888.codeberg.page/categories/%E5%8D%97%E5%BC%80%E8%AE%A1%E7%A7%91/AUDatalogi/"/>
-    
     
     <category term="笔记" scheme="https://tinsir888.codeberg.page/tags/%E7%AC%94%E8%AE%B0/"/>
     
@@ -48,7 +67,7 @@
     <title>25 Fall CS PhD 申请历险记（终章：上岸！）</title>
     <link href="https://tinsir888.codeberg.page/posts/28a60d27.html"/>
     <id>https://tinsir888.codeberg.page/posts/28a60d27.html</id>
-    <published>2025-07-17T16:00:00.000Z</published>
+    <published>2025-07-17T22:00:00.000Z</published>
     <updated>2025-07-19T20:59:45.322Z</updated>
     
     
@@ -68,8 +87,6 @@
     
     <category term="丹麦" scheme="https://tinsir888.codeberg.page/tags/%E4%B8%B9%E9%BA%A6/"/>
     
-    <category term="北欧" scheme="https://tinsir888.codeberg.page/tags/%E5%8C%97%E6%AC%A7/"/>
-    
     <category term="留学" scheme="https://tinsir888.codeberg.page/tags/%E7%95%99%E5%AD%A6/"/>
     
     <category term="德国" scheme="https://tinsir888.codeberg.page/tags/%E5%BE%B7%E5%9B%BD/"/>
@@ -82,13 +99,15 @@
     
     <category term="瑞士" scheme="https://tinsir888.codeberg.page/tags/%E7%91%9E%E5%A3%AB/"/>
     
+    <category term="北欧" scheme="https://tinsir888.codeberg.page/tags/%E5%8C%97%E6%AC%A7/"/>
+    
   </entry>
   
   <entry>
     <title>【整活】疑似 2025 年高考全国卷外语（丹麦语）试卷流出</title>
     <link href="https://tinsir888.codeberg.page/posts/a1455432.html"/>
     <id>https://tinsir888.codeberg.page/posts/a1455432.html</id>
-    <published>2025-06-06T16:00:00.000Z</published>
+    <published>2025-06-06T22:00:00.000Z</published>
     <updated>2025-06-07T10:34:54.619Z</updated>
     
     
@@ -115,7 +134,7 @@
     <title>丹麦皇冠——学生工体验</title>
     <link href="https://tinsir888.codeberg.page/posts/d81e7e66.html"/>
     <id>https://tinsir888.codeberg.page/posts/d81e7e66.html</id>
-    <published>2024-11-27T16:00:00.000Z</published>
+    <published>2024-11-27T23:00:00.000Z</published>
     <updated>2025-07-29T11:48:03.108Z</updated>
     
     
@@ -142,7 +161,7 @@
     <title>丹麦 IT 学生工求职记（已接 offer 版）</title>
     <link href="https://tinsir888.codeberg.page/posts/ecaaaba7.html"/>
     <id>https://tinsir888.codeberg.page/posts/ecaaaba7.html</id>
-    <published>2024-04-11T16:00:00.000Z</published>
+    <published>2024-04-11T22:00:00.000Z</published>
     <updated>2024-11-29T00:00:47.086Z</updated>
     
     
@@ -169,7 +188,7 @@
     <title>書之溯源 SourceBook —— 使用超分辨率技术修复低清扫描书的一款工具</title>
     <link href="https://tinsir888.codeberg.page/posts/27a2575b.html"/>
     <id>https://tinsir888.codeberg.page/posts/27a2575b.html</id>
-    <published>2024-01-21T16:00:00.000Z</published>
+    <published>2024-01-21T23:00:00.000Z</published>
     <updated>2024-01-22T17:21:21.713Z</updated>
     
     
@@ -197,7 +216,7 @@
     <title>算法博弈论 三篇不同方向的论文阅读</title>
     <link href="https://tinsir888.codeberg.page/posts/248b382e.html"/>
     <id>https://tinsir888.codeberg.page/posts/248b382e.html</id>
-    <published>2023-12-12T16:00:00.000Z</published>
+    <published>2023-12-12T23:00:00.000Z</published>
     <updated>2024-01-26T10:51:59.253Z</updated>
     
     
@@ -229,7 +248,7 @@
     <title>留学申请就是大撒币</title>
     <link href="https://tinsir888.codeberg.page/posts/be6176a4.html"/>
     <id>https://tinsir888.codeberg.page/posts/be6176a4.html</id>
-    <published>2023-02-05T16:00:00.000Z</published>
+    <published>2023-02-05T23:00:00.000Z</published>
     <updated>2023-08-22T06:52:59.274Z</updated>
     
     
@@ -250,8 +269,6 @@
     
     <category term="丹麦" scheme="https://tinsir888.codeberg.page/tags/%E4%B8%B9%E9%BA%A6/"/>
     
-    <category term="北欧" scheme="https://tinsir888.codeberg.page/tags/%E5%8C%97%E6%AC%A7/"/>
-    
     <category term="留学" scheme="https://tinsir888.codeberg.page/tags/%E7%95%99%E5%AD%A6/"/>
     
     <category term="德国" scheme="https://tinsir888.codeberg.page/tags/%E5%BE%B7%E5%9B%BD/"/>
@@ -260,35 +277,9 @@
     
     <category term="瑞典" scheme="https://tinsir888.codeberg.page/tags/%E7%91%9E%E5%85%B8/"/>
     
+    <category term="北欧" scheme="https://tinsir888.codeberg.page/tags/%E5%8C%97%E6%AC%A7/"/>
+    
     <category term="芬兰" scheme="https://tinsir888.codeberg.page/tags/%E8%8A%AC%E5%85%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>德国学校申请全过程记录</title>
-    <link href="https://tinsir888.codeberg.page/posts/9736e7ab.html"/>
-    <id>https://tinsir888.codeberg.page/posts/9736e7ab.html</id>
-    <published>2022-12-29T16:00:00.000Z</published>
-    <updated>2023-10-13T17:08:59.630Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;这一篇是有关 🇩🇪 学校申请的流水账。&lt;/p&gt;
-&lt;p&gt;申请德国留学的第一步：留德人员审核（Akademische Prüfstelle），对应的流水账文章链接 &lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="留学申请" scheme="https://tinsir888.codeberg.page/categories/%E7%95%99%E5%AD%A6%E7%94%B3%E8%AF%B7/"/>
-    
-    
-    <category term="留学" scheme="https://tinsir888.codeberg.page/tags/%E7%95%99%E5%AD%A6/"/>
-    
-    <category term="德国" scheme="https://tinsir888.codeberg.page/tags/%E5%BE%B7%E5%9B%BD/"/>
     
   </entry>
   
@@ -296,7 +287,7 @@
     <title>奥地利学校申请全过程记录</title>
     <link href="https://tinsir888.codeberg.page/posts/b2182fb5.html"/>
     <id>https://tinsir888.codeberg.page/posts/b2182fb5.html</id>
-    <published>2022-12-29T16:00:00.000Z</published>
+    <published>2022-12-29T23:00:00.000Z</published>
     <updated>2023-10-13T17:08:17.580Z</updated>
     
     
@@ -322,10 +313,38 @@
   </entry>
   
   <entry>
+    <title>德国学校申请全过程记录</title>
+    <link href="https://tinsir888.codeberg.page/posts/9736e7ab.html"/>
+    <id>https://tinsir888.codeberg.page/posts/9736e7ab.html</id>
+    <published>2022-12-29T23:00:00.000Z</published>
+    <updated>2023-10-13T17:08:59.630Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;这一篇是有关 🇩🇪 学校申请的流水账。&lt;/p&gt;
+&lt;p&gt;申请德国留学的第一步：留德人员审核（Akademische Prüfstelle），对应的流水账文章链接 &lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="留学申请" scheme="https://tinsir888.codeberg.page/categories/%E7%95%99%E5%AD%A6%E7%94%B3%E8%AF%B7/"/>
+    
+    
+    <category term="留学" scheme="https://tinsir888.codeberg.page/tags/%E7%95%99%E5%AD%A6/"/>
+    
+    <category term="德国" scheme="https://tinsir888.codeberg.page/tags/%E5%BE%B7%E5%9B%BD/"/>
+    
+  </entry>
+  
+  <entry>
     <title>芬兰学校申请全过程记录</title>
     <link href="https://tinsir888.codeberg.page/posts/795b9708.html"/>
     <id>https://tinsir888.codeberg.page/posts/795b9708.html</id>
-    <published>2022-11-30T16:00:00.000Z</published>
+    <published>2022-11-30T23:00:00.000Z</published>
     <updated>2023-04-01T07:36:41.573Z</updated>
     
     
@@ -342,9 +361,9 @@
     <category term="留学申请" scheme="https://tinsir888.codeberg.page/categories/%E7%95%99%E5%AD%A6%E7%94%B3%E8%AF%B7/"/>
     
     
-    <category term="北欧" scheme="https://tinsir888.codeberg.page/tags/%E5%8C%97%E6%AC%A7/"/>
-    
     <category term="留学" scheme="https://tinsir888.codeberg.page/tags/%E7%95%99%E5%AD%A6/"/>
+    
+    <category term="北欧" scheme="https://tinsir888.codeberg.page/tags/%E5%8C%97%E6%AC%A7/"/>
     
     <category term="芬兰" scheme="https://tinsir888.codeberg.page/tags/%E8%8A%AC%E5%85%B0/"/>
     
@@ -354,7 +373,7 @@
     <title>23 Fall CS/AI 硕士留学申请记录</title>
     <link href="https://tinsir888.codeberg.page/posts/fc8a9ea4.html"/>
     <id>https://tinsir888.codeberg.page/posts/fc8a9ea4.html</id>
-    <published>2022-11-21T16:00:00.000Z</published>
+    <published>2022-11-21T23:00:00.000Z</published>
     <updated>2025-07-29T11:40:01.397Z</updated>
     
     
@@ -374,8 +393,6 @@
     
     <category term="丹麦" scheme="https://tinsir888.codeberg.page/tags/%E4%B8%B9%E9%BA%A6/"/>
     
-    <category term="北欧" scheme="https://tinsir888.codeberg.page/tags/%E5%8C%97%E6%AC%A7/"/>
-    
     <category term="留学" scheme="https://tinsir888.codeberg.page/tags/%E7%95%99%E5%AD%A6/"/>
     
     <category term="德国" scheme="https://tinsir888.codeberg.page/tags/%E5%BE%B7%E5%9B%BD/"/>
@@ -383,6 +400,8 @@
     <category term="奥地利" scheme="https://tinsir888.codeberg.page/tags/%E5%A5%A5%E5%9C%B0%E5%88%A9/"/>
     
     <category term="瑞典" scheme="https://tinsir888.codeberg.page/tags/%E7%91%9E%E5%85%B8/"/>
+    
+    <category term="北欧" scheme="https://tinsir888.codeberg.page/tags/%E5%8C%97%E6%AC%A7/"/>
     
     <category term="芬兰" scheme="https://tinsir888.codeberg.page/tags/%E8%8A%AC%E5%85%B0/"/>
     
@@ -392,7 +411,7 @@
     <title>丹麦学校申请全过程记录</title>
     <link href="https://tinsir888.codeberg.page/posts/d1d83d58.html"/>
     <id>https://tinsir888.codeberg.page/posts/d1d83d58.html</id>
-    <published>2022-11-16T16:00:00.000Z</published>
+    <published>2022-11-16T23:00:00.000Z</published>
     <updated>2023-03-30T15:07:58.296Z</updated>
     
     
@@ -411,9 +430,9 @@
     
     <category term="丹麦" scheme="https://tinsir888.codeberg.page/tags/%E4%B8%B9%E9%BA%A6/"/>
     
-    <category term="北欧" scheme="https://tinsir888.codeberg.page/tags/%E5%8C%97%E6%AC%A7/"/>
-    
     <category term="留学" scheme="https://tinsir888.codeberg.page/tags/%E7%95%99%E5%AD%A6/"/>
+    
+    <category term="北欧" scheme="https://tinsir888.codeberg.page/tags/%E5%8C%97%E6%AC%A7/"/>
     
   </entry>
   
@@ -421,7 +440,7 @@
     <title>瑞典学校申请全过程记录</title>
     <link href="https://tinsir888.codeberg.page/posts/5ba31e31.html"/>
     <id>https://tinsir888.codeberg.page/posts/5ba31e31.html</id>
-    <published>2022-11-15T16:00:00.000Z</published>
+    <published>2022-11-15T23:00:00.000Z</published>
     <updated>2023-04-01T07:37:28.093Z</updated>
     
     
@@ -441,11 +460,11 @@
     <category term="留学申请" scheme="https://tinsir888.codeberg.page/categories/%E7%95%99%E5%AD%A6%E7%94%B3%E8%AF%B7/"/>
     
     
-    <category term="北欧" scheme="https://tinsir888.codeberg.page/tags/%E5%8C%97%E6%AC%A7/"/>
-    
     <category term="留学" scheme="https://tinsir888.codeberg.page/tags/%E7%95%99%E5%AD%A6/"/>
     
     <category term="瑞典" scheme="https://tinsir888.codeberg.page/tags/%E7%91%9E%E5%85%B8/"/>
+    
+    <category term="北欧" scheme="https://tinsir888.codeberg.page/tags/%E5%8C%97%E6%AC%A7/"/>
     
   </entry>
   
@@ -453,7 +472,7 @@
     <title>APS 复习课程清单</title>
     <link href="https://tinsir888.codeberg.page/posts/19a08087.html"/>
     <id>https://tinsir888.codeberg.page/posts/19a08087.html</id>
-    <published>2022-10-16T16:00:00.000Z</published>
+    <published>2022-10-16T22:00:00.000Z</published>
     <updated>2025-10-07T09:12:28.912Z</updated>
     
     
@@ -482,7 +501,7 @@
     <title>针对硕士申请的留德人员审核（Akademische Prüfstelle）全过程记录</title>
     <link href="https://tinsir888.codeberg.page/posts/78cb6bc4.html"/>
     <id>https://tinsir888.codeberg.page/posts/78cb6bc4.html</id>
-    <published>2022-10-15T16:00:00.000Z</published>
+    <published>2022-10-15T22:00:00.000Z</published>
     <updated>2025-07-29T11:40:11.165Z</updated>
     
     
@@ -514,7 +533,7 @@
     <title>“一生一芯”计划 基础阶段</title>
     <link href="https://tinsir888.codeberg.page/posts/58efac96.html"/>
     <id>https://tinsir888.codeberg.page/posts/58efac96.html</id>
-    <published>2022-09-18T16:00:00.000Z</published>
+    <published>2022-09-18T22:00:00.000Z</published>
     <updated>2022-12-14T04:27:21.973Z</updated>
     
     
@@ -550,7 +569,7 @@
     <title>本科第七学期（大四上）的课表</title>
     <link href="https://tinsir888.codeberg.page/posts/b0bcf79e.html"/>
     <id>https://tinsir888.codeberg.page/posts/b0bcf79e.html</id>
-    <published>2022-09-10T16:00:00.000Z</published>
+    <published>2022-09-10T22:00:00.000Z</published>
     <updated>2022-09-11T10:25:37.073Z</updated>
     
     
@@ -574,7 +593,7 @@
     <title>华为 ICT 计算产品线 2022 年暑期实习经历</title>
     <link href="https://tinsir888.codeberg.page/posts/6b8f58f7.html"/>
     <id>https://tinsir888.codeberg.page/posts/6b8f58f7.html</id>
-    <published>2022-08-27T16:00:00.000Z</published>
+    <published>2022-08-27T22:00:00.000Z</published>
     <updated>2022-08-28T05:51:39.250Z</updated>
     
     
@@ -594,41 +613,6 @@
     <category term="实习经历" scheme="https://tinsir888.codeberg.page/tags/%E5%AE%9E%E4%B9%A0%E7%BB%8F%E5%8E%86/"/>
     
     <category term="华为" scheme="https://tinsir888.codeberg.page/tags/%E5%8D%8E%E4%B8%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>“一生一芯”计划 预学习阶段</title>
-    <link href="https://tinsir888.codeberg.page/posts/1f03145f.html"/>
-    <id>https://tinsir888.codeberg.page/posts/1f03145f.html</id>
-    <published>2022-07-14T16:00:00.000Z</published>
-    <updated>2022-07-19T15:09:44.206Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;一生一芯计划-预学习阶段&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#一生一芯计划-预学习阶段&quot;&gt;&lt;/a&gt; “一生一芯”计划</summary>
-        
-      
-    
-    
-    
-    <category term="一生一芯" scheme="https://tinsir888.codeberg.page/categories/%E4%B8%80%E7%94%9F%E4%B8%80%E8%8A%AF/"/>
-    
-    
-    <category term="操作系统" scheme="https://tinsir888.codeberg.page/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-    <category term="计算机系统设计" scheme="https://tinsir888.codeberg.page/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/"/>
-    
-    <category term="计算机体系结构" scheme="https://tinsir888.codeberg.page/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/"/>
-    
-    <category term="RISC-V" scheme="https://tinsir888.codeberg.page/tags/RISC-V/"/>
-    
-    <category term="NEMU" scheme="https://tinsir888.codeberg.page/tags/NEMU/"/>
-    
-    <category term="数字电路" scheme="https://tinsir888.codeberg.page/tags/%E6%95%B0%E5%AD%97%E7%94%B5%E8%B7%AF/"/>
     
   </entry>
   
